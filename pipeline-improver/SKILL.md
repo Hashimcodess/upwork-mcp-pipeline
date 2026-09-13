@@ -168,6 +168,21 @@ This file is the insurance policy. If the session ends unexpectedly, this is wha
 run: what was audited, what changed, what was rejected. This is how you avoid re-litigating a
 decision that was already made and reversed once.
 
+### 4d. Commit and push (added 2026-09-14)
+The skills folder is its own git repo: `Danish/.claude/skills` → private
+`Hashimcodess/upwork-mcp-pipeline`, branch `main`. After any skill-file edit:
+
+```
+cd Danish/.claude/skills
+git add -A
+git commit -m "<skill>: <what changed> (<job or trigger that caused it>)"
+git push
+```
+
+One commit per run, message says **why** the rule changed. This is the evolution history: it lets
+a later outcome review ask "did replies go up after this rule landed?" and revert a rule that made
+things worse. Never commit client contact details. A run that changed nothing makes no commit.
+
 ---
 
 ## Step 5 — Report and notify
