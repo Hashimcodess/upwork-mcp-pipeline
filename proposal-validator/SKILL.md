@@ -265,8 +265,9 @@ Read `references/rate-and-boost.md` first. Then, in order:
 ```
 find_jobs action=get params={job_id:"<id>"}
 ```
-Confirm `can_apply: true`, `jobActivity.totalHired == 0`, `connects_cost` unchanged,
-`connects_balance` still above 50 after the spend.
+Confirm `can_apply: true`, `jobActivity.totalHired == 0`, `connects_cost` unchanged, and the
+daily cap still holds with this submission counted: **at most 100 Connects and 4 proposals in the
+last 24 hours** (see hard stops in `references/rate-and-boost.md`).
 
 This exists because a real job went from open to `totalHired: 1` between being drafted and being
 reviewed. Scout data can be two hours stale.

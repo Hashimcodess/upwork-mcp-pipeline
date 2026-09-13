@@ -141,7 +141,7 @@ Any one of these stops the pipeline and surfaces to Hashim instead.
 | Verdict is **BLOCK** | Fabricated claim or contact info. Never goes out, never silently rewritten |
 | **2 rewrite loops exhausted** | The disagreement needs a human, not a third attempt |
 | **`totalHired > 0`** on the liveness re-check | Seat is filled. The roofline job went open → hired in 3 days |
-| **Connects balance would drop below 50** | Leaves no room to react to an invitation |
+| **Daily cap: 100 Connects or 4 proposals in the last 24 hours** (revised 2026-09-14 — was "balance would drop below 50") | Count this submission in. Proposals from `list_freelancer_proposals action=list` created in the last 24h; Connects from dashboard `recent_usage` in the last 24h. Either limit reached → stop, bank the letter, report which limit and when it frees up |
 | **`connects_cost` > 40** | Unusually expensive application, worth a human look |
 | **Job no longer returns** `can_apply: true` | Closed or withdrawn |
 | Client rating **below 3.5** | Below the scout's flag threshold; freelancers are reporting real problems |
