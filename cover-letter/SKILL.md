@@ -1,0 +1,218 @@
+---
+name: cover-letter
+description: >
+  Write an Upwork cover letter for Danish from a chosen job post. Finds the technical wedge,
+  researches it, matches portfolio projects honestly, writes a humanized hook and CTA, lists
+  referenced work as bullets, saves to a dated folder, hands off to proposal-validator.
+model: opus
+disable-model-invocation: false
+allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, mcp__upwork__upwork__find_jobs
+---
+
+# cover-letter — write the letter that wins
+
+**Account:** `org_uid` = `1328310880177278977`.
+
+## The one thing that matters
+
+Every proposal Danish has won recently won for the same reason: it contained **one specific,
+falsifiable technical claim** that proved he had already thought about *that client's* problem
+before being paid to.
+
+- Camera measurement, 67 applicants: *"±5mm isn't achievable camera-only. RoomPlan gets 1-3cm
+  with the LiDAR you excluded. Monocular VIO studies report RMSE 1.0-1.3cm."* → **won.**
+- Football tracking: *"Two of your symptoms share one root cause, and it's the homography, not the
+  detector."* → diagnosis before hire.
+- Drone house detection: *"The hard part is the same roof looking different three months later."*
+
+Call it **the wedge.** It is the entire job of this skill. Everything else (structure, tone,
+length) is hygiene. A letter with perfect hygiene and no wedge is one of forty forgettable
+proposals.
+
+**The wedge is risky on purpose.** It is a claim the client could check and find wrong. That is
+exactly why it works: 37% of Upwork proposals are AI-written, and fluent AI produces confident
+generalities, never a specific assertion it could be caught on. The risk *is* the signal.
+
+---
+
+## Step 1 — Load context
+
+In parallel:
+- Root `CLAUDE.md`, `Danish/CLAUDE.md`
+- `references/hook-and-cta-guide.md` — hooks and CTAs
+- `references/winning-patterns.md` — **read this every run.** The wedge taxonomy and worked examples
+- `.claude/skills/proposal/references/cover-letter-guide.md` (repo root)
+- Every `Danish/projects/*.md` in the job's domain
+
+Pull the post if not saved: `find_jobs action=get params={job_id: "<id>"}`
+
+---
+
+## Step 2 — Find the wedge (do this BEFORE writing anything)
+
+Read the post twice. On the second pass, hunt for one of these:
+
+| Wedge type | Look for | Example |
+|---|---|---|
+| **The impossible spec** | A stated accuracy, latency, or cost target that published results say is unreachable | ±5mm room measurement, no LiDAR |
+| **The misdiagnosis** | Client lists symptoms and implies one cause; you can see two, or a different one | "lost players" is detection dropout, "wrong ID" is no appearance model |
+| **The unstated failure mode** | The thing that breaks in month three that they haven't hit yet | Seasonal roof colour drift, walls that bow, camera pan breaking a one-time homography |
+| **The wrong tool** | They named a stack that will fight them | SegFormer for thin structures with a few hundred images |
+| **The buried real project** | Five bullets, four routine, one genuinely hard | The one nobody else will notice |
+| **The scope trap** | Budget and scope are incompatible and saying so is the differentiator | $500 fixed for 200k-image annotation plus deployment |
+
+**Then research it.** This is mandatory when the wedge is a factual claim.
+
+```
+WebSearch: "<technique> accuracy benchmark 2026", "<framework> limitations",
+           "<sensor/method> published RMSE", "<library> vs <library> <task>"
+```
+
+Bring back a real number, a real published result, or a real named limitation. `±0.4mm against
+caliper ground truth` and `RoomPlan 1-3cm with LiDAR` are wedges. `high accuracy` is not.
+
+**Research does not only verify the wedge, it upgrades it.** Go in with a hypothesis and let the
+sources sharpen it. On the SDXL job the starting claim was "inconsistency is a dataset problem";
+the search surfaced that removing the regularization set can *improve* fidelity and style
+alignment, which is contrarian to standard advice and gave the letter a second, stronger edge.
+If the research returns exactly what you assumed, you probably did not search hard enough.
+
+**When the wedge rests on a computable number, compute it YOURSELF first, then check the
+literature.** Not the other way round. On the geospatial job the arithmetic was run in `awk`
+before searching — 100 km² at 30cm GSD is 1.11 gigapixels and a 3m shelter is 6 pixels at 50cm —
+and the published figure then independently matched. That order matters for two reasons: an
+independently derived number is one you can defend in a call, and if your arithmetic and the
+literature *disagree*, that gap is itself a finding worth investigating before it reaches a client.
+
+**If you cannot find a wedge, say so in the output.** A job with no wedge available is a lottery
+ticket, and Hashim should know he is buying a ticket rather than making a bet. Write the letter
+anyway, but flag it: `NO WEDGE FOUND — this is a credentials-only letter, expect low conversion.`
+
+---
+
+## Step 3 — Positioning and length
+
+**Mode** — from `Danish/CLAUDE.md`. Default **engineer**: IC framing, "I built", technical metrics
+only. Hard avoid: "my team", "MiniByte", "as a founder", "my company", "we", any revenue figure.
+Use **founder** only when the client is buying a partner, not a pair of hands.
+
+| Depth | Match | Mode | Words |
+|---|---|---|---|
+| HIGH/MED | >70% | Portfolio-led | 180-240 |
+| HIGH/MED | <40% | Approach-led | 160-220 |
+| HIGH/MED | 40-70% | Hybrid | 160-220 |
+| LOW | any | Guide-led | 120-170 |
+
+Shorter than the older 200-300 targets. Every approved letter landed 160-215; two came back as
+too long. When in doubt, cut.
+
+---
+
+## Step 4 — Match projects honestly
+
+- **>70%** — name it, lead with it, cite its real metric
+- **40-70%** — name it as transferable. Never "I've built this exact thing"
+- **<40%** — do not mention it at all
+
+Every metric must exist in the project file. Uma machine-scores the text against the client's
+stated requirements, so a stretched claim is now checkable. If a project has no quotable number,
+describe what it does without inventing one.
+
+**Vocabulary leak trap (caught 2026-09-08, AI Solutions Architect job):** when the letter also has
+a "how I'd approach this" paragraph naming techniques for the *client's* problem, don't let that
+paragraph's vocabulary bleed into a proof bullet about *past* work. The letter recommended
+"per-agent token budgets" as the design approach for this client, then the StackFuse bullet said
+StackFuse used "per-agent token budget allocation" — StackFuse's actual mechanism (per
+`stackfuse.md`) is budget allocation between chat history and retrieved context in one shared
+context layer, not a per-agent split. Caught at Gate 1, fixed before submit. Check each proof
+bullet against its project file in isolation, not against the surrounding paragraph's vocabulary.
+
+---
+
+## Step 5 — Structure
+
+1. **Hook** — the wedge, stated plainly. 1-2 sentences.
+2. **Mini plan** — how he'd actually approach it. Named techniques, real tool names. This is the
+   paragraph that proves engineer, not bidder. 2-4 sentences.
+3. **Referenced work** — bullets. Format below.
+4. **CTA** — binary choice plus a concrete first-mile offer. 1-2 sentences.
+
+Understanding gets folded into the hook. Four parts, not five.
+
+### Referenced work — bullets (supersedes the old "no bullets" rule)
+
+```
+Relevant work:
+- SN3: production NLP layer, LangGraph state machine doing intent classification across eight categories with RAG over pgvector, live now.
+- Anna: annotation platform where the model suggests a label and a human approves it before it counts, the verification discipline legal review needs.
+```
+
+- Two, occasionally three. Never four.
+- `Name: what it is, the technical detail that matters *here*, the real number.`
+- The clause after the metric must tie to **this** client's problem. A bullet that fits any
+  proposal is dead weight.
+- Plain hyphens. No bold, no nesting, no emoji.
+
+---
+
+## Step 6 — Voice
+
+Danish is a senior engineer in Rawalpindi messaging a peer.
+
+**Do:** contractions everywhere. Hard variation in sentence length, a four-word sentence beside a
+twenty-five-word one. Direct opinions ("I wouldn't use SegFormer here"). Comfortable admission of
+limits ("I haven't done X specifically, here's the closest thing I have"). Peer shorthand
+("BoT-SORT with appearance gating", not "an advanced multi-object tracking algorithm").
+
+**Never:** em dashes (zero, not one). "I'm excited about". "Perfect fit". Rule-of-three rhetoric.
+"The real question isn't X, it's Y". Mic-drop endings on every paragraph. Three paragraphs of
+identical shape. AI vocabulary: delve, leverage, seamless, robust-as-filler, landscape, testament,
+underscore, showcase, pivotal, crucial, tapestry.
+
+**The Pakistan test:** would this sentence fit on a SaaS landing page? Then rewrite it.
+
+---
+
+## Step 7 — Format (absolute)
+
+- Plain text. No markdown headers, bold, italics. Hyphen bullets for the project list only.
+- **No hard wrapping.** Unbroken paragraph lines — hard wraps force manual reflow on paste.
+- Blank line between paragraphs.
+- Client's name if visible in the post.
+- Mirror the client's exact stack terms and problem wording. Uma matches on it; so does the human.
+- **No contact info anywhere.** Email, phone, WhatsApp, site, socials. Upwork's disintermediation
+  policy prohibits it pre-contract and enforcement lands on the freelancer.
+- Sign `Danish Ashraf`. Name only.
+- If the post asks questions with no separate field, answer all of them inside the letter.
+- **Screening field text can differ from the body text** (added 2026-09-14, Aethera). The body's
+  "Please reply with" Q2 asked for the system, how you'd know it works, and the mistakes; the
+  screening field version only asked for the mistakes. Answer the **fuller** version of each
+  question. The validator caught the missing half on loop 1.
+- **Name every source in the text** (added 2026-09-14). "A CBT study found" is vague attribution
+  and failed Gate 2b three times in one letter. Write the paper's title or the benchmark name.
+- **Shared-cause claims: say "most of" or "several", not "are one gap"** (added 2026-09-14). Second
+  time the single-cause trap fired (football v1, then Aethera's "problems 1, 2 and 4 are one gap").
+  Name the shared piece without claiming it explains every symptom.
+- **Never hardcode the bid in a screening answer before the liveness re-check** (added 2026-09-14).
+  Aethera's Q3 said $65; the field average moved $34 -> $45 before submit and rule 2b set $55. Write
+  `<RATE>` in the draft and let the validator fill it at Step 6c.
+
+---
+
+## Step 8 — Save and hand off
+
+Write to `Danish/proposals/YYYY-MM-DD-<slug>/`:
+- `job-post.txt` — post plus every metric pulled
+- `cover-letter.txt` — the letter
+- `wedge.md` — the wedge, the research backing it, and the source. **The validator checks this.**
+- `screening-answers.txt` — when the job has a screening field
+
+**Write these with the Write tool, not a Bash heredoc** (added 2026-09-14). A heredoc holding a
+letter full of apostrophes failed to parse in this harness and cost a round trip.
+
+Display the letter, then **invoke `proposal-validator`**, which owns approval and submission.
+
+**Hashim does not read the letter before it goes out.** He picks the job; the validator approves
+and submits. So this skill is the last place the letter can be made genuinely good rather than
+merely correct — there is no human catching a weak wedge downstream. Max two rewrite loops from
+the validator, then it escalates to Hashim instead of looping.
