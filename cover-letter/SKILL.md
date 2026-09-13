@@ -117,6 +117,13 @@ Use **founder** only when the client is buying a partner, not a pair of hands.
 Shorter than the older 200-300 targets. Every approved letter landed 160-215; two came back as
 too long. When in doubt, cut.
 
+**Embedded screening questions widen the band by ~15%** (added 2026-09-14, Vision AI/CCTV job).
+When the post lists screening questions in the body with no separate API field, every one must be
+answered inside the letter itself — that is real, necessary content, not padding. Budget for it:
+treat the table above as the base and allow up to +15% over the top of the band before treating
+length as a hygiene problem. A letter that is still over even with that allowance gets trimmed for
+real, not because the base band didn't account for the questions it was required to answer.
+
 ---
 
 ## Step 4 — Match projects honestly

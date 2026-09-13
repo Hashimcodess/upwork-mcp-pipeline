@@ -423,3 +423,46 @@ target.
 **Bug found by the synthetic test and fixed:** version check ordered groups by earliest timestamp with no tie-break; equal timestamps flipped previous/newest. Now ordered by latest submission, version name as tie-break.
 
 **Backfill:** match_pct recovered from scout reports for SDXL 85, wall replacement 70, soccer 70, GIS 55. Geospatial and legal-tech had none recorded; left blank.
+
+---
+
+## 2026-09-14 ~13:35 PKT — Vision AI/CCTV submission (PPE + face-ID wedge)
+
+**Audited:** proposal `2099415357799260161`, job `2099025421965830989` (Vision AI — Integration
+with Existing CCTV System, $45/hr, 26 Connects). Scout scored 70, same-session pick.
+
+**Found (all caught in self-review before submit, not by a client — recorded because each is a
+repeatable pattern, not a one-off):**
+1. Draft came in at 271 words against a 160-220 hybrid band (23% over) because the post embedded 3
+   screening questions in the body with no separate API field, and answering them honestly is real
+   required content, not padding. The length rule had no allowance for this case, so every job
+   shaped like this one will trigger the same trim-and-recheck cycle.
+2. Hook opened with "One thing worth flagging early:" — a throat-clearing signpost not on the
+   existing dead-pattern list, since it doesn't match any of the six named patterns exactly but
+   fails the same test (delays the claim, doesn't earn the second sentence as fast as opening on
+   the claim directly).
+3. A proof bullet claimed Urban Guard is "running in production" — present tense, but Urban Guard
+   isn't among Danish's 5 currently active contracts, so ongoing operation isn't something this
+   pipeline can actually verify. "Deployed to production" says the same true thing without the
+   unverifiable present-tense implication.
+
+**Changed:**
+- `cover-letter/SKILL.md` Step 3: +15% length allowance when 2+ screening questions are embedded
+  in the body with no separate field.
+- `proposal-validator/SKILL.md` Gate 3: word-count check now measures against the widened band
+  first in that case.
+- `proposal-validator/SKILL.md` Gate 1: new tense-overclaim guidance — prefer past-tense-safe
+  phrasing for any project that isn't a live active contract.
+- `cover-letter/references/hook-and-cta-guide.md`: added the throat-clearing signpost pattern to
+  the dead-hooks table.
+
+**Research:** skipped, `research-log.md` already has a 2026-09-14 entry (same-day cap).
+
+**Wedge note:** type `unstated_failure` — PPE compliance and face-ID accountability fight over the
+same occluded region of the frame (hardhat brim/safety glasses vs. face recognition). Backed by
+OCFR 2022 (arXiv:2208.02760). No prior instance of this exact wedge shape in the log; logging it as
+a new worked example is left to `winning-patterns.md` only if it converts — too early to add an
+unproven pattern there.
+
+**Persisted:** this entry, SESSION-HANDOFF §15, outcome row `2099415357799260161` in
+`outcome-learner`, ledger row 2026-09-14 13:30 PKT.

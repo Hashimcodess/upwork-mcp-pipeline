@@ -125,6 +125,13 @@ Check:
 - **Role.** Files say "Lead engineer" or "Architect and technical lead". Do not promote to sole
   author or demote a lead.
 - **Tense.** "live now" needs a deployed system. "I built" needs built, not proposed.
+  **Present-continuous overclaim (added 2026-09-14, Vision AI/CCTV job):** "running in production"
+  or "live now" implies Danish knows the system is operating *today*. That's only checkable for
+  one of his 5 current active contracts (`get_freelancer_dashboard` → `active_contracts`) — for
+  anything else, the project file records that it was built and deployed, not that it is still
+  running. Prefer past-tense-safe phrasing ("deployed to production", "shipped", "built and
+  deployed") unless the client is a live active contract. Flag ongoing-tense claims on non-active
+  projects as a soft DISTORTED and suggest the safer phrasing rather than blocking outright.
 - **Transfer.** ">70%" earns "I built this exact thing". 40-70% must read transferable/adjacent.
   Under 40% must not appear.
 - **Technique names.** U-Net, LangGraph, pgvector, TensorRT, BoT-SORT — the file must name that
@@ -181,7 +188,7 @@ unchanged on a SaaS landing page.
 
 | Check | Rule |
 |---|---|
-| Word count | In band for the mode. Over by >15% → REVISE |
+| Word count | In band for the mode. Over by >15% → REVISE. **When 2+ screening questions are embedded in the body with no separate API field, the +15% allowance from `cover-letter/SKILL.md` Step 3 applies first** — measure the overage against the widened band, not the base one (added 2026-09-14, Vision AI/CCTV job) |
 | Referenced work | Bulleted, plain hyphens, 2-3 items, each tied to *this* client |
 | Hard wrapping | Unbroken paragraph lines. Wraps → REVISE |
 | Markdown | No headers, bold, italics, emoji. Hyphen bullets only |

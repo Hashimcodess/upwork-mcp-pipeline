@@ -306,6 +306,30 @@ Format: `job_id | title | score | reason`
 2098842208730689176 | ROS2 robot (Israel) | -- | HARD FILTER $20-40/hr, unverified.
 2098855235452419437 | AI Automation Claude Code/n8n (Sweden) | -- | 50+ proposals, client $268.
 
+## 2026-09-14 13:15 PKT (full scan)
+
+2099391169939914093 | Radar & Computer Vision Project Consultation (Oman) | 39 | Academic advisory consultation, 1-week duration, NOT_VERIFIED, off-pattern class (same as prior mentor/tutor rejects).
+2099056791700164089 | Senior TypeScript/AI Engineer: Document Intelligence (Belgium) | 38 | Near saturation (46 proposals), TypeScript-specific OCR/document pipeline, no direct portfolio precedent (Well Log Digitization is Python not TS).
+2099287640491441517 | Development of printing agriculture spraying drones (Cyprus) | 30 | No stated budget but real bids top out at $30/hr (avg $23). Client 0 history, exploratory hobbyist framing. Below-floor in practice.
+2099294576379478152 | Field Integration & QA Engineer, Hardware/SaaS (US) | 35 | HARD FILTER match<40%. Field hardware bring-up/travel/QA validation, not CV/ML build. FULL_TIME with US site travel vs Pakistan-remote profile. CLIENT WORTH WATCHING: $112,547 spent, 3,951h, 5.0 rating, one open contract is "Senior Computer Vision Lead" since Mar 2025 — a remote CV posting from this account would be a strong lead.
+2099299860506848077 2099315971770361437 | ControlNet ML imaging duplicates (Singapore) | 20 | $5-15/hr below floor, same client theme posted twice.
+2099363099254951690 | Custom Mouse (peripheral) software | 20 | $3-30/hr below floor.
+2099408766128432733 | Live AI TV Host Developer | 25 | $15-35/hr below floor, skills mis-tagged PHP/WordPress.
+2099403503479569773 | AI Recommendation Engine for E-Commerce | 20 | $20-25/hr below floor.
+2099255799229263512 | Copilot AI coding certified instructor | 15 | $22-25/hr below floor, client rating 1.0.
+2099347157716356602 | AI-Powered Building Inspection Platform (AUS) | -- | HARD FILTER 133 proposals, saturated.
+2099007070434017416 | Elite AI Agent Architect (US) | -- | HARD FILTER 75 proposals, saturated.
+2099178485970024766 | AI Agent Developer Healthcare Scheduling (Colombia) | -- | HARD FILTER 55 proposals, saturated. LangGraph match real but field too crowded.
+2099098384666775033 | Automation Expert AI (HKG) | -- | HARD FILTER 70 proposals, saturated (previously logged at lower count).
+2099395732458409738 | AI developer for smart glasses (Even G2) | 25 | $120 fixed, fake-budget for full Android+SDK+AI copilot build.
+2099388587819712648 | AI Engineer Connect CRM to Local NVIDIA GPU Server | 25 | $100 fixed, fake-budget for Docker/API/DevOps scope.
+2098818617289261192 | IOT auto inspection and jewelry counting (India) | 20 | Vague post, unclear scope ("if your ready we can do multiple projects").
+2098020638485821758 | AI/ML Engineer LiDAR Asset Extraction & Multi-Epoch Change Detection | -- | HARD FILTER age. Posted 2026-09-10, >48h at scan time. Otherwise strong (5 proposals, $20,442 spent client, LiDAR domain match) — genuinely good and dropped anyway per the no-exceptions age cap.
+2099238442310937421 | AI Engineer Claude/AI Automation SMS Chatbot | -- | HARD FILTER 56 proposals, saturated, off-pattern (SMS chatbot integration).
+2098830327555926861 2098457752683854142 2098239091213378705 2098196795371630232 2098135673135016781 2098099048834442385 2098066684965730917 | (7x voice AI platform-assembly/telephony jobs) | -- | Saturated (39-138 proposals) or gimmick screening gates or agency-only asks. Established off-pattern/saturated class from prior scans.
+2098044730676624749 2094427458935366211 | GIS/CAD drafting jobs (DWG overlay, historical map digitization) | -- | CAD/GIS drafting, not ML/CV engineering.
+2099099025421965830989-adjacent (AI video/image content gigs, ~8 postings) | -- | Content-mill, off-pattern class, established from prior scans.
+
 ## 2026-09-14 ~01:15 PKT (full scan, re-run after kitchen skip)
 
 2099116033081943645 | CV Kitchen & Service Analytics (Bahrain/KSA) | 53 | SKIPPED BY HASHIM after reading the attached brief: 328-camera enterprise RFP, 3-year TCO + itemized pricing required, masked-staff wedge already pre-empted by the client. Brief saved in proposals/2026-09-13-cv-kitchen-service-analytics-bahrain/.

@@ -73,6 +73,7 @@ you can back it with published figures.**
 | "I'm excited about this opportunity" | Instant skip. |
 | "With 7+ years of experience in..." | Nobody has ever read past this. |
 | Any opening that restates their requirements | They wrote them. They know. |
+| "One thing worth flagging early:" / "Worth noting:" / "Quick thing before I get into it:" | Signposting. Announces that a point is coming instead of just making it — delays the actual claim by a clause for no reason. Cut the windup, open on the claim itself. (Added 2026-09-14, Vision AI/CCTV job — caught in self-review before submit, not by a client.) |
 
 ### Structural variety
 
