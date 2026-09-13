@@ -39,25 +39,40 @@ Rule of thumb for edits:
 - Never silently delete a rule; supersede it and say why
 - Keep files tight. A rule that never fires is load cost with no benefit
 
-## Outcome loop (built 2026-09-14)
+## Outcome loop — the `outcome-learner` skill (built 2026-09-14)
 
-`performance-evaluator/data/outcomes.csv` holds one row per proposal: the decisions that produced
-it (cohort, rule version, scout score, wedge type, rate, Connects) and what happened (status,
-whether the client opened a conversation, job-level field activity).
-`performance-evaluator/scripts/outcomes.py` does all the arithmetic:
+The rest of the pipeline learns from **mistakes**. `outcome-learner` learns from **results**, and
+it is the only component allowed to change scoring from them.
+
+- `outcome-learner/data/outcomes.csv`: one row per proposal. Decisions (rule version, scout score
+  and its six components, match %, wedge type, rate, Connects) and outcome (status, whether the
+  client opened a conversation, job-level field activity)
+- `outcome-learner/scripts/outcomes.py`: all arithmetic and all weight changes
+- `job-scout/references/learned-weights.json`: scout component weights, wedge points, wedge
+  preference. Baseline kept for bounds
 
 ```
-python performance-evaluator/scripts/outcomes.py summary   # breakdowns with sample-size guards
-python performance-evaluator/scripts/outcomes.py due       # rows needing a status refresh
+python outcome-learner/scripts/outcomes.py status          # sync / learn due?
+python outcome-learner/scripts/outcomes.py learn           # observations, recommendations, version check
+python outcome-learner/scripts/outcomes.py learn --apply   # applies only if the guards pass
+python outcome-learner/scripts/outcomes.py summary         # breakdowns with 90% intervals
+python outcome-learner/scripts/outcomes.py gaps            # rows missing learning tags
 ```
 
-Outcome labels: `hired > offered > engaged > declined > closed > dead > passed_over > no_response >
-pending`. `passed_over` means the client messaged other applicants but not Danish, the closest the
-API gets to "read and turned down". Weight changes from outcomes are blocked until 30 judged
-proposals; any bucket under 8 is observe-only.
+**Sample-size discipline, enforced in code:**
 
-Wiring: the validator appends a row at submit, the scout triggers a sync when the last one is
-over 20h old, and pipeline-improver Step 1b reads the summary under those guards.
+| Stage | Judged proposals | Allowed |
+|---|---|---|
+| observe | < 30 | Observations only. Nothing changes |
+| calibrate | 30-49 | ±3 wedge points when 90% intervals separate; ±2 component points on a ≥0.20 gap |
+| confident | 50+ | Also ±1 lean changes on a ≥15-point / ≥0.10 gap |
+
+Every value stays within 50-150% of baseline, at most one apply per 7 days, every apply is a
+commit, and a newer rule version that performs clearly worse than the previous one (15+ judged in
+each) is flagged for `git revert`.
+
+Wiring: the validator adds a row at submit, the scout triggers sync and the daily learning pass,
+the cover letter reads the learned wedge preference, pipeline-improver reads observations.
 
 ## Known limits (verified)
 

@@ -61,6 +61,17 @@ Read the post twice. On the second pass, hunt for one of these:
 | **The buried real project** | Five bullets, four routine, one genuinely hard | The one nobody else will notice |
 | **The scope trap** | Budget and scope are incompatible and saying so is the differentiator | $500 fixed for 200k-image annotation plus deployment |
 
+**When the post offers more than one wedge, lead with the type that has earned replies**
+(added 2026-09-14). Read `../job-scout/references/learned-weights.json` → `current.wedge_preference`
+and open on the highest-ranked type the post genuinely supports; use a second one as support if it
+fits. That ranking is written only by `outcome-learner`, and only moves after 30+ judged proposals,
+so until then it is the baseline order above. **Never invent a wedge to match the preference.** A
+post with no wedge stays `NO WEDGE FOUND`.
+
+Record the type in `wedge.md` as exactly one of `impossible_spec`, `misdiagnosis`,
+`unstated_failure`, `wrong_tool`, `buried_real_project`, `scope_trap`, `none`. The validator copies
+it into the outcome dataset; a free-text type cannot be learned from.
+
 **Then research it.** This is mandatory when the wedge is a factual claim.
 
 ```

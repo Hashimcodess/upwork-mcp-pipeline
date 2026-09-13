@@ -74,39 +74,16 @@ Track B is what makes it possible.
 
 ## Step 0 — Outcome sync (daily, run FIRST) (added 2026-09-14)
 
-The ledger below is prose. Prose cannot be recalibrated from. `data/outcomes.csv` is the
-structured record the whole self-improving loop runs on: one row per proposal, the decisions that
-produced it, and what happened. `scripts/outcomes.py` does every calculation; never compute a rate
-by hand.
+(revised 2026-09-14 — the sync and all learning moved to the `outcome-learner` skill, which owns
+the data. This skill no longer syncs or computes outcome rates.)
 
+Before writing a ledger entry, make sure the outcome data is fresh, then quote it:
 ```
-python performance-evaluator/scripts/outcomes.py due
+python outcome-learner/scripts/outcomes.py status     # sync_due true -> run outcome-learner Step B first
+python outcome-learner/scripts/outcomes.py summary
 ```
-
-For each proposal id it prints:
-```
-list_freelancer_proposals action=get params={id:"<proposal_id>"}
-```
-and write back with `outcomes.py update <id> '<json>'`:
-
-| Field | From |
-|---|---|
-| `status` | `vendorProposal.status.status`, lowercased. **Read it per proposal.** The `list` status filter is unreliable (a `Declined` filter returned `Accepted` rows, 2026-09-14) |
-| `client_messaged` | `yes` if the response carries `room_id`, else `no`. **This is the only per-proposal engagement signal in the API.** A room exists only when the client started a conversation |
-| `field_total` / `field_opened` / `field_shortlisted` / `field_messaged` | `insights.proposals_total` / `proposals_opened` / `shortlisted` / `messaged`. Job-level context, used to separate dead jobs from live losses |
-| `last_checked_utc` | now |
-
-Leave a field blank when the API does not give it. Never estimate.
-
-The script derives the outcome: `hired > offered > engaged (room exists) > declined > closed >
-dead (0 opened after 24h) > no_response (7d+) > pending`. Dead and closed jobs leave the
-denominator, because they say nothing about the letter.
-
-**The strongest learning rows are live losses:** client opened most of the field and messaged
-others, but not Danish. Those are the letters that were read and lost. Mark them in `notes`.
-
-Then run `outcomes.py summary` and paste it at the top of the ledger entry. Commit
-`data/outcomes.csv` in the skills repo with message `outcomes: daily sync`.
+Paste the summary's top lines at the head of the ledger entry. The ledger adds what the dataset
+does not hold: Connects balance, invitations, earnings, and field benchmarking (Track C).
 
 ---
 

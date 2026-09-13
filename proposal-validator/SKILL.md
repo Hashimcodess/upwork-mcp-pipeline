@@ -336,16 +336,21 @@ submission can never be tied back to the decisions that produced it:
 
 ```
 cd Danish/.claude/skills
-python performance-evaluator/scripts/outcomes.py add '{
+python outcome-learner/scripts/outcomes.py add '{
   "proposal_id": "...", "job_id": "...", "title": "...", "submitted_at_utc": "<from 6e>",
   "cohort": "pipeline", "rule_version": "<git rev-parse --short HEAD>",
-  "scout_score": "...", "match_pct": "...", "wedge_type": "<one of: impossible_spec,
-  misdiagnosis, unstated_failure, wrong_tool, buried_real_project, scope_trap, none>",
+  "scout_score": "...", "match_pct": "...",
+  "comp_match": "<points/weight, 0-1>", "comp_client": "...", "comp_winnability": "...",
+  "comp_competition": "...", "comp_rate": "...", "comp_post": "...",
+  "wedge_type": "<one of: impossible_spec, misdiagnosis, unstated_failure, wrong_tool,
+  buried_real_project, scope_trap, none>",
   "mode": "engineer|founder", "contract_type": "hourly|fixed", "bid": "...",
   "connects_cost": "...", "boosted": "yes|no", "boost_connects": "0",
   "proposals_at_submit": "...", "client_spend": "...", "client_hires": "...",
   "status": "accepted", "client_messaged": "no", "last_checked_utc": "<now>" }'
 ```
+The `comp_*` values come from the scout card's `COMPONENTS` line. If the script prints
+`WARNING untagged`, fix the missing tags now; an untagged row is invisible to learning.
 
 `rule_version` is the commit of the skills repo that wrote the letter. That is what lets a later
 review compare outcomes before and after a rule changed. Blank beats guessed for any field the run

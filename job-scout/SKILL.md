@@ -33,14 +33,16 @@ From the dashboard capture: Connects balance, any pending invitations, any offer
 client messages. If there are **invitations or offers**, surface those at the very top of the
 digest — an invitation beats any marketplace job and costs no Connects.
 
-**Outcome sync piggyback** (added 2026-09-14). Scans are the one thing that reliably runs, so they
-carry the outcome loop:
+**Outcome loop** (added 2026-09-14, revised same day — moved to its own skill). Scans are the one
+thing that reliably runs, so they carry the learning loop:
 ```
-python performance-evaluator/scripts/outcomes.py due
+python outcome-learner/scripts/outcomes.py status
 ```
-If it prints any proposal ids, run `performance-evaluator` Step 0 on those before scanning. It is
-a handful of `get` calls. If a row flips to `engaged`, `offered` or `hired`, put it at the top of
-the digest next to invitations.
+- `sync_due: true` → run `outcome-learner` Step B before scanning (a handful of `get` calls)
+- `learn_due: true` → run `outcome-learner` Step C after the sync (once a day)
+
+Any proposal that prints `NEW SIGNAL` goes at the top of the digest next to invitations. Add one
+line to the digest footer: `LEARNING  stage <stage> · judged <n> of 30`.
 
 ---
 
@@ -128,6 +130,20 @@ Discard silently. Do not list these in the digest. Do not ask permission.
 
 Score 0-100. Weights are deliberate: match and client quality dominate, because a perfect
 proposal to a client who never hires is wasted Connects.
+
+**Weights come from `references/learned-weights.json` → `current`** (added 2026-09-14). The
+numbers in the two tables below are the **baseline**. Only `outcome-learner` changes the JSON, and
+only after 30+ judged proposals with confidence-gated evidence. Read the JSON at the start of every
+scan. If `current` differs from baseline, use `current` and put `weights: learned <updated_utc>` in
+the digest footer.
+
+**Record the components on every surfaced card**, so results can be traced back to which part of
+the score actually predicted a reply:
+```
+COMPONENTS match 24/30 · client 18/25 · wedge 15/15 (misdiagnosis) · competition 5/10 · rate 7/10 · post 10/10
+```
+Save the same line in the scout report. The validator turns these into `comp_*` fractions at
+submit.
 
 | Signal | Weight | How to score |
 |---|---|---|

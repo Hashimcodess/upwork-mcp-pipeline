@@ -402,3 +402,24 @@ target.
 5. Guard contradiction: buckets showed [act] at 9 judged while weights_change_allowed=False. [act] now also requires 30 judged overall.
 
 **First read (n=16, judged 9, observe only, no rule changes allowed):** 2 engaged (camera measurement hired, SDXL interview), 5 passed_over, 4 dead, 1 closed, 2 no_response, 2 pending. Both engagements carried a wedge (impossible_spec, misdiagnosis). All 4 wedge "none" letters got nothing. 3 of 4 buried_real_project letters landed on dead jobs, which is a scout problem, not a letter problem. Not significant; logged as observation only.
+
+---
+
+## 2026-09-14 ~03:15 PKT — outcome-learner skill (Hashim: self-evolving, consistency-upgrading)
+
+**Why a separate skill:** outcome logic had been spread across performance-evaluator, pipeline-improver, job-scout and the validator. With three skills able to act on the same numbers, the pipeline could tune itself in contradictory directions. One owner now.
+
+**Built:**
+- `outcome-learner/` owns `data/outcomes.csv`, `data/state.json`, `scripts/outcomes.py`, `references/observations.md`, `references/calibration-log.md`.
+- `job-scout/references/learned-weights.json`: the scout's component weights and wedge points as data, with baseline kept for bounds. Scout Step 3 reads it; only `outcomes.py learn --apply` writes it.
+- Script commands: add, update, due, status, mark-sync, gaps, summary, learn [--apply].
+- Guards in code: observe <30 judged (nothing changes), calibrate 30-49 (strong changes only, 90% Wilson intervals must separate, ±3 wedge / ±2 component), confident 50+ (adds ±1 lean). Buckets need 8+ on both sides. 50-150% of baseline, components renormalise to 100, one apply per 7 days, version check flags a REVERT CANDIDATE at 15+ judged per version.
+- Scout cards now record COMPONENTS so results can say which part of the score predicted a reply.
+- cover-letter reads `wedge_preference`; wedge types are a fixed enum.
+- pipeline-improver no longer touches weights; reads observations only.
+
+**Verified:** real data (9 judged) -> stage observe, apply refused, weights untouched, observation written. Synthetic copy (60 judged, in scratchpad, real files untouched) -> impossible_spec +3 on separated intervals, winnability +2 on 0.6 component gap, sum 100, bounds held, second apply blocked by 7-day rule, calibration log written.
+
+**Bug found by the synthetic test and fixed:** version check ordered groups by earliest timestamp with no tie-break; equal timestamps flipped previous/newest. Now ordered by latest submission, version name as tie-break.
+
+**Backfill:** match_pct recovered from scout reports for SDXL 85, wall replacement 70, soccer 70, GIS 55. Geospatial and legal-tech had none recorded; left blank.

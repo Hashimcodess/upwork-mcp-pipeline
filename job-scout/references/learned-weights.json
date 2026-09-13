@@ -1,0 +1,14 @@
+{
+  "note": "Owned by outcome-learner. Scout reads 'current'. Never edit by hand; changes go through outcomes.py learn --apply so they stay bounded and logged.",
+  "updated_utc": "2026-09-14T00:00:00Z",
+  "baseline": {
+    "components": {"match": 30, "client": 25, "winnability": 15, "competition": 10, "rate": 10, "post": 10},
+    "wedge_points": {"impossible_spec": 15, "misdiagnosis": 15, "unstated_failure": 12, "wrong_tool": 12, "buried_real_project": 10, "scope_trap": 8, "none": 0}
+  },
+  "current": {
+    "components": {"match": 30, "client": 25, "winnability": 15, "competition": 10, "rate": 10, "post": 10},
+    "wedge_points": {"impossible_spec": 15, "misdiagnosis": 15, "unstated_failure": 12, "wrong_tool": 12, "buried_real_project": 10, "scope_trap": 8, "none": 0},
+    "wedge_preference": ["impossible_spec", "misdiagnosis", "unstated_failure", "wrong_tool", "buried_real_project", "scope_trap", "none"]
+  },
+  "history": []
+}

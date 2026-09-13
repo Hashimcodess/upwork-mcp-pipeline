@@ -80,28 +80,21 @@ Known examples already encoded, use as the pattern:
 Step 1 learns from **mistakes**. This step learns from **results**, which is the only evidence
 that the pipeline is winning more, not just erring less.
 
-```
-python performance-evaluator/scripts/outcomes.py summary
-```
+(revised 2026-09-14 — outcome learning moved to its own skill.)
 
-Read it with these guards. They exist because at ~1 proposal a day, noise looks like signal for
-weeks:
+**`outcome-learner` owns results.** Read its latest entry in
+`outcome-learner/references/observations.md` and its `calibration-log.md`. Do not recompute rates
+and **never change scout weights, wedge points or wedge preference yourself**: those live in
+`job-scout/references/learned-weights.json` and change only through `outcomes.py learn --apply`
+under its sample-size guards. Two skills tuning the same numbers is how a pipeline stops being
+consistent.
 
-| Condition | Allowed action |
-|---|---|
-| `weights_change_allowed: False` (under 30 judged) | **No weight or threshold change from outcomes.** Log observations in the improvement log only |
-| A bucket marked `[observe]` (under 8 judged) | Mention it, never act on it |
-| A bucket marked `[act]` and 30+ judged overall | May change a rule. Cite the bucket numbers in the commit message |
-| A `rule_version` group with 8+ judged | Compare against the previous version. A rule whose version group does worse may be reverted with `git revert` |
-
-**Always read the `passed_over` rows individually, regardless of sample size.** Each one is a
-letter a live client probably read and turned down. Compare it against the `engaged` letters:
-hook, wedge type, length, proof, rate. Qualitative lessons from those rows can become rules
-before the numbers are significant, but label them `(from N passed-over letters, not yet
-significant)`.
-
-Dead and closed jobs are a **scout** problem, never a letter problem. If `dead` keeps rising,
-the fix belongs in `job-scout`, not `cover-letter`.
+What this step may still do with results:
+- A `REVERT CANDIDATE` in the version check → confirm the revert happened, record it here
+- Passed-over letters read side by side with engaged ones may produce **writing** lessons (hook,
+  length, proof choice) for `cover-letter`. Label them `(from N letters, not significant)` and keep
+  them as guidance, not hard gates, until the stage is `calibrate` or higher
+- A rising `dead` count is a **scout** targeting problem: fix `job-scout` filters, never the letter
 
 ---
 
