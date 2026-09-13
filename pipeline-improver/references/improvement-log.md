@@ -382,3 +382,23 @@ target.
 **Research:** 1 kept (Uma on Basic plan, reinforces), 2 rejected. See research-log 2026-09-14.
 
 **Open:** Connects 91 and a 1-Connect/12h "Paid invitation badge" drain. About 2 applications left before the 50 floor. Hashim's call whether to top up or turn the badge off.
+
+---
+
+## 2026-09-14 ~02:30 PKT — outcome loop built (Hashim asked)
+
+**Why:** audit of the pipeline found it learns only from caught mistakes, never from results. Improver fires at submit, the moment least is known. Ledger had not recorded outcomes since 2026-09-08.
+
+**Built:**
+- `performance-evaluator/data/outcomes.csv` + `scripts/outcomes.py` (add / update / due / summary). Script does all arithmetic.
+- Backfilled 16 proposals (7 manual Aug 31 - Sep 4, 9 pipeline Sep 6 - 14). Wedge types read from the actual submitted letters, not from memory. Unrecorded fields left blank.
+- Wiring: validator 6g appends a row with `rule_version` = skills repo commit; performance-evaluator Step 0 daily sync; job-scout Step 0 triggers the sync when stale; pipeline-improver Step 1b reads the summary under guards.
+
+**Discovered while building:**
+1. `get` returns `room_id` only when the client opened a conversation. The one real per-proposal engagement signal.
+2. `list` status filter is unreliable (Declined filter returned Accepted rows). Read status per proposal.
+3. Local machine clock runs ~12h behind Upwork timestamps. Mislabelled every proposal age until the script switched to max(local, newest last_checked_utc).
+4. First summary buried the most useful rows as "pending". Added `passed_over`: client messaged others, not Danish, after 72h.
+5. Guard contradiction: buckets showed [act] at 9 judged while weights_change_allowed=False. [act] now also requires 30 judged overall.
+
+**First read (n=16, judged 9, observe only, no rule changes allowed):** 2 engaged (camera measurement hired, SDXL interview), 5 passed_over, 4 dead, 1 closed, 2 no_response, 2 pending. Both engagements carried a wedge (impossible_spec, misdiagnosis). All 4 wedge "none" letters got nothing. 3 of 4 buried_real_project letters landed on dead jobs, which is a scout problem, not a letter problem. Not significant; logged as observation only.

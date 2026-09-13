@@ -75,6 +75,34 @@ Known examples already encoded, use as the pattern:
 - Bullets requested → superseded the old "no bullets" rule
 - A U-Net claim contradicted by literature → Gate 0d research test made mandatory
 
+## Step 1b — Outcome review (added 2026-09-14)
+
+Step 1 learns from **mistakes**. This step learns from **results**, which is the only evidence
+that the pipeline is winning more, not just erring less.
+
+```
+python performance-evaluator/scripts/outcomes.py summary
+```
+
+Read it with these guards. They exist because at ~1 proposal a day, noise looks like signal for
+weeks:
+
+| Condition | Allowed action |
+|---|---|
+| `weights_change_allowed: False` (under 30 judged) | **No weight or threshold change from outcomes.** Log observations in the improvement log only |
+| A bucket marked `[observe]` (under 8 judged) | Mention it, never act on it |
+| A bucket marked `[act]` and 30+ judged overall | May change a rule. Cite the bucket numbers in the commit message |
+| A `rule_version` group with 8+ judged | Compare against the previous version. A rule whose version group does worse may be reverted with `git revert` |
+
+**Always read the `passed_over` rows individually, regardless of sample size.** Each one is a
+letter a live client probably read and turned down. Compare it against the `engaged` letters:
+hook, wedge type, length, proof, rate. Qualitative lessons from those rows can become rules
+before the numbers are significant, but label them `(from N passed-over letters, not yet
+significant)`.
+
+Dead and closed jobs are a **scout** problem, never a letter problem. If `dead` keeps rising,
+the fix belongs in `job-scout`, not `cover-letter`.
+
 ---
 
 ## Step 2 — Outside intelligence

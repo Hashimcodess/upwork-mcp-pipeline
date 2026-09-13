@@ -331,6 +331,26 @@ Then append one row to `Danish/performance/ledger.md` recording the submission: 
 rate, Connects spent, balance after, and the score the scout gave it. The funnel numbers come
 later from `performance-evaluator`; this row just makes sure nothing goes unlogged.
 
+**And add the structured row the outcome loop learns from** (added 2026-09-14). Without it, a
+submission can never be tied back to the decisions that produced it:
+
+```
+cd Danish/.claude/skills
+python performance-evaluator/scripts/outcomes.py add '{
+  "proposal_id": "...", "job_id": "...", "title": "...", "submitted_at_utc": "<from 6e>",
+  "cohort": "pipeline", "rule_version": "<git rev-parse --short HEAD>",
+  "scout_score": "...", "match_pct": "...", "wedge_type": "<one of: impossible_spec,
+  misdiagnosis, unstated_failure, wrong_tool, buried_real_project, scope_trap, none>",
+  "mode": "engineer|founder", "contract_type": "hourly|fixed", "bid": "...",
+  "connects_cost": "...", "boosted": "yes|no", "boost_connects": "0",
+  "proposals_at_submit": "...", "client_spend": "...", "client_hires": "...",
+  "status": "accepted", "client_messaged": "no", "last_checked_utc": "<now>" }'
+```
+
+`rule_version` is the commit of the skills repo that wrote the letter. That is what lets a later
+review compare outcomes before and after a rule changed. Blank beats guessed for any field the run
+did not actually record.
+
 Give Hashim **one** message covering the submission and what the improver found, not two.
 
 ---

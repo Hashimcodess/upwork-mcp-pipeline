@@ -39,6 +39,26 @@ Rule of thumb for edits:
 - Never silently delete a rule; supersede it and say why
 - Keep files tight. A rule that never fires is load cost with no benefit
 
+## Outcome loop (built 2026-09-14)
+
+`performance-evaluator/data/outcomes.csv` holds one row per proposal: the decisions that produced
+it (cohort, rule version, scout score, wedge type, rate, Connects) and what happened (status,
+whether the client opened a conversation, job-level field activity).
+`performance-evaluator/scripts/outcomes.py` does all the arithmetic:
+
+```
+python performance-evaluator/scripts/outcomes.py summary   # breakdowns with sample-size guards
+python performance-evaluator/scripts/outcomes.py due       # rows needing a status refresh
+```
+
+Outcome labels: `hired > offered > engaged > declined > closed > dead > passed_over > no_response >
+pending`. `passed_over` means the client messaged other applicants but not Danish, the closest the
+API gets to "read and turned down". Weight changes from outcomes are blocked until 30 judged
+proposals; any bucket under 8 is observe-only.
+
+Wiring: the validator appends a row at submit, the scout triggers a sync when the last one is
+over 20h old, and pipeline-improver Step 1b reads the summary under those guards.
+
 ## Known limits (verified)
 
 - Client attachments are not returned by `find_jobs get`

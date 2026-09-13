@@ -33,6 +33,15 @@ From the dashboard capture: Connects balance, any pending invitations, any offer
 client messages. If there are **invitations or offers**, surface those at the very top of the
 digest — an invitation beats any marketplace job and costs no Connects.
 
+**Outcome sync piggyback** (added 2026-09-14). Scans are the one thing that reliably runs, so they
+carry the outcome loop:
+```
+python performance-evaluator/scripts/outcomes.py due
+```
+If it prints any proposal ids, run `performance-evaluator` Step 0 on those before scanning. It is
+a handful of `get` calls. If a row flips to `engaged`, `offered` or `hired`, put it at the top of
+the digest next to invitations.
+
 ---
 
 ## Step 1 — Scan
