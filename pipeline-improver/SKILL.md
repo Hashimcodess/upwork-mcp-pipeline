@@ -189,16 +189,21 @@ This file is the insurance policy. If the session ends unexpectedly, this is wha
 run: what was audited, what changed, what was rejected. This is how you avoid re-litigating a
 decision that was already made and reversed once.
 
-### 4d. Commit and push (added 2026-09-14)
+### 4d. Commit every change, push once every 24 hours (added 2026-09-14, revised same day — was push on every run)
 The skills folder is its own git repo: `Danish/.claude/skills` → private
-`Hashimcodess/upwork-mcp-pipeline`, branch `main`. After any skill-file edit:
+`Hashimcodess/upwork-mcp-pipeline`, branch `main`. After any skill-file edit, **commit locally**.
+**Push only when the last push is 24+ hours old** (Hashim's rule: not on every pipeline trigger):
 
 ```
 cd Danish/.claude/skills
 git add -A
 git commit -m "<skill>: <what changed> (<job or trigger that caused it>)"
-git push
+last=$(git log -1 --format=%ct origin/main); head=$(git log -1 --format=%ct HEAD)
+if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ] && [ $((head - last)) -ge 86400 ]; then git push; fi
 ```
+
+Both timestamps come from the same local clock, so the check is safe even though this machine's
+clock runs ~12h behind. Unpushed commits simply wait for the next window.
 
 One commit per run, message says **why** the rule changed. This is the evolution history: it lets
 a later outcome review ask "did replies go up after this rule landed?" and revert a rule that made

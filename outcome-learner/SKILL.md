@@ -143,8 +143,8 @@ cd Danish/.claude/skills
 git add outcome-learner job-scout/references/learned-weights.json
 git commit -m "outcomes: daily sync (<judged> judged, stage <stage>)"      # or
 git commit -m "calibration: <changes> — evidence: <bucket numbers>"
-git push
 ```
+Push follows the once-every-24-hours rule in `pipeline-improver` Step 4d. Never push on every sync.
 
 A sync with no status changes and no new observation makes no commit.
 
