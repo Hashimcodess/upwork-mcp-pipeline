@@ -306,6 +306,23 @@ Format: `job_id | title | score | reason`
 2098842208730689176 | ROS2 robot (Israel) | -- | HARD FILTER $20-40/hr, unverified.
 2098855235452419437 | AI Automation Claude Code/n8n (Sweden) | -- | 50+ proposals, client $268.
 
+## 2026-09-14 19:20 PKT (full scan, all 7 domains)
+
+2099453581557835357 | AI Automation Engineer for OpenAI and Claude | 20 | $20 fixed, skills mis-tagged (Eagle/Embedded/Electrical Drawing) on an AI-automation title.
+2099496081281531245 | AI Engineer - Claude API Integration & Prompt Engineering | 25 | $30 fixed, entry_level, troubleshoot-existing-chatbot scope underpriced.
+2099475346199383818 | Senior/Staff Python Engineer - Data Platform & Cloud Architecture (robotics training-data co, Croatia) | -- | HARD FILTER 104 proposals, saturated. Client good (5.0, $13,341) but field too crowded.
+2099469493673184761 | AI and Machine Learning Expert (Indonesia) | 30 | $19-40/hr, NOT_VERIFIED, MATLAB-centric boilerplate, same template class as prior India/Pakistan/Azerbaijan variants.
+2099433792487630429 | AI Agent Developer for Business Automation (Pakistan) | 30 | Re-seen, now 20 proposals. Unchanged assessment: mis-tagged skills, vague.
+(generative AI domain search) | -- | All content-creation/video-editing gigs, established off-pattern class. No new ML/CV work surfaced.
+
+## 2026-09-14 13:45 PKT (delta scan, ~30 min after full scan)
+
+2099454780635136136 | Senior Hardware NPD Engineer - AI/IoT Consumer Electronics (India) | 32 | HARD FILTER match<40%. Screening Qs ask for hands-on DFM/mass-production, FCC/BIS certification, SOM carrier-board layout (Rockchip/NXP/Qualcomm). Hardware productionization, different specialty from Danish's AI/firmware embedded work. No rate stated, client 0 history.
+2099424815284561501 | "Full-Stack IoT Dashboard Developer" (actually drone/geospatial rail telemetry) | 35 | FAKE BUDGET: $500 stated vs bids $350-5,000 (avg $697). Client has 1 active contract with this exact title already (1 hire, 0 feedback, $70 spend) — re-post or duplicate-role signal. Bizarre jargon-heavy post with a compliance-trap phrase. Backend/streaming-architecture ask (Python/Node, MQTT, Leaflet/Mapbox), not core CV/ML — match ~35% even setting budget aside.
+2099444969395301197 | AI Model Development (FaceApp-style haircut selector, AUS) | -- | HARD FILTER 94 proposals, saturated.
+2099400767830830744 | Senior AI Engineer - AI Agents RAG Voice AI & Automation | 20 | FAKE BUDGET $20 fixed for "production-grade AI systems... Agentic AI workflows".
+2099433792487630429 | AI Agent Developer for Business Automation (Pakistan) | 30 | $19-40/hr, skills mis-tagged (English/HTML5/JavaScript/Graphic Design), vague generic post, no stack named.
+
 ## 2026-09-14 13:15 PKT (full scan)
 
 2099391169939914093 | Radar & Computer Vision Project Consultation (Oman) | 39 | Academic advisory consultation, 1-week duration, NOT_VERIFIED, off-pattern class (same as prior mentor/tutor rejects).
