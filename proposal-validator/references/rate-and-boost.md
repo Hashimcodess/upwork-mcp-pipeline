@@ -123,7 +123,7 @@ What changes is that "say the word for next time" has to actually fire on the jo
 matters, instead of being boilerplate on every report.
 
 **Name the boost explicitly in the report when all four hold:**
-1. `proposal_count` under 25 (post-crowd-cap, so the field is genuinely small)
+1. `proposal_count` under 25 (a genuinely small field)
 2. Match 70%+
 3. Client is demonstrably active — `totalInvitedToInterview` > 0 or `invitesSent` > 0
 4. `boost.recommended_connects` is at or under 15

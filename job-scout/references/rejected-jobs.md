@@ -154,9 +154,6 @@ Format: `job_id | title | score | reason`
 2097055072152970657 | Expert AI Video Creator, Basketball Motion (Seedance 2.5) | 25 | Fewer than 5 proposals and a 4.98/37-hire client, but it is AI video production with Final Cut Pro, not ML engineering. Never-force-fit.
 2096967784623169774 | AI App Vibe Coder for Instagram videos | 25 | Content-app build, "MUST HAVE PROVEN EXPERIENCE" building this exact product.
 2096947195546776628 | PCB Design, electric underwater scooter | 15 | PCB design around a VESC motor controller.
-2096999665946940758 | AI/ML Engineer AgTech (Israel) | 48.5 | SURFACED not dropped — logged for dedupe. Match 50%: Agricultural UGV gives domain credibility but the ask is time-series predictive modelling of plant stress, which is not in the 40 project files. 20-50 proposals, client VERIFIED but 0 hires.
-2097042475088688180 | Fabric Defect Detection System (Pakistan) | 44.5 | SURFACED not dropped — logged for dedupe. Match 65%, only 4 proposals, real wedge (line-scan/strobe/loom-sync is the constraint, not the model; imbalanced data makes accuracy meaningless). Held back by a five-sentence post with no specs and a 0-hire NOT_VERIFIED client with 4 invites already out.
-2096961010297390310 | Senior multi-sensor fusion / multi-target tracking architect (NL) | 53 | SURFACED not dropped — logged for dedupe. $70-110/hr, 5-10 proposals, deep hits on fusion/Kalman/GPS-denied/track-ID-stability. Fails two STATED bars: "ten or more years" (Danish has 7+) and "direct experience with at least radar" (no radar — same gap as Fravek). Client 0 history, NOT_VERIFIED.
 
 ## 2026-09-08 02:39 PKT (delta scan, 72 min)
 
@@ -223,7 +220,6 @@ Format: `job_id | title | score | reason`
 2096869863941316952 | Senior AI Engineer, ML Infrastructure & Applications (Long-Term) | -- | HARD FILTER age. Published 2026-09-07T07:56Z, 48h04m old at scan time -- four minutes over the 2-day cap, no exception taken. Real ~55% match (LLM features, RAG, vector stores, eval frameworks, cost monitoring), $20-45/hr, 19 proposals, VERIFIED Pakistan client with no history. Would have been a live candidate an hour earlier.
 2097561567940168938 | Research AI Engineer for Voice Platform | -- | HARD FILTER $15-25/hr below floor. ~70% match (vLLM, LiveKit, KV-cache optimization, ASR/TTS, GPU optimization vs Ringly.io/CallAxa/Chatley.ai/Emotive TTS). VERIFIED US client, 7 hires, $3,405 spent, 35 proposals. Rate is the ONLY disqualifier -- the shape of job that would earn a floor exception if one is ever documented.
 2097554931301338346 | AI Video Pipeline Engineer (MiniMax H3 Specialist) | -- | HARD FILTER $15-30/hr below floor. RE-POST of 2092896210337554392 which Danish already applied to (cancelled 2026-09-09 10:09 PKT, 18 Connects refunded incl. 8 boost). Same Singapore client: 86 hires, $39,443 spent, 4.94/55, VERIFIED, only 4 proposals. Strong buyer, re-listed $10 under floor.
-2097500892929233413 | Senior AI Coding Governance & Agent Harness Engineer | 40 | SURFACED BORDERLINE, not dropped. Agent harness/context engineering/evals/guardrails adjacent to HOKI + StackFuse, but ask is an AI-native software engineering environment for a client dev team and post gates it: "do not apply if this would be your first attempt." No coding-agent harness in the 40 project files. Client 0 history, NOT_VERIFIED (-10).
 2097542648704939391 | Kaggle Expert for Tabular ML | -- | Tabular ML competition tuning, off-domain. Skills tagged SAS/JavaScript/SAP/Hadoop on an ML title -- mis-tagged post.
 2097548074494593985 | LLM/NLP Research Consultant for Cross-Lingual Hallucination Detection | -- | Academic Final Year Project advisory, Nepal, NOT_VERIFIED, no rate. Off-pattern class (same as Academic Research Assistant reject).
 2097538078191073573 | AI engineer/consultant: run a head-to-head model eval on your own task | -- | $10 fixed, hiring 10 people. Content-mill/crowdsourced product feedback, not engineering work.
@@ -247,7 +243,6 @@ Format: `job_id | title | score | reason`
 
 ## 2026-09-09 18:10 PKT (full scan, cron ba1701d5 + manual)
 
-2097365062079364158 | Voice Agent Setup Live Demo & Buy | 57 | SURFACED WITH HEAVY FLAG. $10,000 fixed, 34 proposals, client 128 hires/141 contracts/4.79 from 75/VERIFIED -- but $65,490 spend across 141 contracts = $464 average, and only 212 total hours. Entire history is fixed-price micro-gigs (Houdini, Lottie, game UI/UX, Unreal livestream). $10k is a 20x outlier vs anything they have paid. SAME CLIENT as 2097191761859816431 (the $50/case-study AI content-mill posting rejected 2026-09-08) -- three contracts of it, two still active. Ask is "buy a setup you already have," a product sale not a build.
 2097294273992159163 | Infrastructure for open-source Conversation IA (Spain) | -- | HARD FILTER $22-29/hr below floor. Genuine architecture work: 20K VoIP calls/day, Asterisk + Whisper STT + Qwen LLM already deployed, all open-source, 21 proposals. Rate is the only disqualifier.
 2097635769930075370 | AI/ML Code & RAG Pipeline Review with Actionable Report | -- | FAKE BUDGET $20 fixed for a full codebase + RAG pipeline + LLM integration audit with written report. Multi-day scope priced as a coffee. VERIFIED Pakistan client, 6 proposals.
 2097582879569557797 | Specialist in AI Speech Recognition / Audio Processing | -- | HARD FILTER $20 fixed below floor. Also note the actual ask: modify audio so speech becomes undetectable to transcription/ASR systems. Evasion work, thinly framed -- would not take regardless of rate.
@@ -262,17 +257,14 @@ Format: `job_id | title | score | reason`
 2096998433594056604 | AI Voice Agent, AI Receptionist Developer (Twilio/Vapi/Retell) | -- | HARD FILTER $100 fixed, 61 proposals.
 2096871384486956508 | AI Voice Assistant Developer - Construction Management Platform | -- | HARD FILTER 307 proposals. Strong client (AUS, 5.0/7, $70,868 spent) but the field is unwinnable.
 2096829793599989672 | AI phone receptionist for a small business | -- | HARD FILTER $900 fixed, 43 proposals, wants a working demo before committing.
-2097646526923575813 | Embedded Firmware Engineer - ESP32 Skin-Contact Sensor Logging | 53 | SURFACED. Not a reject -- logged here for dedupe. $1,500 fixed across 2 milestones, ~$30-50/hr equivalent, clears the floor only if the bring-up stays efficient.
 
 ## 2026-09-09 18:37 PKT (cron ba1701d5 delta, 27 min after full scan)
 
 2097631295301433637 | Product Focused AI Engineer (US/NJ) | 30 | BELOW FLOOR. $30-40/hr, 32 proposals, VERIFIED. Post is 4 generic sentences -- no stack, no deliverable, no problem stated ("build fast, high-quality products end-to-end using modern AI engineering tools"). Client has 2 lifetime hires / $6,625 and nothing since 2023 (Executive Assistant 2023, Web3/Webflow 2022 at 4.6). Carries preferred_locations: India (soft, but a Uma ranking negative Danish does not match). No wedge available in a contentless post.
 2097674505823678395 | Full-Stack AI Engineer - Early-Stage Logistics SaaS | -- | HARD FILTER $10-20/hr below floor. Named because the client is strong: $210,741.36 spent, 57 hires, 4.92 from 29, VERIFIED, founder-led freight/logistics SaaS v1. 50+ proposals. Rate is half the floor.
-2097598045963106597 | AI QA Automation Engineer (Goodgame Studios, Germany) | 54 | SURFACED WITH GATE FLAGGED, not a reject -- logged for dedupe. Client is exceptional ($554,450 spent, 62 jobs with hires, 105 contracts, 4.96 from 71, 9,194h, Stillfront Group). But match ~30%: stated expectation is "hands-on experience with Unity test automation" and nothing in the 40 project files is test automation, device-lab ops, or QA tooling. The VR work is Unity application building, not instrumentation. AI is the tool here, not the product. 50+ proposals, 27 Connects, rate tops at $40.
 
 ## 2026-09-10 14:54 PKT (full scan)
 
-2097781977576028478 | Embedded Flight Software Developer (UAE) | 41 | SURFACED WITH BUDGET FLAG. $30,000 fixed, 15-20 proposals. Match ~50% (GNC, flight controller, SIL/HIL vs GPS-Denied Navigation, Autonomous Inspection Drone, FabSky, Agricultural UGV). BUDGET NOT CREDIBLE: client has $353.95 lifetime spend across 4 contracts and 1 total hour, entire history is legal services (contract review, employer dispute, company structuring). $30k is an ~85x outlier. Also filed under subcategory Web Development. Same pattern as 2097365062079364158 ($10k voice agent, 2026-09-09).
 2097865867116819031 | Reinforcement Learning Environment Expert | -- | Tutoring role ("looking for an expert to tutor me" while they interview for a job). Off-pattern class. WORTH WATCHING: client is enormous -- 513 hires, $553,990 spent, 4.98 from 275, only 10-15 proposals, $20-60/hr. A real engineering posting from this account would be a strong lead.
 2097927211321834085 | Full-Stack AI Engineer - AI Agent Platform | -- | HARD FILTER 50+ proposals. Genuine match (realtime voice + agentic task execution + tool/API integration), solid client ($58,881 spent, 162 hires, 4.96 from 122, VERIFIED), $20-45/hr. Dropped on field size alone -- re-check if proposals thin out.
 2097876498081491789 | Set Up "AI OS" Obsidian + Claude Cowork Integration | -- | HARD FILTER $20/hr flat below floor, 50+ proposals.
@@ -455,12 +447,3 @@ Format: `job_id | title | score | reason`
 2099929668769644311 | AI Engineer - Voice AI (acoustic intelligence) | 39 | 76 proposals, competition zero, no client spend history
 2099856050220966623 | Japanese Vehicle Image Dataset | 25 | dataset sourcing/supply role, not model engineering
 2099886316376391447 | AI Simulation and Embedded Systems Lead | 33 | $15-40/hr, 1-job client, vague AI+embedded+fullstack lead
-2099915798947100063 | SEM Microscope CV Team Leader | 68 | SURFACED
-2099965157819865153 | Face redaction egocentric video | 77 | SURFACED
-2099955507679016630 | ComfyUI Workflow Graphic Novel | 68 | SURFACED
-2100032336632821430 | AI Agent Consultant LangGraph | 67 | SURFACED
-2099864363314365341 | Elite LLM Engineer / Harness Building | 65 | SURFACED
-2099867503901921415 | Autonomous AI Sales & Revenue Platform | 61 | SURFACED borderline
-2099928916257588125 | Mentor secure AI-agent Claude Code/MCP | 60 | SURFACED borderline
-2099984911860155293 | Developer for AI steel estimating SaaS | 57 | SURFACED borderline
-2099970698825289863 | AI Alignment / Post-Training Researcher | 47 | SURFACED borderline
