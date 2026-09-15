@@ -36,6 +36,14 @@ afterwards. There is no second human read. Two consequences:
 The authorisation covers submitting a proposal to a job Hashim chose. It does not extend to
 boosting, to raising the bid outside the rules, or to applying to a job he did not pick.
 
+**A job that defers to a questionnaire, test, or "we don't read cover letters" does not exempt
+this gate (added 2026-09-14, Principal AI-Native Architect job).** Upwork's `cover_letter` field
+is still required to submit, and it is still the only text guaranteed to be read before any
+follow-up process exists. Run Gates 0-4 on it exactly as on a normal letter. If a job's cover
+letter was drafted and submitted without a validator pass — including one hand-edited live with
+Hashim in the main conversation because the format looked unusual — that is a process miss to log
+here and correct going forward, not a special case that stays uncovered.
+
 ---
 
 ## Gate 0 — Will this win? (run FIRST, weight it heaviest)

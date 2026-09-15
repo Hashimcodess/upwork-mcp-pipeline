@@ -234,3 +234,19 @@ Display the letter, then **invoke `proposal-validator`**, which owns approval an
 and submits. So this skill is the last place the letter can be made genuinely good rather than
 merely correct — there is no human catching a weak wedge downstream. Max two rewrite loops from
 the validator, then it escalates to Hashim instead of looping.
+
+**Non-standard submission formats do not exempt this flow (added 2026-09-14, Principal AI-Native
+Architect job).** A job post that says "we'll send a technical questionnaire instead of a cover
+letter," or otherwise implies the normal proposal text doesn't matter, still requires: the
+`Danish/proposals/YYYY-MM-DD-<slug>/` folder, the Step 2 wedge search, and a `proposal-validator`
+invocation before submission. Upwork's `cover_letter` field is still required by the API and is
+still the only text a human or Uma reads before any questionnaire exists — write it with the same
+rigor and pass it through the validator like any other job. What changes is only the CTA (state
+readiness for their process instead of forcing the standard binary call/2-slide-deck choice), not
+the workflow. On the job above, the letter was hand-drafted directly in conversation with Hashim
+reviewing and editing it live — skipping this entire skill and proposal-validator's Gates 0-4.
+That inverts the design ("Hashim does not read the letter before it goes out") and happened only
+because the unusual format didn't visibly trigger the normal chain. It worked out (claims were
+manually double-checked against `projects/hoki.md` before submission), but treat any job with an
+atypical proposal mechanic as a prompt to explicitly invoke this skill and the validator, not a
+reason to freelance the letter in the main conversation.

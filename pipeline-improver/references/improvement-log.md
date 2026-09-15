@@ -466,3 +466,58 @@ unproven pattern there.
 
 **Persisted:** this entry, SESSION-HANDOFF §15, outcome row `2099415357799260161` in
 `outcome-learner`, ledger row 2026-09-14 13:30 PKT.
+
+---
+
+## 2026-09-14 23:59 UTC — Principal AI-Native Architect, validator/cover-letter skipped entirely
+
+**Audited:** proposal `2099830059598569473`, job `2099730174664867607` (Principal AI-Native
+Software Engineering / Agentic Development Architect), $65/hr, no boost, no attachments, 27
+Connects. Scout-surfaced this session at 69 (`scout-reports/2026-09-15-0900.md`). Hashim picked
+it directly from the digest and asked for full job details, then a submission note, reviewed it,
+asked for one CTA change, then said "proceed."
+
+**Found:**
+1. **The whole `cover-letter` → `proposal-validator` chain was never invoked.** The job post said
+   "we'll send a technical questionnaire instead of a cover letter," which doesn't map onto either
+   skill's normal trigger shape, so the letter got hand-drafted directly in the main conversation.
+   Hashim reviewed and edited the CTA live — which inverts the explicit design in both SKILL.md
+   files ("Hashim does not read the letter before it goes out," validator owns Gates 0-4). No
+   systematic Gate 0 win-check, no Gate 1 claim re-verification pass, no Gate 4 compliance check
+   ran. It happened to be fine — the HOKI claims were manually checked against `projects/hoki.md`
+   before submission, and there's nothing disintermediation-adjacent in the letter — but nothing
+   would have caught it if it hadn't been.
+2. **Self-caught tagging error**, not Hashim's: the outcome ledger row was first written with
+   `mode: founder`, but the actual letter text uses pure IC framing ("I architected," "I built,"
+   no MiniByte/we/revenue language) — i.e. `engineer` mode per the skill's own rule. Corrected via
+   `outcomes.py update` before this audit. Cause: picked founder because HOKI's project file says
+   "Chief Architect at MiniByte" without checking what mode the actual drafted text landed in.
+3. **No proposal folder was created** — first submission this pipeline-improver has audited with
+   no `job-post.txt` / `wedge.md` / `cover-letter.txt`. Backfilled for audit-trail consistency.
+
+**Changed:**
+- `cover-letter/SKILL.md` (end of Step 8): non-standard submission formats (questionnaire-first,
+  "apply by answering these questions in a message," take-home test) still require the full flow
+  — proposal folder, Step 2 wedge search, `proposal-validator` invocation. Only the CTA adapts.
+- `proposal-validator/SKILL.md` (standing authorisation section): a job that defers to a
+  questionnaire/test does not exempt Gates 0-4 from running on whatever text fills the required
+  `cover_letter` field.
+
+**Research:** skipped, `research-log.md` already has a 2026-09-14 entry (same-day cap).
+
+**Wedge note:** type `buried_real_project` — most applicants for this role will cite general
+AI-coding-tool fluency; the client explicitly wants evidence of engineering controls built around
+autonomous decision-making. HOKI's Reward/Penalty Agent (self-optimization from outcome feedback)
+and orchestrator-traceable state are a genuine but cross-domain proof (sales-agent platform, not a
+coding-agent SDLC) — letter states that gap honestly rather than implying a literal match.
+
+**Flagged, not actioned:** the most literal possible proof for this job type is this very Upwork
+pipeline (confidence-gated `learned-weights.json`, `outcome-learner`'s sample-size gating, the
+audit trail in `rejected-jobs.md`) — but it isn't a documented project in Danish's portfolio files,
+so citing it as personally built would be an identity/role fabrication. Left as an open thread for
+`portfolio-profile-upgrade`: if this pipeline is ever meant to be citable, it needs a real,
+honestly-scoped project entry first, under whichever name is actually accurate.
+
+**Persisted:** this entry, SESSION-HANDOFF (new 2026-09-14 evening section), outcome row
+`2099830059598569473` in `outcome-learner` (mode corrected), `memory/feedback_unusual_format_still_needs_validator.md`,
+backfilled `proposals/2026-09-14-principal-ai-native-architect/`.

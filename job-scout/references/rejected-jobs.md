@@ -48,6 +48,18 @@ Format: `job_id | title | score | reason`
 2096721981151634438 | M5Stack 2-3 prototypes + phone app | 35 | HARD FILTER match<40%. Client is the best seen ($961k spend, 259 contracts, 166 hires, 4.87) but the job is ESPHome/YAML config + enclosure selection with "minimal custom development". Danish's embedded work is edge AI, not hardware assembly. Their history is Shopify/illustrator/After Effects, not hardware.
 2096765791826061224 | Roof Measurement and Reporting Software | 32 | $15-50/hr midpoint below floor, client 0 history, "build or recommend" reads advisory, EagleView/Hover own this market
 2096719765897993343 | Senior AI/Backend Architect Enterprise Data Eng | 45 | 50% match (no IDMC/lineage/graph DB), client NOT_VERIFIED with 0 contracts/0 hires/0 spend on a long-term architecture engagement
+
+## 2026-09-15 09:00 UTC
+
+2099780816535869505 | AI engineer mortgage/protection advice platform | -- | HARD FILTER location gate: UK/EU Only, full-time remote
+2099706258362021558 | Senior RL Engineer Humanoid Olympics (Unitree G1) | 30 | No locomotion/RL portfolio; post requires locomotion video proof as entry bar. Never-force-fit.
+2099698752005322108 | Applied ML Research Engineer - LLM Post-Training and Evaluation | 32 | LoRA overlap is diffusion (Ostris masked LoRA), not LLM RLHF/GRPO/DPO - different discipline despite shared vocabulary
+2099720902099154614 | Data Scientist (AI model eval pipeline) | 26 | New client shopping hard (18 invites/13 interviewing/0 hired), thin match on eval-harness building
+2099699018005598343 | Scan-to-BIM point cloud to CAD | -- | HARD FILTER rate floor $12-25/hr
+2099699880847048471 | Football (Soccer) video analysis | -- | HARD FILTER rate floor $50 fixed entry-level, scope too broad for budget
+2098020638485821758 | AI/ML Engineer LiDAR Asset Extraction & Change Detection | -- | HARD FILTER age >48h (posted 2026-09-10)
+2099617894041041473 | Local AI Expert Consultancy Work | -- | Payment NOT_VERIFIED + vague scope
+2099116033081943645 | Kitchen & Service Analytics Bahrain | -- | Already proposed 2026-09-13, see proposals folder
 2096713124072368040 | Natural garment listing photo enhancement | 51 | 70% match and a strong wedge, but client 0 hires/0 spend, 14 invites out, no budget, bids avg $39. REVISIT-WORTHY if Hashim wants it.
 2093064842893287020 | Video Evaluation Verification & Data Engineer | -- | HARD FILTER stale+crowded: 11 days old, 50+ proposals. Note: same client as Danish's live Generative Video ML proposal, still_hiring true.
 
@@ -306,6 +318,14 @@ Format: `job_id | title | score | reason`
 2098842208730689176 | ROS2 robot (Israel) | -- | HARD FILTER $20-40/hr, unverified.
 2098855235452419437 | AI Automation Claude Code/n8n (Sweden) | -- | 50+ proposals, client $268.
 
+## 2026-09-15 12:05 PKT (full scan, all 7 domains)
+
+2099699880847048471 | Football (Soccer) game video analysis (Singapore) | 30 | $50 fixed. Client posted 805 jobs total for only $7,350 spent (~$9/job avg) -- mass-posting low-budget pattern, not a serious buyer despite the on-target skill tags.
+2099706258362021558 | Senior RL Engineer: Train a Unitree G1 Humanoid Policy (Greece) | 35 | Genuine robotics adjacency but no RL/MuJoCo/policy-training precedent in the 40 project files -- Danish's robotics work is CV/sensor-fusion/tracking, not RL locomotion control. $30-60/hr, 5 proposals, client 1 prior hire.
+2099699018005598343 | Scan-to-BIM designer, point cloud to IFC/DWG (NZ) | -- | CAD/BIM drafting from point clouds, not ML/CV engineering. Same class as prior CAD/GIS drafting rejects.
+2099755919927770903 | 3D GIS/CAD Specialist, neighborhood model (Switzerland) | -- | CAD/3D modeling, not ML.
+(generative AI + voice AI domain searches) | -- | All content-creation/video-editing/platform-assembly gigs or saturated fields (Aethera now 118 proposals). No new ML/CV work.
+
 ## 2026-09-14 19:20 PKT (full scan, all 7 domains)
 
 2099453581557835357 | AI Automation Engineer for OpenAI and Claude | 20 | $20 fixed, skills mis-tagged (Eagle/Embedded/Electrical Drawing) on an AI-automation title.
@@ -363,3 +383,18 @@ Format: `job_id | title | score | reason`
 2099159628446748153 | Masters Research Quantum ML | -- | HARD FILTER $150 fixed, academic.
 2099210019722543240 2099111774457608510 2099219112960798360 2099191689064713994 2099110197739043134 | (AI video/ad content gigs) | -- | Content creation, off-pattern class.
 2099211719106072330 2099170512388722442 2099155139572583929 2099152294609735161 2099179876150689133 | (PCB/mechanical/MATLAB) | -- | Hardware/mechanical, no ML.
+
+## 2026-09-15 12:30 PKT (full scan, all 7 domains, 25 min after 12:05)
+
+2099698752005322108 | Applied ML Research Engineer - LLM Post-Training & Eval (US) | 34 | Hard requirement #1 "fine-tuned open-weight LLMs yourself, start to finish, with LoRA" — nothing in the 40 project files shows LLM LoRA (only image LoRA: SDXL/Flux, Ostris). No GRPO/DPO/PPO anywhere. Three screening Qs demand a base model + number + baseline from that work. 27 proposals, no rate, bids avg $35.79, client 31 hires / $5,880 / 4.89 (mostly design/no-code gigs).
+2099720902099154614 | Data Scientist - LLM consistency eval pipeline (US) | 31 | Five-sentence post. Client 0 hires/0 spend, 18 invites out and 11 already interviewing (-5). 28 proposals, bids avg $26.62. No documented benchmarking/eval-harness project.
+2099747830850188703 | AI Voice Agent Developer for Demo (NZ) | 33 | NEAREST MISS. Domain match real (Ringly/CallAxa/Chatley, ~60%) and a usable wedge (they ask for ongoing per-minute cost — a real Twilio+STT+LLM+TTS per-minute breakdown, plus NZ number regulatory docs). Killed by client: NOT_VERIFIED (-10), 0 contracts/0 spend, 35 proposals, bids avg $30.17, proof-of-concept framing.
+2099570096002351240 | LLM Engineer - Claude pipeline classifying 50k msgs/month (US) | -- | HARD FILTER 136 proposals. Also required screening answer needs a production accuracy figure; SN3 file has no measured accuracy number.
+2099513995299498829 | iOS ARKit App Development (US) | -- | HARD FILTER 105 proposals. Native iOS/Swift ARKit not in project files (ring sizer is browser-based). CLIENT WORTH WATCHING: $106,726 spent, 52 hires, 5.0 from 35, 4,617h, history includes "3D Reconstruction" and "underwater photogrammetry".
+2099540359907555646 | Manufacturing Fixture Engineer, trimmer blade calibration (US) | 30 | CV is a component, the ask is precision electromechanical fixture/CAD design for 24/7 manufacturing, "done multiple times". Match <40%. 71 invites out, 18 interviewing, $10-50/hr, client $1,477.
+2099617894041041473 | Local AI Expert Consultancy (US) | 25 | NOT_VERIFIED, 0 history, three vague sentences, no rate.
+2099593255025655149 | Build Five Claude Workflows Using Existing MCP Tools | -- | HARD FILTER 50 proposals, $400 fixed for five workflows. Hands-on MCP shipping history undocumented.
+2099636947201151111 2099656218845443487 2099676530332782727 2099638005808215420 2099730174664867607 2099621601763574685 2099556137885552121 2099619015159042183 | (8x saturated AI/agent/voice/RAG posts) | -- | HARD FILTER 57-158 proposals each.
+2099503912076459373 2099594647852133197 2099546268579188217 2099730620989144855 2099686540524107132 | (below floor) | -- | $100 fixed RPi+radar, $100 fixed SaaS, $150 IoT IDS academic, $300 NLP POS academic, $10-12/hr Azure.
+2099649473741911455 2099694858818992705 2099514522172832062 2099557070738664269 2099521544226574090 2099589907290368845 2099594532852121736 2099564547955724042 2099530226408729421 | (PCB/mechanical/IoT web/networking) | -- | No ML component or off-domain.
+2099758546589679383 2099747227549889951 2099738141333968961 2099736325615877911 2099709337818166687 2099703737216842305 2099648145865291132 2099638878866886791 2099615946776065718 | (AI video/image content gigs) | -- | Content creation, established off-pattern class.
