@@ -82,6 +82,18 @@ For each id: `list_freelancer_proposals action=get params={id:"<id>"}`, then
 | `status` | `vendorProposal.status.status`, lowercased. **Per proposal.** The `list` status filter is unreliable |
 | `client_messaged` | `yes` if the response has `room_id`, else `no`. The only per-proposal engagement signal the API has |
 | `field_total/opened/shortlisted/messaged` | `insights.proposals_total / proposals_opened / shortlisted / messaged`. Job-level context only |
+
+⚠ **Never write "not us" against an OPEN or SHORTLIST number** (added 2026-09-16, after four
+ledger notes had to be rewritten). The distinction is not pedantic — it decides whether a loss
+gets blamed on the letter:
+
+- `proposals_opened` / `shortlisted` are **job-level totals only.** Upwork exposes no per-proposal
+  view flag anywhere. "Client opened 17 of 54 and not ours" is unknowable, and writing it teaches
+  the pipeline that the letter failed when the evidence cannot say that.
+- `client_messaged` **is** per-proposal (a `room_id` either exists or it does not). So "the client
+  messaged 18 people and we were not one of them" is a fact and is fair to record.
+
+Write the job-level number as a job-level number, then state our own outcome separately.
 | `last_checked_utc` | now, in UTC |
 
 When `insights_available` is false, leave the field_* values as they were. Never estimate.

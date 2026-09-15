@@ -227,13 +227,120 @@ underscore, showcase, pivotal, crucial, tapestry.
 
 ---
 
-## Step 8 — Save and hand off
+## Step 8 — Approach doc (restored 2026-09-16 — do not skip again)
+
+**Build one whenever the job is HIGH technical depth, or MEDIUM with a named stack.** Root
+`CLAUDE.md` has required this since the beginning; this pipeline never carried the rule forward
+and silently stopped producing them.
+
+### Why this is back
+
+Audit of all 18 submitted proposals, 2026-09-16:
+
+```
+2026-09-01-cv-camera-measurement-room-scan   approach-doc.pdf + CV   → HIRED (contract live Sep 9)
+2026-09-03-joe-lwd-measurement-arkit         3 PDFs                  → same client, follow-on work
+...every other proposal folder, all 20       0 PDFs                  → 0 hires
+```
+
+One hire in the whole ledger, and it is the one job that went out with an approach doc. n=1, so
+this is not proof that the doc caused the hire — but it is the only differentiated artifact in
+the set, root `CLAUDE.md` puts targeted attachments at roughly +35% reply rate, and "50 people
+send cover letters, maybe 2 send a technical approach doc" is the stated differentiation
+strategy. Producing zero of them for six weeks was a silent regression, not a decision.
+
+### What it is not
+
+**It is not a ranking input.** Uma scores the cover letter and the screening answers; attachments
+are not documented as reaching the shortlist stage. So the doc never carries a claim that needs
+to count at ranking time — every load-bearing claim still lives in the letter and the screening
+answers. The doc's job is to win the human read *after* the shortlist.
+
+### ⚠ The PDF cannot be attached autonomously — verified 2026-09-16
+
+`manage_proposals create` takes `attachments` as `file_uid` values, and the only way to mint a
+`file_uid` is `start_attachment_upload`, which **opens an upload session for a human** and
+returns a `fallback_url`. Its own contract says: *"Never ask for base64 text or local file
+paths."* There is no path from a locally generated `approach-doc.pdf` to a submitted proposal
+without Hashim touching an upload UI.
+
+That collides with the standing autonomous-submit rule (Hashim picks the job; approving and
+submitting are Claude's). **Do not resolve that collision silently.** The doc still gets built —
+it is what makes the letter sharp, and it is ready the moment a client replies — but at submit
+time the validator reports it as available, not attached:
+
+```
+DOC       approach-doc.pdf built (4pp). Not attached — upload needs your hand.
+          Say the word and I'll open an upload session before the next one.
+```
+
+Send it in the message thread once the client replies. That is autonomous and costs nothing.
+
+### The part that IS autonomous, and was never used
+
+`manage_proposals create` also accepts **`portfolio_project_ids`** and `certificate_ids`, which
+take plain ids from `get_profile action=list_highlights` and need no upload and no human. The
+pipeline has passed neither on any of the 18 proposals.
+
+Danish has 10 attachable portfolio projects live on the profile:
+
+```
+2004143829449625600  AI-Assisted Data Annotation Platform (SaaS)
+2004134768072495104  Advanced Computer Vision & Deep Learning Systems
+2003805355783475200  AI-Powered Autonomous Agricultural Robot (UGV)
+1757134909834051584  Object detection with satellite Imagery
+1988235081997873152  AI-Powered Business Matchmaking Platform
+1757150913536462848  Agriculture Boost
+1988232653182840832  Custom Enterprise Conversational AI
+1757148321481756672  3D modeling
+1988230570776457216  Voice Automation Platform
+1757146018121039872  Multi-Spectral Imaging
+```
+
+(certificates list is empty — nothing to attach there.)
+
+**Pick 1-3 that match the projects the letter actually cites** and record the ids in `wedge.md`
+so the validator passes them at submit. Re-pull the list rather than trusting these ids blindly
+if a run is far from 2026-09-16 — the profile changes.
+
+### Build it
+
+Source of truth for the content is `wedge.md`. The doc is the wedge, expanded — not a capability
+brochure.
+
+1. Write `approach-doc.md` in the proposal folder. Structure: the problem as they stated it →
+   the thing they have not accounted for (the wedge) → how you would actually build it →
+   architecture or flow diagram → what you would measure → what you would deliberately not do
+   in v1.
+2. Render with the kit at `Upwork-Claude-Skill/generate-doc-kit` (MiniByte LaTeX template).
+   Produces `approach-doc.tex` then `approach-doc.pdf`, matching the hired proposal's layout.
+3. **Compile with the Bash tool, never PowerShell.** MiKTeX refuses to run elevated; `pdflatex`
+   through Bash works. This is a known, already-paid-for lesson.
+4. Max 5 pages. Include the architecture diagram (TikZ). Name and branding per the positioning
+   mode selected in Step 3.
+
+Attach the matching CV alongside it, per `Danish/CLAUDE.md` `## CV Selection` —
+`cv-fullstack-ai.pdf` for SaaS/AI/fullstack, `cv-embedded-ai-ml.pdf` for embedded/robotics.
+
+### When to skip
+
+LOW technical depth, or a fixed budget under ~$500 where the doc costs more than the job pays.
+**Skipping is a decision that gets written down**: put one line in `wedge.md` saying why. The
+validator reads it and will not let an unexplained absence through on a HIGH-depth job.
+
+---
+
+## Step 9 — Save and hand off
 
 Write to `Danish/proposals/YYYY-MM-DD-<slug>/`:
 - `job-post.txt` — post plus every metric pulled
 - `cover-letter.txt` — the letter
 - `wedge.md` — the wedge, the research backing it, and the source. **The validator checks this.**
 - `screening-answers.txt` — when the job has a screening field
+- `approach-doc.pdf` (+ `.md`, `.tex`) — per Step 8, or the written skip reason in `wedge.md`
+
+`wedge.md` must end with a `PORTFOLIO IDS:` line carrying the 1-3 chosen
+`portfolio_project_ids` and which cited project each one backs. The validator submits them.
 
 **Write these with the Write tool, not a Bash heredoc** (added 2026-09-14). A heredoc holding a
 letter full of apostrophes failed to parse in this harness and cost a round trip.

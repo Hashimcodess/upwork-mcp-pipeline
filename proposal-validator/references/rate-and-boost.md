@@ -116,6 +116,28 @@ BOOST  Skipped. Top bids were [12 12 11 1] — 13 Connects would clear the field
 
 Boost only when Hashim explicitly asks, for that job or as a standing instruction.
 
+### When skipping must be SURFACED, not silent (added 2026-09-16)
+
+The default stays skip — that is Hashim's authorisation boundary and this rule does not move it.
+What changes is that "say the word for next time" has to actually fire on the jobs where it
+matters, instead of being boilerplate on every report.
+
+**Name the boost explicitly in the report when all four hold:**
+1. `proposal_count` under 25 (post-crowd-cap, so the field is genuinely small)
+2. Match 70%+
+3. Client is demonstrably active — `totalInvitedToInterview` > 0 or `invitesSent` > 0
+4. `boost.recommended_connects` is at or under 15
+
+That is the losing-a-winnable-job shape. The 2026-09-16 ledger audit found it once already:
+**GIS / ArcGIS — an 11-proposal field where the client messaged 4 of 11 people and Danish was
+not one of them.** Random chance was around 36%. That is the job a boost was for, and the
+report said nothing specific about it.
+
+Outside those four conditions, keep the skip line short and generic. On a 380-proposal field a
+boost is not a missed opportunity, it is throwing Connects into a furnace.
+
+**Still never auto-boost.** Surfacing is the change; the decision stays Hashim's.
+
 **Research note (2026-09-08, does not change the default):** a vendor blog (bidpilotpro.com, so
 read with a sales incentive in mind — but it cited actual numbers) reported 16-20 Connects of boost
 lifting reply rate by 1.61pp at roughly $1.94 per extra reply, and Upwork's own placebo-auction

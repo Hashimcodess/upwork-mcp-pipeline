@@ -420,3 +420,47 @@ Format: `job_id | title | score | reason`
 2099699880847048471 2099503912076459373 | (Football video analysis $50 fixed, RPi+radar $100 fixed) | -- | HARD FILTER budget below floor.
 2099892555879927943 | Voice & Chat AI Agents Developer — Consultation First (India) | -- | $200 fixed for voice+chat agents+real-time comms build. Fake budget for scope, 44 proposals.
 2099866060689866519 | NLP expert for 3h Q&A on LLM internals (Italy) | -- | $60 fixed, tiny consulting gig, client $10 total spend history.
+2099908839508720193 | Embedded Product Security Engineer | filtered | rate floor - $30-35/hr MANUAL, max below $40
+2099699880847048471 | Football (Soccer) game video analysis | filtered | fake budget - $50 fixed for full match-video CV pipeline; client 4.08 rating
+2100106507395890967 | Developer a Realtime Voice App with Ollama | filtered | fake budget - $22 fixed for LiveKit/STT/TTS realtime stack
+2099932682021511903 | AI Customer Support Platform | 22 | 299 proposals, generic Retell-tier build, competition zero
+2099747830850188703 | AI Voice Agent Developer for Demo | 20 | 86 proposals, no client history, demo-tier scope
+2099656218845443487 | AI Voice Agent Builder (Student Lead Verification) | 28 | 100 proposals, $1500 fixed for 20k-record pipeline
+2099897450319632449 | Ai voice receptionist for plumbers | filtered | rate floor - $15-25/hr, GoHighLevel+Retell no-code
+2099879282755942977 | Retell AI receptionist setup | filtered | rate floor - $5/hr
+2099850179867934487 | AI Voice Agent Developer POC | 30 | 57 proposals, $110 fixed, no-code voice tier
+2099892555879927943 | Voice & Chat AI Agents Developer | 32 | 47 proposals, $200 fixed, consultation-first with no spec
+2099877475631768287 | AI Agent Calling System | 26 | 71 proposals, $400 fixed, CSV-to-dialer commodity build
+2100081275490326593 | Velos BioImaging Full-Stack Scientific Imaging | 38 | 71 proposals, $5k fixed for web+backend+ML+deploy, client 1 hire
+2100066509914120927 | Full-Stack AI / Data Engineer Intelligence System | 34 | 59 proposals, no rate, generic BI build, 3-job client
+2100039944856459329 | AI Knowledge Systems Architect / RAG | 36 | 93 proposals, Wix+Algolia+Monday glue work, not ML depth
+2099937994588608577 | AI Engineer RAG pipeline LangChain | 33 | 50+ proposals, commodity RAG, no wedge
+2100098836504852150 | AI Customer Operations Agent B2B SaaS | filtered | rate floor - $12/hr flat
+2100071962186359519 | AI Developer for Resume Creation System | filtered | rate floor - $15-30/hr, 61 proposals
+2100045389374601793 | AI/ML Software Engineer for Startup | filtered | rate floor - $18-23/hr
+2100038796263634614 | Data Scientist Train and Evaluate AI | filtered | rate floor - $20-35/hr, RLHF annotation tier
+2100033052005546561 | Senior AI Engineer for AI/ML | filtered | fake budget - $50 fixed, 6-month scope
+2100078604960497431 | AI Agent Workflow & SLM Testing | 24 | $100 fixed model-testing task, not engineering
+2100070343526380959 | OCR Engine for PDF to Word | 35 | $1000 fixed, client $50 lifetime spend, commodity OCR
+2100082272572856385 | Full-Stack AI Agent Developer (job search bot) | 30 | $150 fixed, client 4.0 rating, 33 proposals
+2100106885357814685 | RAG Chatbot Pakistan PSX (MCP) | filtered | fake budget - $20 fixed
+2099985600119363649 | AI Business Consultant / Automation Strategist | filtered | rate floor - $20-30/hr, Zapier/Make tier
+2099973186838512541 | Long-Term Personal AI Instructor | 38 | tutoring on consumer AI tools, no engineering depth
+2099905335313905334 | Offline AI Image Personalization Tool | 39 | $500 fixed, 21 proposals, client 0 hires, ComfyUI template work
+2100039507554129985 | Drone Point Cloud LAZ to Watertight Mesh | 31 | $175 fixed, Blender mesh work not ML, client no history
+2099964952654181791 | Embedded Engineer Bluetooth Data Logger | 30 | PCB schematic/routing, not embedded AI; 40 proposals
+2099989403350652993 | Senior IoT / Telematics Fleet Tracking | 36 | $1750 fixed, CAN/OBD plumbing, no ML, client no history
+2099946444152428609 | Senior Software Engineer Applied AI (enterprise) | 35 | 50+ proposals, no rate, generic staffing-platform fullstack
+2100008331743973511 | Senior Full-Stack Sports Betting Platform | 37 | 50+ proposals, betting domain, no CV/ML wedge
+2099929668769644311 | AI Engineer - Voice AI (acoustic intelligence) | 39 | 76 proposals, competition zero, no client spend history
+2099856050220966623 | Japanese Vehicle Image Dataset | 25 | dataset sourcing/supply role, not model engineering
+2099886316376391447 | AI Simulation and Embedded Systems Lead | 33 | $15-40/hr, 1-job client, vague AI+embedded+fullstack lead
+2099915798947100063 | SEM Microscope CV Team Leader | 68 | SURFACED
+2099965157819865153 | Face redaction egocentric video | 77 | SURFACED
+2099955507679016630 | ComfyUI Workflow Graphic Novel | 68 | SURFACED
+2100032336632821430 | AI Agent Consultant LangGraph | 67 | SURFACED
+2099864363314365341 | Elite LLM Engineer / Harness Building | 65 | SURFACED
+2099867503901921415 | Autonomous AI Sales & Revenue Platform | 61 | SURFACED borderline
+2099928916257588125 | Mentor secure AI-agent Claude Code/MCP | 60 | SURFACED borderline
+2099984911860155293 | Developer for AI steel estimating SaaS | 57 | SURFACED borderline
+2099970698825289863 | AI Alignment / Post-Training Researcher | 47 | SURFACED borderline

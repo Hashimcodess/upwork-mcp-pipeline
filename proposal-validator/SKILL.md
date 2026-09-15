@@ -237,6 +237,30 @@ unchanged on a SaaS landing page.
 
 ---
 
+## Gate 5 — Proof artifacts (added 2026-09-16)
+
+Cheap to check, and the pipeline shipped 18 proposals without either of these.
+
+**5a. Portfolio highlights — REVISE if missing.**
+`wedge.md` must carry a `PORTFOLIO IDS:` line with 1-3 `portfolio_project_ids`. Verify each id
+against `get_profile action=list_highlights` — an id that no longer exists is dropped at submit,
+silently, so check rather than trust. Verify each one actually corresponds to a project the
+letter cites. A satellite-imagery job attaching "3D modeling" is worse than attaching nothing.
+
+No plausible match among the 10 available → pass none and say so in the report. That is a real
+answer, not a failure.
+
+**5b. Approach doc — REVISE on HIGH depth, unless the skip is written down.**
+HIGH technical depth (or MEDIUM with a named stack) needs `approach-doc.pdf` in the folder, or an
+explicit skip reason in `wedge.md`. An unexplained absence on a HIGH-depth job is a REVISE back
+to `cover-letter`.
+
+**Never fail a job for the PDF not being *attached*.** It cannot be — `attachments` needs a
+`file_uid` from `start_attachment_upload`, which requires a human at an upload UI. Verified
+2026-09-16. The gate is about the doc *existing*, not reaching Upwork.
+
+---
+
 ## Verdict
 
 **PASS** — every gate clean. Ready to submit.
@@ -314,11 +338,17 @@ rate) in the letter and screening answers with this number before 6d.
 
 ### 6d. Create and confirm
 ```
-manage_proposals action=create params={job_reference, cover_letter, charged_amount, answers?}
+manage_proposals action=create params={job_reference, cover_letter, charged_amount,
+                                       answers?, portfolio_project_ids}
 confirm_preview  action=confirm params={type:"proposal", preview_id:"<from create>"}
 ```
 - Answer `screening_questions` from the preview if the job has a separate field.
-- **No `boost_connects`** unless Hashim has asked for that job. Default is skip.
+- **Pass `portfolio_project_ids`** — the 1-3 ids from `wedge.md`, verified at Gate 5a. Free,
+  autonomous, and never once used across the first 18 proposals.
+- **No `attachments`.** The approach-doc PDF cannot go through here; see Gate 5b.
+- **No `boost_connects`** unless Hashim has asked for that job. Default is skip. But read the
+  preview's `boost` block and apply the surfacing rule in `references/rate-and-boost.md` —
+  a small, winnable, high-match field must be named in the report, not silently skipped.
 - Preview expires in ~15 minutes. Confirm promptly.
 
 ### 6e. Verify it landed
@@ -338,7 +368,10 @@ WEDGE     Inconsistency is a dataset problem, not a hyperparameter one
 RATE      $65 = standard rate, inside their $50-80 range, no downward adjustment
           (13 proposals, not crowded)
 BOOST     Skipped. Top bids [12 12 11 1]; 13 would clear. Say the word for next time.
-GATES     0 PASS · 1 PASS 3/3 verified · 2 PASS · 3 PASS 174 words · 4 PASS
+PROOF     Attached 2 portfolio projects — "Advanced Computer Vision & Deep Learning
+          Systems", "Object detection with satellite Imagery"
+DOC       approach-doc.pdf built (4pp). Not attached — upload needs your hand.
+GATES     0 PASS · 1 PASS 3/3 verified · 2 PASS · 3 PASS 174 words · 4 PASS · 5 PASS
 LIVENESS  can_apply true · 0 hired · re-checked at submit
 FILES     proposals/2026-09-07-sdxl-lora-training/
 ```

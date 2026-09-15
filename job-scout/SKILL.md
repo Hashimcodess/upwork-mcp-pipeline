@@ -123,6 +123,77 @@ Discard silently. Do not list these in the digest. Do not ask permission.
 | **Content-mill signal** | Client's work history is Webflow sites / logos / SEO audits / VA gigs *and* the budget is under $200 for engineering work. |
 | **Fake budget** | Stated budget is an order of magnitude below the bid spread (e.g. "$100 fixed" with bids averaging $800). Flag-and-drop unless the post itself says the number is a placeholder. |
 | **Language/location gate** | Post requires a language Danish does not have, or hard-requires a country he is not in. |
+| **CROWD CAP — 60 PROPOSALS** | `proposal_count` > 60 at scan time. **Drop regardless of every other signal.** See below. |
+| **DORMANT CLIENT** | `proposal_count` >= 25 **and** `jobActivity.totalInvitedToInterview` == 0 **and** `jobActivity.invitesSent` == 0. The client has a full inbox and has engaged nobody. See below. |
+
+### Why these two are gates and not point deductions (added 2026-09-16)
+
+Both were promoted from scoring signals to hard filters after auditing all 18 submitted
+proposals in `outcome-learner/data/outcomes.csv`. **120 of 308 recorded Connects — 39% — went
+into jobs that no cover letter could have won.**
+
+**The crowd cap.** Competition is worth 10 of 100 points, so a hopeless field costs a job ten
+points and nothing else. Measured consequence: `2099830059598569473` (Principal AI-Native
+Architect) recorded `comp_competition: 0.0` — the scout *knew* the field was 382 deep — and
+still scored the job 69 and surfaced it, because the other five components carried it. Same
+pattern on Soccer Video Analytics (163), Aethera (104) and Claude Code Sales Agent (516).
+Four proposals, 75+ Connects, zero replies. Ten points is not a deterrent; a gate is.
+
+60 is the cap because Uma shortlists on the order of 10-20 and boosting is off by default. Past
+60, placement dominates content and the letter stops being the variable.
+
+**The dormant-client gate.** Four jobs took Connects where the client opened **zero** proposals
+out of the entire field — not ours, not anyone's:
+
+| Job | Field | Opened by client |
+|---|---|---|
+| AI/NLP Legal Tech | 55 | 0 |
+| Geospatial AI & CV | 53 | 0 |
+| Need Claude AI help | 56 | 0 |
+| Claude CoWork Skills | 90 | 0 |
+
+45+ Connects into clients who ghosted ~254 proposals between them.
+
+⚠ **Know which signal you actually have, and when.** `proposals_opened` lives in the `insights`
+block of `list_freelancer_proposals action=get`, which only exists **after** we have applied to
+that job. It is useless as a pre-application filter and must never be cited as one.
+
+What IS available before applying, from `find_jobs action=get` → `activityStat.jobActivity`:
+`invitesSent`, `totalInvitedToInterview`, `totalHired`, `totalOffered`. A client sitting on 25+
+proposals who has invited nobody to interview and sent no invites is not working the field.
+That is the closest pre-application proxy for engagement that the API exposes, and it is the
+one the gate uses. Measured on the 2026-09-16 scan, it separates cleanly:
+
+```
+dormant   Face Redaction     69 proposals · 0 invites · 0 interviewing
+dormant   Elite LLM Engineer 35 proposals · 0 invites · 0 interviewing
+active    Steelflo           35 proposals · 5 invites · 4 interviewing
+active    SEM Microscope     29 proposals · 0 invites · 1 interviewing
+active    ComfyUI             7 proposals · 3 invites · 1 interviewing
+```
+
+Both gates fire **before** the per-job `get` in Step 4 where possible, to save the call. The
+dormant gate needs `jobActivity`, so it fires immediately after that `get` returns and the job
+is dropped before scoring.
+
+**These two do not discard fully silently — unlike every other hard filter.** Hashim's standing
+rule is that he picks and the scout informs ("drop the threshold to 40... I want more options").
+A new filter built off 18 proposals should not quietly shrink what he sees. So the digest footer
+carries one line:
+
+```
+GATED  7 dropped — 5 crowd cap (>60 proposals), 2 dormant client
+```
+
+If a gated job would otherwise have scored 75+, name it in that line with its score, so a real
+miss is visible rather than invisible:
+
+```
+GATED  7 dropped — 5 crowd cap, 2 dormant. Highest: Face Redaction [77], 69 proposals.
+```
+
+That keeps the decision reviewable. If Hashim wants a gated job anyway, he says so and it goes
+through — the gate saves Connects by default, it does not overrule him.
 
 ---
 
@@ -150,7 +221,7 @@ submit.
 | **Portfolio match %** | 30 | Score against `Danish/projects/*.md`. See `references/scoring-rubric.md` for the domain map. Report the honest number. |
 | **Client hire record** | 25 | `client_record.jobs_with_hires` and `spend_total` read **together**. $50k spent across 100 hires is a real buyer; $50k across 1 hire is a one-off. Zero hires = cap this at 5/25 regardless of spend. |
 | **Winnability (wedge available)** | 15 | See below. This is the difference between a bet and a lottery ticket. |
-| **Competition** | 10 | `proposal_count`. <10 = full marks. 10-25 = half. 25-45 = quarter. 45+ = zero. |
+| **Competition** | 10 | `proposal_count`. <10 = full marks. 10-25 = half. 25-45 = quarter. 45-60 = zero. **Above 60 the job is already gone at Step 2** — this row never sees it. |
 | **Rate fit** | 10 | Range midpoint vs Danish's $65 standard. At or above = full. $40-65 = partial. Below floor already filtered. |
 | **Post quality** | 10 | Detailed spec, named stack, screening questions = full marks. Three vague sentences = low. |
 
