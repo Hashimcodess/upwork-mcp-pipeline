@@ -59,3 +59,16 @@ would actually change a rule.**
 - KEPT (reinforces, no rule change): Uma Recruiter reportedly moved from Business Plus to the Basic client plan in May 2026, so the AI shortlist now applies to almost every client. Source: UpAlerts guide (third-party, not yet confirmed on an Upwork page). Also stated there: all proposals stay visible, the shortlist is a nudge, not a gate. Consequence: screening answers are a ranking input on nearly every job, which the existing screening-answers guide already assumes. https://upalerts.app/blog/uma-recruiter-shortlist-guide
 - REJECTED as a rule, logged as a data point: GigRadar claims reply rate 11.86% for bids sent 3-4 minutes after posting vs 6.91% at 5-6 minutes. Vendor sells auto-bidding, so heavy incentive bias, and no date on the dataset. Would only matter for scout cadence, and the pipeline cannot hit a sub-5-minute window with a researched wedge anyway. https://gigradar.io/blog/upwork-algorithm
 - REJECTED: generic 2026 "algorithm guide" posts (jobbers, giguphq, snipework) with undated percentage weights for JSS/keywords. Unsourced.
+
+## 2026-09-15 findings
+
+- KEPT (new rule): "Availability is a live signal, so a profile marked as not available for new
+  work is being scored against one that is, and no amount of portfolio makes up for that."
+  Confirms availability/exclusivity screening answers are a standalone Uma ranking input, separate
+  from proposal text quality. Source: upwork.com/blog/uma-recruiter-how-we-built-an-agentic-solution-to-talent-matching-and-hiring
+  (Upwork's own blog, dated 2026). Applied to `cover-letter/SKILL.md` and `proposal-validator/SKILL.md`
+  after the Senior Full-Stack AI-Native job surfaced a real conflict (client wants no other
+  contracts, Danish has 6 active).
+- REJECTED, no signal: searched r/Upwork for freelancer disclosure norms on multiple concurrent
+  contracts vs a full-time ask. No dated community discussion surfaced, only generic Upwork
+  contract-writing pages and unrelated financial-news noise. Nothing to log.

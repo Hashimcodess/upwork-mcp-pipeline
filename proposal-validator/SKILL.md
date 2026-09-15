@@ -105,6 +105,15 @@ Does the letter defuse it? A tiered accuracy commitment, a fixed-price refusal w
 real number, a first-mile deliverable, an honest gap disclosure. **Missing → note it. Two or more
 of 0a-0e missing → REVISE.**
 
+**Exclusivity/availability check (added 2026-09-15, Senior Full-Stack AI-Native job):** when the
+post wants someone "not juggling several other contracts" or otherwise screens on availability,
+confirm the letter's answer was written against a real `list_contracts` pull, not a guess. Danish
+routinely runs 5-6 active Upwork contracts. Availability is a standalone Uma ranking signal
+(upwork.com/blog, Sept 2026), so a vague non-answer costs ranking the same way a vague rate does —
+but so does silently implying zero conflicts when there are several. The letter must disclose that
+other work exists without inventing an hours/week figure the API doesn't provide. Missing either
+half → REVISE.
+
 ### 0f. The six-second test
 
 Read only the first sentence. Does it earn the second?

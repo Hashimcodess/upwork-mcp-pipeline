@@ -214,6 +214,16 @@ underscore, showcase, pivotal, crucial, tapestry.
 - **Never hardcode the bid in a screening answer before the liveness re-check** (added 2026-09-14).
   Aethera's Q3 said $65; the field average moved $34 -> $45 before submit and rule 2b set $55. Write
   `<RATE>` in the draft and let the validator fill it at Step 6c.
+- **Availability/exclusivity questions: pull the real contract count before answering** (added
+  2026-09-15, Senior Full-Stack AI-Native job). When a post asks about current commitments or wants
+  someone "not juggling several other contracts," call `list_contracts action=search
+  contract_statuses=["ACTIVE"]` first. Danish routinely has 5-6 active Upwork contracts running.
+  Disclose that other work exists — never imply zero — but do not invent a specific hours/week
+  figure the API doesn't give you either; "a couple of small, async contracts" is honest framing,
+  not a fabricated number. Confirmed via research (upwork.com/blog, Sept 2026): availability is a
+  live Uma ranking signal on its own, separate from the proposal text, so a vague non-answer here
+  costs real ranking the same way a vague rate answer does. Flag the tension in `wedge.md` either
+  way so the validator and Hashim both see it as a real fit risk, not a hidden one.
 
 ---
 

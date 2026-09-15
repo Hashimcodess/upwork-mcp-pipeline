@@ -387,6 +387,10 @@ Format: `job_id | title | score | reason`
 ## 2026-09-15 12:30 PKT (full scan, all 7 domains, 25 min after 12:05)
 
 2099698752005322108 | Applied ML Research Engineer - LLM Post-Training & Eval (US) | 34 | Hard requirement #1 "fine-tuned open-weight LLMs yourself, start to finish, with LoRA" — nothing in the 40 project files shows LLM LoRA (only image LoRA: SDXL/Flux, Ostris). No GRPO/DPO/PPO anywhere. Three screening Qs demand a base model + number + baseline from that work. 27 proposals, no rate, bids avg $35.79, client 31 hires / $5,880 / 4.89 (mostly design/no-code gigs).
+
+## 2026-09-15 (Hashim-flagged, not a scan pick)
+
+2099787342890842689 | AI-Native Defense & Earth Intelligence OS (IND) | 46 | Hashim asked for insights then said skip. Scope trap: $4,000 fixed for "initial version of an OS with a path to a defense-grade intelligence platform" — client has zero defense/geospatial history (proofreading, mobile app, Magento e-commerce; two other open contracts are also grand AI-platform pitches at modest fixed budgets). Post is buzzwords over spec, screening questions generic/typo'd. Match ~45% (Satellite Imagery Analytics/geospatial work is real, "secure intelligence operations" + scalable OS architecture is not). Competition unknown, job was minutes old at review.
 2099720902099154614 | Data Scientist - LLM consistency eval pipeline (US) | 31 | Five-sentence post. Client 0 hires/0 spend, 18 invites out and 11 already interviewing (-5). 28 proposals, bids avg $26.62. No documented benchmarking/eval-harness project.
 2099747830850188703 | AI Voice Agent Developer for Demo (NZ) | 33 | NEAREST MISS. Domain match real (Ringly/CallAxa/Chatley, ~60%) and a usable wedge (they ask for ongoing per-minute cost — a real Twilio+STT+LLM+TTS per-minute breakdown, plus NZ number regulatory docs). Killed by client: NOT_VERIFIED (-10), 0 contracts/0 spend, 35 proposals, bids avg $30.17, proof-of-concept framing.
 2099570096002351240 | LLM Engineer - Claude pipeline classifying 50k msgs/month (US) | -- | HARD FILTER 136 proposals. Also required screening answer needs a production accuracy figure; SN3 file has no measured accuracy number.
@@ -398,3 +402,21 @@ Format: `job_id | title | score | reason`
 2099503912076459373 2099594647852133197 2099546268579188217 2099730620989144855 2099686540524107132 | (below floor) | -- | $100 fixed RPi+radar, $100 fixed SaaS, $150 IoT IDS academic, $300 NLP POS academic, $10-12/hr Azure.
 2099649473741911455 2099694858818992705 2099514522172832062 2099557070738664269 2099521544226574090 2099589907290368845 2099594532852121736 2099564547955724042 2099530226408729421 | (PCB/mechanical/IoT web/networking) | -- | No ML component or off-domain.
 2099758546589679383 2099747227549889951 2099738141333968961 2099736325615877911 2099709337818166687 2099703737216842305 2099648145865291132 2099638878866886791 2099615946776065718 | (AI video/image content gigs) | -- | Content creation, established off-pattern class.
+
+## 2026-09-15 ~19:00 UTC / 00:00 PKT (full scan, most_recent+best_match+4 domain searches)
+
+2099888000821704374 | Senior AI & ML Product Lead, FinTech agent platform (UK) | -- | SCOPE TRAP/fake budget: $1,500 fixed for a full LangGraph multi-agent platform + ML pipelines + eval framework + MLOps stack — a multi-month build. Client 0 history.
+2099886316376391447 | AI Simulation and Embedded Systems Lead (India) | -- | Title says embedded, body is full-stack SaaS/ed-tech PM+dev+cloud+LLM bundle, $15-40/hr full-time, NOT_VERIFIED, 0 history. Bait-title mismatch, not embedded work.
+2099864363314365341 | Elite LLM Engineer / AI Team — harness building (US) | 35 | Wants foundation-model pretraining/SFT/RLHF/DPO, quantization, vLLM/DeepSpeed. No LLM-from-scratch training or RLHF work in any of the 40 project files (HOKI is orchestration, not model training). Match <40%.
+2099932682021511903 | AI Customer Support Platform (US) | -- | Generic RAG helpdesk bot, client only 3 hires/$4,380, 20-50 proposals. Low differentiation vs portfolio, match <40%.
+2099929705843340982 | Data Engineer - HR Analytics & AI-Ready Data (US) | -- | Data warehousing/pipelines role, not AI/ML/CV engineering. Off-domain.
+2099867503901921415 | Senior Full-Stack AI Developer(s) — Sales & Revenue Platform (US) | -- | 50+ proposals, no rate stated. Saturated, established off-pattern class.
+2099889833774859165 | Senior Generative AI & Prompt Engineer (US) | -- | HARD FILTER rate $15-20/hr, below $40 floor. 50+ proposals.
+2099871490629816455 | AI-Powered Prompt Engineering and Workflow Dev (Indonesia) | -- | HARD FILTER rate $19-30/hr, below $40 floor.
+2099848987102531719 | AI RAG Developer — Multi-Doc Knowledge Assistant (UAE) | -- | HARD FILTER rate $6-15/hr, below $40 floor.
+2099908839508720193 | Embedded Product Security Engineer, EU CRA compliance (US) | -- | HARD FILTER rate $30-35/hr, below $40 floor. Also compliance-focused, not ML.
+2099699018005598343 2098044730676624749 2094427458935366211 2094435177276941557 | (Point Cloud-to-BIM/CAD, DWG overlay, historical map digitizing) | -- | CAD/GIS drafting, not ML/CV engineering. Established off-pattern class.
+2098020638485821758 2099098122845337918 2096889821188056070 | (LiDAR change detection, gold exploration GIS, geospatial CV consultant) | -- | Posted 5, 2, 8 days ago respectively — exceed 48h age cap.
+2099699880847048471 2099503912076459373 | (Football video analysis $50 fixed, RPi+radar $100 fixed) | -- | HARD FILTER budget below floor.
+2099892555879927943 | Voice & Chat AI Agents Developer — Consultation First (India) | -- | $200 fixed for voice+chat agents+real-time comms build. Fake budget for scope, 44 proposals.
+2099866060689866519 | NLP expert for 3h Q&A on LLM internals (Italy) | -- | $60 fixed, tiny consulting gig, client $10 total spend history.

@@ -521,3 +521,32 @@ honestly-scoped project entry first, under whichever name is actually accurate.
 **Persisted:** this entry, SESSION-HANDOFF (new 2026-09-14 evening section), outcome row
 `2099830059598569473` in `outcome-learner` (mode corrected), `memory/feedback_unusual_format_still_needs_validator.md`,
 backfilled `proposals/2026-09-14-principal-ai-native-architect/`.
+
+## 2026-09-15 (00:15 PKT) — Senior Full-Stack Engineer (AI-Native), proposal 2099939795197599745
+
+**Audited:** the submission itself. Scout score 68 held up (StackFuse/HOKI overlap was genuine,
+client record was real). Wedge (buried_real_project, StackFuse's own token-budget/context-window
+fix) was found first-time by cover-letter Step 2 and needed no rebuild. One clean validator pass,
+no rewrite loops, rate came from rule 2 (clamp to range_max $47) with no improvisation.
+
+**Found:** the one genuine gap. The client explicitly wanted someone "not juggling several other
+contracts," full-time. Danish currently has 6 ACTIVE Upwork contracts (confirmed via
+`list_contracts action=search`). Neither `cover-letter/SKILL.md` nor `proposal-validator/SKILL.md`
+had a standing rule for this — it was handled ad hoc this run (disclosed honestly, framed as
+small/async, flagged in `wedge.md`) but nothing would have caught a future run that either hid the
+conflict or invented a fake hours-per-week number to sound more available.
+
+**Changed:**
+- `cover-letter/SKILL.md` Step 7 — new rule: pull `list_contracts` before answering an
+  availability/exclusivity question, disclose other work exists, never invent an hours figure.
+- `proposal-validator/SKILL.md` Gate 0e — new exclusivity/availability check, REVISE if either
+  half (disclosure or non-fabrication) is missing.
+
+**Research:** due today (last entry 2026-09-14). One search kept — Upwork's own blog post
+confirming availability is a standalone Uma ranking signal, independent of proposal text — which
+is what makes the new rule matter and not just a compliance nicety. One search rejected, no
+dated signal found on freelancer community disclosure norms.
+
+**Persisted:** this entry, `research-log.md` 2026-09-15 section, SESSION-HANDOFF (new section
+below), outcome row `2099939795197599745` in `outcome-learner`, ledger row in
+`Danish/performance/ledger.md`.
