@@ -72,3 +72,18 @@ would actually change a rule.**
 - REJECTED, no signal: searched r/Upwork for freelancer disclosure norms on multiple concurrent
   contracts vs a full-time ask. No dated community discussion surfaced, only generic Upwork
   contract-writing pages and unrelated financial-news noise. Nothing to log.
+
+## 2026-09-17 findings
+
+- REJECTED, and worth recording because direct observation beat it: multiple 2026 guides
+  (zenlance.net/upwork-boosted-proposals, gigradar.io/blog/upwork-algorithm) state boosting to the
+  top four "costs 25 to 40 Connects per bid". The Audio Processing Service preview the same day
+  returned real `current_top_bids` of [101, 100, 20, 17]. The published range is not a ceiling and
+  is not reliable. Rule added to `rate-and-boost.md`: trust the preview's own bids, never a blog's
+  range.
+- KEPT (reinforces existing rule, no change): boosted proposals are pinned above the organic list
+  in the client's Proposal Manager, so on a contested job placement is settled before the letter is
+  read. Already the basis of the crowded-field warnings; now also the basis of the contested-auction
+  report line.
+- REJECTED again (third time): the gigradar "bid within 3-4 minutes" reply-rate claim. Same vendor,
+  same incentive, still undated. Flagging here so a fourth run stops re-reading it.

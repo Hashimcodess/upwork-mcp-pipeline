@@ -276,6 +276,17 @@ DOC       approach-doc.pdf built (4pp). Not attached — upload needs your hand.
 
 Send it in the message thread once the client replies. That is autonomous and costs nothing.
 
+**But "send it later" is weaker than it sounds (added 2026-09-18, Audio Processing Service).**
+Freelancers cannot open a proposal thread — the MCP's own `manage_proposals` contract says so under
+PROPOSAL MESSAGING. So a doc held back after submit reaches the client **only if they reply first**,
+which is the exact thing the doc was meant to cause. There is also no way to attach it afterwards;
+a submitted proposal cannot be edited.
+
+Therefore: **whenever Hashim is in the loop on a submission, offer the upload session BEFORE the
+submit call, not after.** Two minutes of his time is the difference between the doc arriving with
+the proposal and the doc being hostage to a reply that may never come. When he is not in the loop,
+the thread remains the fallback and the report says so.
+
 ### The part that IS autonomous, and was never used
 
 `manage_proposals create` also accepts **`portfolio_project_ids`** and `certificate_ids`, which

@@ -550,3 +550,45 @@ dated signal found on freelancer community disclosure norms.
 **Persisted:** this entry, `research-log.md` 2026-09-15 section, SESSION-HANDOFF (new section
 below), outcome row `2099939795197599745` in `outcome-learner`, ledger row in
 `Danish/performance/ledger.md`.
+
+## 2026-09-18 02:25 PKT — Audio Processing Service, proposal 2100697244661100545
+
+AUDITED   job 2100684076263057140 ($2,300 fixed, scout 74, submitted 21 Connects, balance 68).
+          Wedge survived validation intact. Rate came from the fixed-price rule, not improvised.
+          One rewrite loop, both fixes self-caught: a signposting hook ("worth naming early", the
+          exact pattern hook-and-cta-guide flags) and "25-style" where the project file says
+          "25+ emotional styles".
+
+FOUND 1   `proposal_count` is unstable. The License Plate job read 83 proposals at 14:00 UTC and
+          21 at 21:00 UTC, moving its score between 53 and 78 with nothing else changed. Three
+          rules key off that field. Scoring a job 25 points lower on one volatile read is how a
+          good job gets buried.
+CHANGED   job-scout/SKILL.md: take the count from the Step 4 metrics pull, cross-check against
+          proposals_tier, score on the lower number when reads disagree by >2x and show both on
+          the card, never apply the crowded penalty on a single uncorroborated read.
+
+FOUND 2   No rule covered an aggressively boosted field. This job's auction had top bids
+          [101 100 20 17] against a 21-Connect application; the existing surfacing rule missed it
+          because recommended_connects was 18, just over the ≤15 threshold.
+CHANGED   rate-and-boost.md: new contested-auction line whenever the top bid is 50+, with the
+          reasoning that four pinned slots decide placement before the writing is read. Default
+          stays skip; 101 Connects is roughly a month of allowance and that call is Hashim's.
+
+FOUND 3   The approach doc came back after six weeks of none (first since the 2026-09-16 rule
+          restoration), and the attachment constraint bit in a new way: freelancers cannot open a
+          proposal thread, so a doc held back after submit only lands if the client replies first,
+          and a submitted proposal cannot be edited to add it.
+CHANGED   cover-letter/SKILL.md Step 8: when Hashim is in the loop, offer the upload session
+          BEFORE the submit call, not after.
+
+WATCHING  Hashim edited the letter pre-submit for the first time in a while: he cut the sentence
+          naming the study and he cut the binary CTA ("Benchmark first, or a 15-minute call?").
+          The citation cut left "all 40 configurations" with no antecedent and he accepted a
+          7-word source tag when it was pointed out. The CTA cut he kept. One instance is taste,
+          not a rule — but if the binary CTA gets cut a second time, the rule in
+          hook-and-cta-guide.md is wrong and should be softened to "a clear ask, binary optional".
+
+RESEARCH  1 kept (reinforcing), 2 rejected. Boost cost range from vendor blogs contradicted by the
+          live auction on this very job.
+
+PERSISTED research-log · improvement-log · SESSION-HANDOFF · memory

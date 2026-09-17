@@ -36,3 +36,15 @@ wedge is a lottery ticket, not new evidence. The `misdiagnosis` and `buried_real
 passed-over letters (Wall Replacement, GIS) both scored 70+ from the scout and still didn't
 convert, which the sample is too small to draw anything from beyond: a good wedge is necessary,
 not sufficient - client quality and timing still matter.
+
+## 2026-09-17 — stage observe, judged 11, engaged 2
+
+- impossible_spec: 1/1 engaged, ci90 [0.27, 1.0] (observe)
+- misdiagnosis: 1/3 engaged, ci90 [0.08, 0.75] (observe)
+- unstated_failure: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- buried_real_project: 0/1 engaged, ci90 [0.0, 0.73] (observe)
+- none: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- scout predictiveness: {"scored_judged": 6, "engaged_mean_score": 81.0, "engaged_n": 1, "other_mean_score": 74.2, "other_n": 5}
+- version check: too early (needs 15 judged in both)
+- passed over: 7 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Vision AI — Integration with Existing CC
+- recommendations: 0; applied: none

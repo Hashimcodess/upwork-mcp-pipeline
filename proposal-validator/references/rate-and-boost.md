@@ -136,6 +136,33 @@ report said nothing specific about it.
 Outside those four conditions, keep the skip line short and generic. On a 380-proposal field a
 boost is not a missed opportunity, it is throwing Connects into a furnace.
 
+### The contested-auction line (added 2026-09-18 — Audio Processing Service)
+
+A second shape deserves naming, and the four conditions above miss it entirely.
+
+That job's preview returned `boost.current_top_bids: [101, 100, 20, 17]` against a 21-Connect
+application, with `recommended_connects: 18`. Two bidders had each staked roughly five times the
+cost of applying. The surfacing rule did not fire (recommended was 18, over the ≤15 threshold), so
+the report would have said nothing.
+
+**Whenever the top bid is 50 Connects or more, say so in one line**, regardless of the other four
+conditions:
+
+```
+BOOST  Skipped. Contested auction: top bids [101 100 20 17], 18 would clear the 4th slot.
+       Two bidders staked 100+ Connects on a 21-Connect job, so four boosted proposals sit
+       above this one whatever the letter says.
+```
+
+Why it earns a line: the top four slots are pinned above the organic list, so on a contested job
+placement is decided before the writing is read. Hashim should know when the proposal is entering
+a field like that. **This still does not authorise auto-boosting** — 101 Connects is roughly a
+month of the subscription allowance, and that call is his alone.
+
+⚠ Third-party guides claiming boosts "cost 25 to 40 Connects" (gigradar, zenlance, 2026) are
+**contradicted by direct observation** — bids of 100+ are real and were seen on this job. Trust the
+preview's `current_top_bids`, never a blog's range.
+
 **Still never auto-boost.** Surfacing is the change; the decision stays Hashim's.
 
 **Research note (2026-09-08, does not change the default):** a vendor blog (bidpilotpro.com, so

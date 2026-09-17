@@ -447,3 +447,146 @@ Format: `job_id | title | score | reason`
 2099929668769644311 | AI Engineer - Voice AI (acoustic intelligence) | 39 | 76 proposals, competition zero, no client spend history
 2099856050220966623 | Japanese Vehicle Image Dataset | 25 | dataset sourcing/supply role, not model engineering
 2099886316376391447 | AI Simulation and Embedded Systems Lead | 33 | $15-40/hr, 1-job client, vague AI+embedded+fullstack lead
+2100153715677062067 | Unity Project with Arduino + multi-screen + FMOD | filtered | match ~30% - Unity only as a compatibility note in 3d-facial-animation, no Arduino/serial/FMOD work in portfolio
+2100168900136727967 | AI Film Director | filtered | match <40% - creative film direction, not engineering
+2100129283414218817 | PCB Designer for Automotive 12V Accessory | filtered | match <40% - PCB layout/CANbus design, no PCB design work in portfolio
+2100129483055005463 | PCB Designer for Automotive 12V Accessory (duplicate post) | filtered | match <40% - duplicate of 2100129283414218817
+2100164789899163039 | Power Architecture Revision for IoT Sensor Board | filtered | match <40% - analog power/load-switch PCB revision, no PCB design work in portfolio
+2100162850545062023 | PCB & Schematic Designer for Industrial Control Unit | filtered | rate floor - $15-30/hr
+2100056617412296471 | Schematic and PCB Design Engineer | filtered | fake budget - $35 fixed
+2100015064044353206 | Teensy Firmware Cleanup | filtered | rate floor - $10-15/hr
+2100163018644583839 | AI Video Producer for Premium Honey Brand | filtered | fake budget - $50 fixed, creative video
+2100162445398688669 | AI Video Production Brief Art Exhibition | filtered | fake budget - $10 fixed
+2100138980044092298 | AI Video Production Specialist Truck Brand | filtered | fake budget - $100 fixed, creative video
+2100111038243062685 | Automotive 3D Visualization Artist | filtered | match <40% - 3D rendering artist role
+2099928930476278685 | Build a Snapchat Lens faceless transition | filtered | rate floor - $15-30/hr
+2100294678518346634 | AI Evaluation Engineer (Healthcare) - Dynamic Eval Infrastructure | 35 | match <40% - requires HIPAA/FHIR and shipped production LLM eval tooling, none documented in portfolio; also 25 proposals with 0 invites/interviews
+2100208000275134134 | Machine Vision & Mechatronics - 3D Laser Card-Scanning Grading Station (China) | filtered | location gate - must be based in China (Shenzhen/Dongguan/Suzhou) to source and build locally
+2100229361643471773 | Senior AI Platform Engineer | filtered | location gate - U.S. citizenship required
+2100173104928703389 | Voice AI Developer for Multi-Tenant Platform | filtered | rate floor - $500 fixed for a 4-phase greenfield multi-tenant LiveKit platform, implies far below $40/hr
+2100219601994764423 | Embedded Engineer - Firmware, Assembly & Prototype Testing | 35 | physical board assembly and bring-up, $500 fixed, client with no hires
+2100253359114125079 | Qualcomm CSR8670 / ADK Bluetooth Developer | filtered | match <40% - CSR8670 ADK Bluetooth Classic, no Bluetooth stack work in portfolio
+2100267938615735990 | PCB Design for Grow Light System | filtered | match <40% - PCB design
+2100190799617241994 | Turnkey China Partner for Mechatronic Escape Room Props | filtered | location gate - China-based fabrication partner
+2100229149900321674 | Mechatronics engineer for kinetic art installation | filtered | match <40% - schematic/PCB and stepper synchronization, no PCB work in portfolio
+2100205552611479687 | Robotics visual - basic test on ROS or nvidia | filtered | fake budget - $15 fixed
+2100275022341963543 | Financial Data Scientist / ML Researcher GCC Decline Study | filtered | match <40% - financial econometrics research
+2100280526912673857 | AI Engineer - Financial Reporting Demo | filtered | match <40% - accounting/P&L domain required, 70 proposals
+2100223262603146655 | AI / RAG Architect for Internal RFP Assistant | 34 | Microsoft Copilot/Power Platform stack, unverified client with no history, 34 proposals
+2100246439911814559 | Full Stack AI/SaaS Developer for Customer Support Automation MVP | 30 | 328 proposals, $1,805 client
+2100225245330133127 | Full-Stack AI/SaaS Developer Customer Inquiry Automation MVP | 36 | 68 proposals, client with no history, generic MVP
+2100212212588927041 | Build an AI Agent for Real Estate Tax-Sale Research | filtered | fake budget - $150 fixed, 75 proposals
+2100204814565290890 | Fal.ai Specialist (Generative AI) | 37 | 76 proposals, prompt-engineering-heavy role
+2100200376406193846 | AI Developer PoC / Micro-Task | filtered | fake budget - $300 fixed, 50+ proposals
+2100181463459349405 | AI Agent builder for model accuracy and evaluation of a live agent | filtered | fake budget - $200 fixed for 3-6 months
+2100186467707705409 | Document Processing Automation Developer for Fintech SaaS | 38 | 50+ proposals, $2,961 client, generic document automation
+2100203056788504343 | Workflow & API Review + RAG System Design | 36 | 50+ proposals, client with no history
+2100161985576777398 | Founding Architect & Enterprise AI Systems Lead | 30 | unverified client, no history, $3,000 fixed for 6+ months
+2100239989519803315 | AI and Machine Learning Specialist | 25 | vague post, unverified client
+2100193252710142087 | Ai customer support system | filtered | rate floor - $10-25/hr
+2100209473157772170 | Full Stack AI Engineer | filtered | rate floor - $15-35/hr, 116 proposals
+2100261243521983411 | AI/ML Engineer for Bug Fixing | filtered | fake budget - $10 fixed
+2100255924318233523 | AI Agent Developer ElevenLabs + HeyGen + N8N | filtered | rate floor - $5-15/hr
+2100212660876138561 | Convert Video to Gaussian with Postshot | filtered | fake budget - $10 fixed
+2100250236686091165 | Consultant/Expert - AI Production Studio | filtered | match <40% - film production business strategy, unverified client
+2100244795602154378 | Go-to-Market & Commercial Strategy Specialist | filtered | match <40% - commercial strategy, not engineering
+2100241763658422337 | Solution Architect Banking - Data Lakehouse | filtered | match <40% - banking data architecture
+2100249797525685149 | AI Video Generator | filtered | match <40% - creative video production
+2100293946891223965 | AI Video Creator & Editor Video Ad | filtered | fake budget - $10 fixed
+2100287143851163415 | AI Video Editor for Realistic Ads | filtered | rate floor - $10-18/hr
+2100278133405377459 | AI Video Animator & After Effects Compositor | filtered | fake budget - $50 trial, creative
+2100272439163011997 | Instagram AI video | filtered | fake budget - $40 fixed
+2100224827474654902 | Hyper-Realistic AI UGC Product Video Ad | filtered | fake budget - $10 fixed
+2100244275890140042 | Ai video creator (fashion films) | filtered | match <40% - creative video
+2100235876865226422 | AI Filmmaker/Video Editor Needed | filtered | fake budget - $100 for 6-minute film
+2100216069648724874 | AI Video Creator (ad campaigns) | filtered | match <40% - creative video, 55 proposals
+2100521252789019571 | Data Scientist - Computer Vision & AI Solutions | filtered | rate floor - $4-5/hr
+2100514545846515103 | Computer Vision Engineer: Industrial QC, Defect Detection | filtered | rate floor - $20/hr
+2100485625480009793 | AI E-commerce Fashion Image Specialist (mannequin-to-model) | filtered | rate floor - $20-30/hr
+2100453802402175041 | AI trainer DataAnnotation/Snorkel | filtered | rate floor - $15/hr
+2100473532575963201 | Robotics Engineer for AI Humanoid Companion Robot | 20 | totalHired 2 (seat likely gone), 11 interviewing, $581 client
+2100518952871781299 | AI Engineer for Healthcare Communication System (Georgia) | 26 | 74 proposals in 40 min, 0 invites/interviews, $2,100 client mostly consultations
+2100307699241680663 | Senior AI / Backend Engineer - Retrieval & Data Systems | 27 | 66 proposals, 0 invites/interviews, $335 client
+2100070343526380959 | OCR Engine for PDF to Word Conversion | filtered | rate floor - $1,000-1,500 fixed for full OCR + layout-reconstruction engine with unseen-doc acceptance; client $50 spent
+2100315495052526493 | Senior Data Scientist / Analytics Engineer + UX ontology layer | filtered | match <40% - analytics + visualization design role
+2100465468972545718 | Data Science Dev / Quicksight expert | filtered | match <40% - BI/Quicksight dashboards
+2100314158683750167 | Data Scientist / NLP - Job Posting Classification Scoring | 30 | 135 proposals, $3,246 client with 2 hires, platform default range
+2100358403496207283 | AI Growth Engineer - SaaS Growth Experiments | 34 | 50+ proposals, growth-marketing role, range $20-50
+2100309704192675975 | AI Image Creation for Glasses | filtered | match <40% - creative image production
+2100312021258650525 | Single Board Computer Design (Intel Core Ultra) | filtered | match <40% - SBC/PCB hardware design
+2100399838717902615 | AI Development (NZ) | filtered | unverified client, no history, 82 proposals, 2-line post
+2100491488719455133 | AI Professional for Claude Code | filtered | rate floor - $5-15/hr
+2100362068340630451 | Generative AI Expert (full-time $4,000/month) | filtered | rate floor - ~$23/hr full-time creative visuals
+2100433396958938013 | iOS Photo Editing Filter App | filtered | rate floor - $20-35/hr
+2100469541945856135 | Quant Options Trading | filtered | match <40% - quant trading platform, wants agency
+2100447848386868918 | Python Automation - Screen Scraping & OCR | filtered | fake budget - $200 fixed, $148 client
+2100344342401696669 | Computational Physicist MCMC Curve Fitting | filtered | match <40% - astrophysics MCMC
+2100081275490326593 | Full-Stack Developer Scientific Imaging Startup (Velos) | 32 | 111 proposals, client no hires, website+backend+ML generalist
+2100323885507793031 | ESP32 CrowPanel HMI State Machine | 36 | Arduino HMI/motion control, $600 fixed, client no history
+2100325403376285087 | Custom 36V BLDC Controller Design | filtered | match <40% - power electronics PCB
+2100419636212856223 | PCB + Firmware 32-Button USB Game Controller | filtered | rate floor - $10-15/hr
+2100359902692701599 | Fix KiCad PCB ESP32 E-Paper Frame | filtered | match <40% - PCB design review
+2100329810939786122 | KiCad RP2350 Keyboard/KVM PCB | filtered | rate floor - $11-30/hr
+2100327231841170847 | Miniature Wearable Cooling Electronics Prototype | filtered | fake budget - $75 fixed
+2100405036051650625 | LLM Evaluation Engineer - SLM testing TrustedRouter | filtered | rate floor - $10-20/hr
+2100383055243696193 | AI Engineer for AI Applications (Nigeria) | filtered | vague post, client no history, graphic-design skill tags
+2100385901376755777 | AI Automation & Agent Developer Freight Forwarding | filtered | fake budget - $300 fixed, 54 proposals
+2100414730577172545 | Chatbot Installation with RAG System | filtered | commission-only engagement
+2100295977428680471 | AI Agents & MCP Multi-Agent Business Management System | filtered | fake budget - $100 fixed
+2100106507395890967 | Realtime Voice App with Ollama | filtered | fake budget - $22 fixed
+2099932682021511903 | AI Customer Support Platform | 25 | 330 proposals, range tops at $40
+2099877475631768287 | AI Agent Calling System | filtered | fake budget - $400 fixed, 77 proposals
+2099897450319632449 | Ai voice receptionist for plumbers | filtered | rate floor - $15-25/hr
+2099892555879927943 | Voice & Chat AI Agents Developer - Consultation First | filtered | fake budget - $200 fixed, 49 proposals
+2100521316168054454 | AI Video Creator spot pubblicitario | filtered | match <40% - creative video, Italian
+2100514476225263007 | AI Video Creator Mythological Reels | filtered | fake budget - $20 fixed
+2100457126028297117 | Pixar AI UGC video editor | filtered | match <40% - creative video production
+2100495252327883699 | 60 minute AI video visualizer DJ set | filtered | match <40% - creative video
+2100473390840533127 | AI Video Generation for Short Videos | filtered | fake budget - $50 fixed
+2100407844775712833 | AI Video Creative & Motion Designer | filtered | match <40% - motion design
+2100354598182901825 | AI Filmmaker 3-5 Minute Short Film | filtered | fake budget - $10 fixed
+2100353348512637875 | AI Image Generation for Product Photography | filtered | match <40% - product photo generation, Photoshop
+2100535900210001311 | Long-term Python/FastAPI geospatial & 3D geometry (Belgium) | filtered | rate floor - $15-25/hr client-specified (MANUAL); strong LiDAR match, bids avg $18
+2100507839796261770 | AI Growth Engineer for AI Native SaaS Platform (UK) | 27 | 87 proposals, client rating 4.27, vague 1-paragraph post, no wedge
+2100558749316596637 | AI Audit for Identifying Time Drains (India) | filtered | unverified client, 0 hires, vague 4-sentence post
+2100546519223039391 | Senior Generative AI & Prompt Engineer (Pakistan) | filtered | rate floor - $3,500 fixed for 6+ month role, unverified, 0 hires, bids from $1,005
+2100574957703807078 | AI and Machine Learning Expert ($100) | filtered | fake budget - $100 fixed, unverified, vague
+2100574056099567253 | AI and Machine Learning Expert ($1,000) | filtered | unverified, vague duplicate post
+2100559653339496215 | AI/ML Product Feature Enhancement (India) | filtered | unverified, vague, graphic-design skills tags
+2100558177043657610 | AI Engineering Expert for Yezol AI Network | filtered | talent-network pool, unverified, no project
+2100527560504694849 | Python ML Time-Series Prediction | filtered | match <40% - time-series forecasting, client $78 spent
+2100532592309237151 | Data Annotator (Video/Audio/Image) | filtered | annotation labour, not engineering
+2100546596798299927 | Sony A7 IV + OBS Video Setup | filtered | match <40% - camera/streaming setup
+2100561909606307905 | AI Content Workflow Coach Recipe Production | filtered | match <40% - creative content coaching
+2100579866144266722 | AI Video Production Family Screen Time | filtered | match <40% - creative video
+2100523116325582518 | AI Video Reel Luxury Jewelry | filtered | match <40% - creative video
+2100563809306063754 | AI Video Clipper for Monetization | filtered | match <40% - content clipping
+2100513324340664385 | AI Video Enhancement Specialist coffee shop | filtered | client rating 2.36, creative editing
+2100522382471319687 | Short AI futuristic human body video | filtered | fake budget - $50 fixed
+2100534913642705802 | PCB Designer Mixed-Signal Review | filtered | match <40% - PCB SI/PDN review
+2100575690328658056 | Smart LED Pet Collar flexible PCB | filtered | match <40% - wearable PCB hardware
+2100453802402175041 | Experienced AI trainer DataAnnotation | filtered | rate floor - $15/hr
+2100212660876138561 | Convert Video to Gaussian with Postshot | filtered | fake budget - $10 fixed
+2100607883434184829 | AI/ML Technical Program Manager ($50k fixed, India) | filtered | match <40% - program/delivery management, Java/Agile
+2100632286846963837 | Senior AI Engineer - LLM / AI Agents ($40-65/hr) | 32 | 175 proposals in 4h, brand-new client 0 hires, generic post
+2100606318862313204 | AI Prompt Engineer OpenEdX & ibl.ai | 30 | 98 proposals, 2-line post (just a URL), no scope
+2100608856099772898 | AI Chatbot & Automation Specialist ($100 fixed) | filtered | fake budget - $100 fixed, 52 proposals
+2100633529364004966 | AI Chatbot Developer OpenAI RAG ($70 fixed) | filtered | fake budget - $70 fixed
+2100629148981826804 | AI Agent Builder for Business Workflow ($25 fixed) | filtered | fake budget - $25 fixed
+2100641612626055293 | Full-Stack AI Developer (India) | filtered | rate floor - $10-20/hr
+2100616013379229333 | Fractional AI Systems Architect (Norway) | filtered | rate floor - $15/hr client-specified
+2100549693738155799 | QGIS Data Annotator 3D Network Scans | filtered | rate floor - $9-10/hr, EU-region requirement
+2100601595131442081 | Crash Testing Simulator Development | filtered | rate floor - $5-15/hr
+2100626841692231317 | Need Python/ML developer (EEG seizure eval) | filtered | fake budget - $10 fixed
+2100622808792806305 | Technical Interviewee for Software Engineer Roles | filtered | interview-proxy work, misrepresentation
+2100640503911265185 | AI Coach - teach me to build AI systems ($200) | filtered | rate floor - $200 for 10 hours of live sessions
+2100656693115836053 | Chief Technology Officer - LUNARTECH | filtered | equity-style CTO role, client $100 spent, 0 rate stated
+2100614830393409638 | AI Agent Engineer Cybersecurity (Turkey) | filtered | unverified, no rate, no client history
+2100597231137887476 | AI Engineer enterprise analytics | 33 | client 171 jobs posted but only $1,550 spent and 4.48 rating
+2100584186048587508 | Senior Data Scientist (Cyprus) | filtered | match <40% - BI/predictive analytics, BigQuery
+2100602129297028001 | AI Engineer acoustic intelligence (Argentina) | 36 | unverified client, duplicate of US acoustic post already scored 39
+2100619053363401972 | Full-Stack / Data Engineer Python pipelines | 38 | 50+ proposals, ETL/integrations focus, no rate stated
+2100646328955326600 | ESP32 Visual Reaction Training Device | 38 | client no history, $2,000 fixed for 10-ft LED hardware build
+2100615275948651425 | Technical Design for Hat Hardware | filtered | match <40% - mechanical/electrical product design
+2100635326445630369 | Lidar scan to 3d model for FreeCAD | filtered | entry-level CAD modelling, not ML
+2100667444558599412 | Build Transcript Manager Service ($1,200) | 42 | JSON assembly/export service, thin ML content; same client as Audio Processing

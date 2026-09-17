@@ -217,6 +217,29 @@ applying, so it can never be a pre-application warning. The quiet-client check u
 A quiet client is often just early. Re-check `jobActivity` on the next scan while the job is
 inside the 48h window; if invites or interviews have started, the warning and penalty drop off.
 
+### ⚠ `proposal_count` is not stable — never let one read swing 20 points (added 2026-09-18)
+
+Measured on the License Plate job `2100539875363832733`: `proposal_count` read **83** at 14:00 UTC
+and **21** at 21:00 UTC, with the personalized feed's `proposals_tier` moving `50+` → `20 to 50`
+over the same window. Counts should not fall. Withdrawn or client-declined proposals leaving the
+count is the likeliest explanation, but the API does not say, so the number is an estimate wearing
+the costume of a fact.
+
+That matters because three separate rules key off it: the competition component (0-10), the crowded
+penalty (−10/−20) and the quiet-client gate (`≥ 25`). On that job the two reads scored **53 and 78**
+for an identical post and an identical client.
+
+Rules:
+- **Take the count from the Step 4 `get` pass, not the Step 1 search feed.** The metrics pull is the
+  freshest read in the scan; the feed row may be minutes or hours stale.
+- **Cross-check against `proposals_tier`** from `smart_search` / the dashboard. It is coarse but
+  independent.
+- **When the two disagree by more than 2x, score on the lower count** and put both on the card:
+  `FIELD  21 proposals (feed read 83 earlier — counts disagree, scored on 21)`.
+  A crowd penalty applied to a field that is not crowded costs a real job; the reverse costs
+  Hashim ten seconds.
+- **Never apply the crowded penalty on a single read that nothing corroborates.**
+
 **Bands (revised 2026-09-07 — Hashim dropped the floor to 40 to see more options):**
 - **80+** — Strong. Lead the digest with it.
 - **65-79** — Full card with all metrics. Push notification.
