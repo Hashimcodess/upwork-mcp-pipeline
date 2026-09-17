@@ -240,6 +240,13 @@ Rules:
   Hashim ten seconds.
 - **Never apply the crowded penalty on a single read that nothing corroborates.**
 
+**A rescored job re-enters the ranking (added 2026-09-18, same incident).** When a correction moves
+a job's score, it takes its new place in the numbered list — as card 1 if it now leads. Do not leave
+it in a correction note above the list. On 2026-09-18 the License Plate job was rescored 53 → 78,
+written up in an unnumbered correction block, and Hashim picked "1" from a numbered list whose top
+entry scored 74. The highest-scoring job on the board was never in the ranking. A correction that
+does not change the order Hashim reads is not a correction.
+
 **Bands (revised 2026-09-07 — Hashim dropped the floor to 40 to see more options):**
 - **80+** — Strong. Lead the digest with it.
 - **65-79** — Full card with all metrics. Push notification.
