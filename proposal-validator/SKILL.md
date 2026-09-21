@@ -18,23 +18,29 @@ job is to find the problem, not the assistant confirming good work.**
 
 **Input:** a cover letter, its job post, and `wedge.md`. Given a folder, read all three.
 
-## ⚠️ Standing authorisation — read before every run
+## ⛔ HARD RULE — Hashim reviews every cover letter. No auto-submission. Read before every run.
 
-Hashim picks the job. **Everything after that is yours: approving the letter and submitting it.**
-He authorised this explicitly on 2026-09-07: *"manually pick the job but approving and confirming
-the submit needs to be done by you."*
+(revised 2026-09-21 — supersedes the 2026-09-07 standing authorisation that let the validator
+approve and submit on its own. Hashim: *"Always let me review the cover letter before submitting,
+no auto submission is to be sent. Make it a hard rule."*)
 
-That means a PASS here goes to a real client, spends real Connects, and cannot be edited
-afterwards. There is no second human read. Two consequences:
+Hashim picks the job. The validator runs every gate, fixes what it can, and then **stops**. It
+presents the final cover letter, the screening answers, the rate, the Connects cost and any boost
+state to Hashim, and **waits for his explicit approval** ("submit" or equivalent) in the current
+conversation. No exceptions:
 
-1. **Be harder, not softer.** The temptation when you own the whole decision is to wave things
-   through. Gate 0 exists precisely because nobody is checking behind you.
-2. **The hard stops are absolute.** They are in `references/rate-and-boost.md` and they are not
-   judgment calls. A BLOCK, an exhausted rewrite loop, or a job that has since been filled stops
-   the pipeline and goes to Hashim.
+- **Never call `manage_proposals create` + `confirm_preview` without that approval.** Not on a
+  clean PASS, not on a cron or scheduled run, not on a same-session retry, not for a job he picked.
+- **Any change after approval needs a fresh approval**: an edit to the letter or answers, a new
+  rate, a Connects cost change, a boost. Show the change, ask again.
+- **Approval covers one proposal.** It never carries to another job, another session, or a later
+  retry.
+- An unattended run (cron, no human present) drafts, validates, banks the letter in its folder and
+  notifies. It never submits.
 
-The authorisation covers submitting a proposal to a job Hashim chose. It does not extend to
-boosting, to raising the bid outside the rules, or to applying to a job he did not pick.
+The validator is still the sceptical reviewer. Hashim's read is the final gate, not a replacement
+for Gates 0-5: hand him a letter that is already right. The hard stops in
+`references/rate-and-boost.md` still apply on top of his approval.
 
 **A job that defers to a questionnaire, test, or "we don't read cover letters" does not exempt
 this gate (added 2026-09-14, Principal AI-Native Architect job).** Upwork's `cover_letter` field
@@ -263,7 +269,8 @@ to `cover-letter`.
 
 ## Verdict
 
-**PASS** — every gate clean. Ready to submit.
+**PASS** — every gate clean. Ready for Hashim's review. Present the letter and terms and wait for
+his explicit approval before Step 6 (hard rule above).
 
 **REVISE** — numbered failures with the offending text quoted, handed back to `cover-letter`,
 re-validated on the rewrite. **Max two loops**, then stop and escalate to Hashim with the
@@ -305,7 +312,9 @@ READY TO SUBMIT
 
 ---
 
-## Step 6 — SUBMIT (on PASS only)
+## Step 6 — SUBMIT (on PASS AND Hashim's explicit approval only)
+
+Never start this step without Hashim's approval of the final letter in this conversation.
 
 Read `references/rate-and-boost.md` first. Then, in order:
 
@@ -437,8 +446,8 @@ Under 200 chars. Lead with the action taken, not the verdict.
 - On escalation: `"STUCK after 2 rewrites on <job>. Not submitted. Needs your call."`
 - On hard stop: `"NOT submitted: <job> shows totalHired 1, seat filled. Letter banked."`
 
-Always notify. Hashim is not reading the letter, so the notification is how he learns what went
-out in his name.
+Always notify. On an unattended run the notification is how Hashim learns a letter is waiting
+for his review; nothing goes out until he approves it.
 
 ---
 

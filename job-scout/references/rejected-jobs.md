@@ -729,3 +729,4 @@ Format: `job_id | title | score | reason`
 2101931795479525731 | AI Tax Policy Assistant | 22 | unverified, accounting domain
 2101937893155543658 | Ecommerce OS $8k (sibling repost) | dup | duplicate of 2101844244336771353
 2101936891957117209 | Ecommerce OS $8k (sibling repost) | dup | duplicate of 2101844244336771353
+2101844244336771353 | Full-Stack AI Engineer — Autonomous Ecommerce OS | 55 | drafted + validated, Hashim skipped at review (2026-09-21); letter banked in proposals/2026-09-21-ecommerce-os-full-stack-ai

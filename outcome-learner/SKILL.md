@@ -26,7 +26,7 @@ job-scout ── Step 0 ──► outcome-learner SYNC (if due) ──► LEARN 
     │                           │
     │ reads learned-weights ◄───┘ (only outcome-learner writes it, only when guards pass)
     ▼
-Hashim picks ──► cover-letter (reads wedge_preference) ──► proposal-validator
+Hashim picks ──► cover-letter (reads wedge_preference) ──► proposal-validator ──► Hashim approves
                                                                │ 6g
                                                                ▼
                                               outcome-learner ADD (row at submit)

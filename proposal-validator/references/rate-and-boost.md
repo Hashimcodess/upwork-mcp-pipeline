@@ -1,17 +1,12 @@
-# Rate and boost rules — autonomous submission
+# Rate and boost rules
 
-Hashim picks the job. Everything after that, including the bid number and the submit, is handled
-without him — **in the sitting where he picked it.** That means the rate cannot be improvised per
-proposal. These are the rules.
+Hashim picks the job and **reviews and approves every letter before it is submitted** (hard rule,
+revised 2026-09-21 — was: bid and submit handled without him). The rate still comes from these
+rules so the number he reviews is never improvised.
 
-**Carryover rule (added 2026-09-08, Hashim's correction):** if a proposal was drafted and
-validated in a prior session and didn't submit (blocked by something mechanical — a spend
-guardrail, not a rejection), do NOT resume and submit it automatically in a new session. Ask first.
-State what's changed since it was picked (competition count, connects balance, anything material)
-and get a yes. The original pick authorized that sitting, not an indefinite window — conditions
-move (a job went from 48 to 116 proposals overnight the one time this was skipped). Same-session
-resume (blocked and retried minutes later) is still fully autonomous; only a session/day boundary
-triggers the check-in.
+**Carryover (revised 2026-09-21):** a letter drafted in a prior session goes back to Hashim for a
+fresh review before submit, with what has changed since (competition count, Connects cost,
+balance). A job went from 48 to 116 proposals overnight the one time this was skipped.
 
 **Every submission logs the number AND the reason.** If the reasoning cannot be stated in one
 line, the rule is not being followed.

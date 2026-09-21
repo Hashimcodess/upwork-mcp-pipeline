@@ -3,12 +3,14 @@
 Claude Code skills that run Danish Ashraf's Upwork job pipeline end to end through the Upwork MCP
 server: scan, score, write, validate, submit, then learn from what happened.
 
-Hashim picks the job. Everything after the pick is automated, including the submit.
+Hashim picks the job. Letter writing and validation are automated. **Nothing is submitted until
+Hashim has reviewed the final cover letter and explicitly approved it** (hard rule, revised
+2026-09-21 — was: everything after the pick automated, including the submit).
 
 ## Flow
 
 ```
-job-scout ──► Hashim picks ──► cover-letter ──► proposal-validator ──► submit
+job-scout ──► Hashim picks ──► cover-letter ──► proposal-validator ──► Hashim reviews ──► submit
     ▲                                                   │
     │                                                   ▼
     └──────────── pipeline-improver ◄──── performance-evaluator (outcomes)

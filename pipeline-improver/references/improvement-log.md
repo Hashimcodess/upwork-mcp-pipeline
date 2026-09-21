@@ -614,3 +614,9 @@ OBSERVED (once, not encoded):
          - Scout missed the job: posted 3 min after the 11:15 UTC scan.
 RESEARCH 1 search. Kept: Upwork states Connects per job "can change during the time the job is posted"
          (quoted via aiproposer/snipework 2026 guides). Rejected: vendor claims of boost 10-60 range.
+
+## 2026-09-21 — HARD RULE change (Hashim)
+Overwrote the autonomous-submit authorisation in place: Hashim reviews and explicitly approves every
+cover letter before submit; no auto-submission, including unattended/cron runs. Files: README,
+proposal-validator SKILL (hard-rule section, PASS verdict, Step 6 header, notify line),
+cover-letter SKILL (Step 8 doc-upload, Step 9), rate-and-boost.md header + carryover, outcome-learner flow.

@@ -272,8 +272,8 @@ returns a `fallback_url`. Its own contract says: *"Never ask for base64 text or 
 paths."* There is no path from a locally generated `approach-doc.pdf` to a submitted proposal
 without Hashim touching an upload UI.
 
-That collides with the standing autonomous-submit rule (Hashim picks the job; approving and
-submitting are Claude's). **Do not resolve that collision silently.** The doc still gets built —
+Hashim reviews every letter before submit (hard rule, revised 2026-09-21), so he is always in
+the loop and the upload can be offered during that review. The doc still gets built —
 it is what makes the letter sharp, and it is ready the moment a client replies — but at submit
 time the validator reports it as available, not attached:
 
@@ -290,10 +290,9 @@ PROPOSAL MESSAGING. So a doc held back after submit reaches the client **only if
 which is the exact thing the doc was meant to cause. There is also no way to attach it afterwards;
 a submitted proposal cannot be edited.
 
-Therefore: **whenever Hashim is in the loop on a submission, offer the upload session BEFORE the
-submit call, not after.** Two minutes of his time is the difference between the doc arriving with
-the proposal and the doc being hostage to a reply that may never come. When he is not in the loop,
-the thread remains the fallback and the report says so.
+Therefore: **offer the upload session during Hashim's review, BEFORE the submit call, not
+after.** Two minutes of his time is the difference between the doc arriving with the proposal and
+the doc being hostage to a reply that may never come.
 
 ### The part that IS autonomous, and was never used
 
@@ -366,10 +365,10 @@ letter full of apostrophes failed to parse in this harness and cost a round trip
 
 Display the letter, then **invoke `proposal-validator`**, which owns approval and submission.
 
-**Hashim does not read the letter before it goes out.** He picks the job; the validator approves
-and submits. So this skill is the last place the letter can be made genuinely good rather than
-merely correct — there is no human catching a weak wedge downstream. Max two rewrite loops from
-the validator, then it escalates to Hashim instead of looping.
+**Hashim reviews every letter before it goes out, and nothing is submitted without his explicit
+approval** (hard rule, revised 2026-09-21 — was: "Hashim does not read the letter before it goes
+out"). Still write it as if nobody will catch a weak wedge: his review is for his judgment, not for
+fixing drafts. Max two rewrite loops from the validator, then it escalates to Hashim.
 
 **Non-standard submission formats do not exempt this flow (added 2026-09-14, Principal AI-Native
 Architect job).** A job post that says "we'll send a technical questionnaire instead of a cover
@@ -381,8 +380,8 @@ rigor and pass it through the validator like any other job. What changes is only
 readiness for their process instead of forcing the standard binary call/2-slide-deck choice), not
 the workflow. On the job above, the letter was hand-drafted directly in conversation with Hashim
 reviewing and editing it live — skipping this entire skill and proposal-validator's Gates 0-4.
-That inverts the design ("Hashim does not read the letter before it goes out") and happened only
-because the unusual format didn't visibly trigger the normal chain. It worked out (claims were
+That skipped the wedge search and Gates 0-4, and happened only because the unusual format didn't
+visibly trigger the normal chain. It worked out (claims were
 manually double-checked against `projects/hoki.md` before submission), but treat any job with an
 atypical proposal mechanic as a prompt to explicitly invoke this skill and the validator, not a
 reason to freelance the letter in the main conversation.
