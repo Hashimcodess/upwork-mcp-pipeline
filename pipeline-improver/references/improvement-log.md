@@ -592,3 +592,25 @@ RESEARCH  1 kept (reinforcing), 2 rejected. Boost cost range from vendor blogs c
           live auction on this very job.
 
 PERSISTED research-log · improvement-log · SESSION-HANDOFF · memory
+
+## 2026-09-21 18:25 PKT — CV depth-camera point-cloud measurement, proposal 2102025466902138881
+
+AUDITED  Letter PASSED first time; Hashim then edited it before submit (review requested).
+FOUND    1. Proof selection missed the live camera-measurement contract (44464909) because it had no
+            projects/*.md file. Hashim asked for "more relevant past projects".
+         2. connects_cost rose 10 -> 16 between scout and submit (field 8 -> 20). Validator 6a said
+            "unchanged" with no branch for a rise.
+CHANGED  cover-letter Step 4: check ACTIVE contracts for in-domain proof (present tense, scope-only).
+         proposal-validator 6a: cost rise is expected (Upwork documents it); use the new number,
+         tell Hashim if he approved a specific cost this sitting. Hard stop stays > 40.
+         projects/camera-measurement-contract.md created (scope facts only, no results).
+OBSERVED (once, not encoded):
+         - Hashim removed the "haven't shipped on DepthAI" gap line (bonus requirement only). Watch
+           for a second instance before changing the admit-limits voice rule.
+         - Hashim skipped the approach doc on a HIGH-depth job after it was built.
+         - First boosted proposal: 32 Connects into [48 33 32 31] on a 20-proposal, 75%-match field.
+           The 4-condition surfacing rule would NOT have fired (recommended 32 > 15). Outcome will
+           tell whether the <=15 threshold is too tight.
+         - Scout missed the job: posted 3 min after the 11:15 UTC scan.
+RESEARCH 1 search. Kept: Upwork states Connects per job "can change during the time the job is posted"
+         (quoted via aiproposer/snipework 2026 guides). Rejected: vendor claims of boost 10-60 range.

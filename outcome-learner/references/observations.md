@@ -48,3 +48,27 @@ not sufficient - client quality and timing still matter.
 - version check: too early (needs 15 judged in both)
 - passed over: 7 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Vision AI — Integration with Existing CC
 - recommendations: 0; applied: none
+
+## 2026-09-18 — stage observe, judged 12, engaged 2
+
+- impossible_spec: 1/1 engaged, ci90 [0.27, 1.0] (observe)
+- misdiagnosis: 1/3 engaged, ci90 [0.08, 0.75] (observe)
+- unstated_failure: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- buried_real_project: 0/2 engaged, ci90 [0.0, 0.58] (observe)
+- none: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- scout predictiveness: {"scored_judged": 7, "engaged_mean_score": 81.0, "engaged_n": 1, "other_mean_score": 73.3, "other_n": 6}
+- version check: too early (needs 15 judged in both)
+- passed over: 8 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Vision AI — Integration with Existing CC; Principal AI-Native Software Engineering
+- recommendations: 0; applied: none
+
+## 2026-09-20 — stage observe, judged 12, engaged 2
+
+- impossible_spec: 1/1 engaged, ci90 [0.27, 1.0] (observe)
+- misdiagnosis: 1/3 engaged, ci90 [0.08, 0.75] (observe)
+- unstated_failure: 0/2 engaged, ci90 [0.0, 0.58] (observe)
+- buried_real_project: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- none: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- scout predictiveness: {"scored_judged": 7, "engaged_mean_score": 81.0, "engaged_n": 1, "other_mean_score": 73.0, "other_n": 6}
+- version check: too early (needs 15 judged in both)
+- passed over: 8 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Principal AI-Native Software Engineering; Senior Full-Stack Engineer (AI-Native) -
+- recommendations: 0; applied: none

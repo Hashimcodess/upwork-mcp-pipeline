@@ -136,6 +136,14 @@ Every metric must exist in the project file. Uma machine-scores the text against
 stated requirements, so a stretched claim is now checkable. If a project has no quotable number,
 describe what it does without inventing one.
 
+**Check active contracts, not only `projects/` (added 2026-09-21, depth-camera measurement job).**
+Current Upwork contracts are often the most relevant proof and have no `projects/*.md` file until
+someone writes one. Run `list_contracts action=search contract_statuses=["ACTIVE"]` and scan titles
+for the job's domain. On the depth-camera job the letter cited AATMS and Newman Bands and missed the
+live "Computer Vision/AI Engineer for Camera Measurement" contract; Hashim had to ask for it. Cite an
+active contract in present tense, from its scope documents only, never with results that don't exist
+yet, and never name the client.
+
 **Vocabulary leak trap (caught 2026-09-08, AI Solutions Architect job):** when the letter also has
 a "how I'd approach this" paragraph naming techniques for the *client's* problem, don't let that
 paragraph's vocabulary bleed into a proof bullet about *past* work. The letter recommended

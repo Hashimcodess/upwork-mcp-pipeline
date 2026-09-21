@@ -317,6 +317,11 @@ Confirm `can_apply: true`, `jobActivity.totalHired == 0`, `connects_cost` unchan
 daily cap still holds with this submission counted: **at most 100 Connects and 4 proposals in the
 last 24 hours** (see hard stops in `references/rate-and-boost.md`).
 
+**`connects_cost` can rise while a job is live (added 2026-09-21).** Upwork documents that the Connects
+needed "can change during the time the job is posted." Observed: 10 -> 16 in two hours as the field
+went 8 -> 20. A rise is not a stop on its own (the hard stop is still > 40). Use the new number. If
+Hashim approved a specific cost in this sitting, tell him the new cost before confirming.
+
 This exists because a real job went from open to `totalHired: 1` between being drafted and being
 reviewed. Scout data can be two hours stale.
 

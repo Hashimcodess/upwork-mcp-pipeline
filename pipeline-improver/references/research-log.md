@@ -87,3 +87,8 @@ would actually change a rule.**
   report line.
 - REJECTED again (third time): the gigradar "bid within 3-4 minutes" reply-rate claim. Same vendor,
   same incentive, still undated. Flagging here so a fourth run stops re-reading it.
+
+## 2026-09-21
+- KEPT: Connects cost per job is dynamic while the job is live (Upwork's own wording, quoted in 2026
+  guides at aiproposer.com and snipework.com). Matches direct observation 10 -> 16. Encoded in validator 6a.
+- REJECTED: "boosts cost 10-60 Connects" (vendor blogs); contradicted by observed 100+ bids on 2026-09-18.
