@@ -620,3 +620,11 @@ Overwrote the autonomous-submit authorisation in place: Hashim reviews and expli
 cover letter before submit; no auto-submission, including unattended/cron runs. Files: README,
 proposal-validator SKILL (hard-rule section, PASS verdict, Step 6 header, notify line),
 cover-letter SKILL (Step 8 doc-upload, Step 9), rate-and-boost.md header + carryover, outcome-learner flow.
+
+## 2026-09-25 — DJI Matrice 4TD YOLO (2103492318789316609)
+AUDITED  scout 2026-09-25-0130 → cover-letter → validator PASS first pass → submitted $400, 9 Connects.
+FOUND    1) Scout age math used the machine clock (~12h behind): 48h cutoff and "drops at" times wrong; job went out ~53h old.
+         2) Boost option only visible in the create preview, which ran after approval; 1 Connect would have bought a top-4 slot (top bids 3/2/1).
+         3) Hashim's "no disclaimer" instruction handled correctly (authority from verified platform facts, no false claim). Encoded as a rule so it repeats.
+CHANGED  job-scout/SKILL.md (API-derived "now"), proposal-validator/references/rate-and-boost.md (preview before approval + boost line), cover-letter/SKILL.md (no-disclaimer rule).
+RESEARCH skipped by request (light run); last external research 2026-09-21. Wedge research for this job logged in the proposal's wedge.md.

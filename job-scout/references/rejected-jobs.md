@@ -730,3 +730,130 @@ Format: `job_id | title | score | reason`
 2101937893155543658 | Ecommerce OS $8k (sibling repost) | dup | duplicate of 2101844244336771353
 2101936891957117209 | Ecommerce OS $8k (sibling repost) | dup | duplicate of 2101844244336771353
 2101844244336771353 | Full-Stack AI Engineer — Autonomous Ecommerce OS | 55 | drafted + validated, Hashim skipped at review (2026-09-21); letter banked in proposals/2026-09-21-ecommerce-os-full-stack-ai
+2102021457289789150 | Python AI Agent Dev (Claude Agent SDK) finish B2B lead tool | filtered | $100 fixed
+2102004505744332957 | Hermes AI Agent/LLM Linux consultant | filtered | rate floor $5-25/hr, client rating 2.33
+2102001884691229670 | AI Engineer for Gaming Platform | filtered | rate floor $10-35/hr, 115 proposals
+2102040321891371156 | Back-End Developer Node/TS + LangGraph | filtered | rate floor $15-18/hr
+2102016020783149083 | AI/ML System Dev, Fine-Tuning ($300, NZ) | 22 | unverified, $300 fixed, requirements to be provided later
+2101968602431596248 | AI consultant (France) | 18 | one-sentence post, unverified, $19-40 default
+2102052026473527003 | VLM/VLA & AI Robotics Algorithm Expert ($1,800) | filtered | match <40% - research-level VLA/diffusion policy, PhD preferred; strong client ($49.7k, 18 hires)
+2102388996407611845 | Self-Hosted AI System Setup (AU) | 26 | new client 0 hires, 8 invites, 4-sentence post, no wedge
+2102376562432020469 | Senior AI/ML Engineer (US-based) | filtered | location gate - US-based required
+2102314772364464671 | Agent Systems Engineer long-running agents | filtered | rate floor $19-35/hr client-set
+2102353441163448309 | Consent-Based AI Video Avatar MVP | filtered | rate floor $15-25/hr client-set
+2102375935216412602 | Claude Code internal training | filtered | rate floor $10-20/hr client-set
+2102217683529905883 | ComfyUI RTX 5090 setup | filtered | language gate - Mandarin required
+2102296634362471363 | Image annotation shop frames | filtered | rate floor $4-6/hr
+2102133654954183813 | AI Specialist digital marketing | filtered | rate floor $22-35/hr client-set
+2102350346911347999 | ESP32-S3 bus controller KiCad PCB | filtered | match <40% - PCB layout
+2102340678334825852 | LoRa ESP32 PCB design | filtered | match <40% - PCB layout
+2102263436394641115 | PCB Maneki Neko | filtered | match <40% - PCB layout
+2102323416704787395 | GreenPAK application notes | filtered | match <40% - IC app-note writing
+2102321643901998251 | Senior Controls Engineer PLC | filtered | match <40% - PLC/SCADA
+2102368975910027962 | Scientific Editor AI paper | filtered | match <40% - academic editing
+2102275478644078299 | Agentic RLE Authors | filtered | $40 fixed
+2102357760151523317 | AI Full-Stack Dev (Pakistan) | filtered | $15 fixed
+2102340794351839162 | AI Swiss Tax Return software | filtered | fake budget - $400 for full system, client 4.3
+2102340858583052978 | AI/ML Specialist job-post brainstorm | filtered | unverified, writing a job post
+2102381612383290042 | OCR Native Developer iOS/Android | filtered | match <40% - native mobile
+2102365162761564179 | Unity Test Infrastructure Engineer | filtered | match <40% - Unity/C# QA
+2102326373970349189 | Technical Generalist / AI Operator | filtered | VA role
+2102355173159954362 | AI Agent / Autonomous AI System Developer (Romania) | 22 | 217 proposals, generic JD
+2102298832654504479 | AI OS sourcing & manufacturing | 28 | 90 proposals, generic, new client
+2102331022671013421 | Customer Operations Agent RAG | 27 | 104 proposals, new client
+2102302466884777691 | AI Engineer $1,500 | 18 | client rating 3.55, 50+ proposals
+2102246889433991316 | OpenAI Developer pass partner assessment | 20 | 50+ proposals, assessment-proxy request
+2102333233275824058 | AI Engineer RAG/CAG $400 | 30 | vague, 35 proposals, $140-spend client
+2102187929767814083 | AI Automation Engineer SaaS n8n | 33 | 50+ proposals, generic, $19-40 default
+2102278441173181997 | AI Developer financial workflows $7,500 (India) | 30 | one-word skills, verification unknown, 23 proposals
+2102350034838171667 | Install Claude Code on Mac | 34 | trivial setup gig, 20-50 proposals
+2102539681177470502 | Senior LLM Fine-Tuning Engineer LoRA validation | filtered | rate floor $10-25/hr client-set (strong Ostris match, lost to rate)
+2102588610441257252 | Long-Term Product & Engineering Team vertical SaaS | filtered | rate floor $15-35/hr client-set; client rating 4.21
+2102600362356777252 | GCP Gemini / Vertex Agentic AI Engineer | filtered | rate floor $18/hr flat
+2102611332858976407 | AI Engineer for Slack Integration | filtered | rate floor $10-30/hr client-set, 94 proposals
+2102610623193030948 | RAG & AI Agent Developer (Ethiopia) | filtered | rate floor $15-30/hr client-set
+2102619311223483100 | AI/ML Engineer AI Voice Agent (CAN) | filtered | $20 fixed
+2102631079311193742 | Executive Intelligence RAG to production MVP | filtered | fake budget - $500 fixed for production MVP, 81 proposals
+2102572735389553093 | Perceive Now Senior AI Backend Engineer | filtered | $650 fixed for senior orchestration build, tagged entry level
+2102573682144629189 | Perceive Now Full-stack AI Multi-Model Chat | filtered | $650 fixed, tagged entry level
+2102533818268393764 | UAV Avionics PCBs STM32H7 + Hailo carrier | filtered | match <40% - PCB/EE design
+2102608033712492997 | PCB Design Automotive Diagnostic Tool | filtered | match <40% - PCB
+2102465125066468620 | PCB Designer PLC M5Stack | filtered | rate floor $10-12/hr
+2102524765251712654 | Embedded Optical Biosensing PPG | filtered | match <40% - owns schematic/PCB/optical design
+2102470088685717030 | Embedded/ML Offline Voice Device Kurdish | filtered | $380 fixed for on-device ASR build
+2102530418264908068 | Digital Sports Scorekeeper prototype | filtered | rate floor $14-15/hr
+2102524471268415639 | Handheld Gaming Device price quote | filtered | CAD/hardware quoting, match <40%
+2102460183454936332 | CSR ADK Bluetooth firmware | filtered | match <40% - BT audio firmware
+2102610086702666181 | Senior Full-Stack Engineer (24 E2E tests PWA) | filtered | match <40% - E2E test authoring
+2102555268884661798 | AI Visibility / GEO Specialist | filtered | match <40% - SEO/GEO
+2102617972589777349 | AI or DevOps Candidate Evaluator | filtered | match <40% - interview panel support
+2102540998622106053 | Polycam Training and Project Review | filtered | training/tutoring gig
+2102594459989060316 | AI Video Generation Instagram Reels | filtered | rate floor $10-20/hr content gig
+2102597511646597573 | AI Filmmaker Vertical Microdrama | filtered | $100 content gig
+2102592462924691086 | AI Video Generator | filtered | $10 content gig
+2102542396152228572 | AI Video Designer vertical content | filtered | rate floor $8-10/hr
+2102535648093924620 | AI Architectural Video Creator | filtered | $50 content gig
+2102503499974908055 | Expert AI UGC Video creator | filtered | $50 content gig
+2102508013869476572 | AI Image Generation plush blankets | filtered | content gig, 39 proposals
+2102496173599897230 | AI Prompt Engineer video process | filtered | $100 fixed
+2102552853978685732 | Data Engineer Document Extraction (medical PDFs -> Filemaker) | 37 | new client, NOT_VERIFIED, $25-40 client-set, PHI handling
+2102650240074324119 | AI Engineer (India) | 30 | generic 3-line JD, verification unknown
+2102580332490445253 | AI Agent Developer Laravel | 33 | 46 proposals, verification unknown, generic
+2102621524187559566 | Full Stack Developer healthcare scribe (PK) | 34 | unverified client, 16 proposals
+2102459203503313349 | AI and Machine Learning Specialist GIS (UK) | 28 | NOT_VERIFIED, three-sentence post
+2102536745168661772 | AI Developer Python SaaS MVP | 36 | $569-spend client, 50+ proposals, generic
+2102652919051185420 | AI Agent / Autonomous Systems Engineer (Romania repost) | 24 | 85 proposals, repost of 2102355173159954362
+2102567197868698332 | Relevance AI + Make.com marina (see report) | 57 | surfaced, unaffordable at 26 Connects
+2102725010672270630 | Telecom Network Expert AI Fault Remediation (Sekuen) | filtered | match <40% - they want a Tier-1 carrier NOC expert, explicitly NOT the AI builder
+2102689976730065047 | Facade AI defect detection (Malaysia) | 29 | one-sentence post, new client 0 hires, 7 invites 0 hired, no wedge
+2102724948078398237 | Multi-Agent RAG Document Intelligence (PK) | filtered | rate floor $22-28/hr client-set
+2102722113674886438 | AI Specialist custom LLM workflows (Israel) | filtered | rate floor $5-20/hr client-set, 78 proposals
+2102737978857978339 | Part-Time Remote Dev AI Platform (UK) | filtered | rate floor $10-15/hr client-set
+2102657644665819589 | AI Automation Engineer SAAS N8N | filtered | $25 fixed
+2102713057684235178 | AI Transformers Architecture and Code | filtered | $25 fixed, tutorial request
+2102722022911982456 | LangChain Q&A Chatbot PDF/CSV | filtered | $50 fixed, entry level
+2102692848790020388 | AI Software Development and Project Management | filtered | $3,000 fixed PM role, NOT_VERIFIED
+2102733782369444778 | Antenna selection and simulation | filtered | match <40% - RF/antenna design
+2102697868642099492 | AI Engineers for Business Improvement (UAE) | 27 | NOT_VERIFIED, generic, skills listed as Claude + Graphic Design
+2102694044256431372 | AI Engineer (UK) | 25 | generic 3-line JD, 50+ proposals, skills mismatched (CAD/drafting)
+2102702384472956834 | Senior Azure AI Engineer / Solution Architect (DE) | 38 | Azure-native stack not in portfolio, 36 proposals, no rate stated
+2102687223781857431 | Context Engineering for Claude Code (FR) | 36 | GTM/cold-email prompt work, marketing not engineering
+2102719728929684344 | AI & Ecommerce Systems Strategist (Shopify) | 34 | 50+ proposals, strategist role, $25-50 client-set
+2102611332858976407 | AI Engineer Slack Integration | filtered | rate floor $10-30/hr, count now 157 proposals
+2102631079311193742 | Executive Intelligence RAG MVP | filtered | $500 fixed for production MVP, now 97 proposals
+2102799555151857719 | AI Voice Agent physio clinics (India) | filtered | client rating 1.37 - other freelancers report bad experience
+2102781609275564970 | Claude / AI Integration Specialist ($125,000 fixed) | 31 | budget implausible, 115 proposals, client 1 job posted, concierge-integration scope
+2102777798728911645 | AI Automation Shipping Carrier Claims | 30 | 233 proposals, $22-50 client-set
+2102744372692876998 | Claude AI Agent Dev towing business (AU) | filtered | rate floor $5-35/hr client-set, 90 proposals
+2102798400575471302 | LLM and Agent Building Q&A | filtered | $100 fixed advice call, 42 proposals
+2102779925110815203 | RAG Architecture 1-Hour Consultation | 34 | $125 fixed one-hour call, 27 proposals
+2102806326216195782 | Polsia chatbot automation | 28 | lead-gen/outreach task mislabelled, verification unknown
+2102792823159719991 | Personal AI Operating System (India) | 35 | $1,000 fixed for a personal agent stack, verification unknown
+2102805244728171946 | AI Industry & Safety Risk Analyst | filtered | match <40% - weekly research writing
+2102776332116887607 | Senior Data Scientist Needed | filtered | rate floor $30-35/hr client-set, 50+ proposals
+2102770987793451063 | Python Developer Data Classification (Egypt) | filtered | rate floor $20-25/hr, NOT_VERIFIED
+2102763795143232285 | Plotter nesting / G-code software (Poland) | 33 | DXF nesting + CNC G-code, match <40%
+2102758806062841126 | Image Labeling Specialist CVAT | filtered | $10 annotation gig
+2102799457368679338 | AI and Machine Learning Expert (Ethiopia) | filtered | NOT_VERIFIED, $5,000 fixed, entry level tag, generic
+2102744026029439864 | Quant Developer / Trading Systems | filtered | match <40% - algorithmic trading systems
+2102742614444903197 | Data Scientist Sports Data Pipelines Snowflake | 36 | data engineering focus, 50+ proposals
+2102810705287543267 | Wearable / Biomedical Electronics Engineer | 38 | electronics + DFM ownership, match <40%
+2102799810852150698 | High-Speed PCB Jetson Multi-SoM Carrier | filtered | rate floor $10-25/hr + PCB design
+2102800494360124842 | AI Engineer for Intelligent Applications | filtered | 50+ proposals, skills listed are mobile app dev
+2102787673194183544 | Product Manager Who Builds with Claude Code | 39 | PM role, no rate stated, 20-50 proposals
+2102759183333949126 | HFT Backtester built inside Claude | 41 | surfaced as borderline, LLM-drift QA over a trading backtester
+2102720872545002410 | Systems Engineer (Fresh Graduate) AR glasses | filtered | entry-level graduate role
+2103150950176251048 | AI/ML Engineer Japanese clients $92-115/hr | filtered | fluent Japanese required
+2102466830092987660 | AI Architect (India service co.) | filtered | 49h old at scan
+2102888983749394993 | AI Agents for Infrastructure | 36 | now 100 proposals, 10 interviewing
+2103047869076441229 | Family Office AI Architect | 38 | 76 proposals, $421 client spend
+2103170188219171329 | AI Avatar YouTube clone | filtered | match <40%, requires avatar portfolio
+2103161274379540488 | Embedded Firmware HDMI | filtered | rate floor $10-30/hr
+2103099522500201570 | Shoplifting pharmacy CV | filtered | rate floor $10-25/hr
+2103162175630524929 | Shoplifting CV model $5 | filtered | $5 fixed
+2103145741985348376 | IoT cart lock BankID BLE | filtered | match <40%
+2103046249231809264 | Miniature BT/GNSS SiP hardware | filtered | PCB design, match <40%
+2103076082028509936 | AI Voice Agent NHS | filtered | 107 proposals, voice lane
+2102652901331187342 | AI Voice FreePBX | filtered | 189 proposals
+2102983753627563947 | Senior Full-Stack AI RAG (StrongAfter) | filtered | 234 proposals
+2103085371419742879 | Full-Stack AI SaaS | filtered | 463 proposals

@@ -199,6 +199,13 @@ underscore, showcase, pivotal, crucial, tapestry.
 
 ---
 
+**"No disclaimer" instructions (added 2026-09-25, DJI Matrice job).** When Hashim says to drop a
+gap line and write with full authority, drop the disclaimer but still never claim the missing
+experience. Put the authority in verified facts about the client's platform (researched and cited
+in `wedge.md`) and in what Danish *will* do. On the DJI job the letter stated DJI's actual Matrice 4
+workflow (patched MMYOLO, .pth plus per-class calibration images, DJI-side quantization) and never
+said "I've deployed on DJI before". Record the gap in `wedge.md` so the validator and Hashim still see it.
+
 ## Step 7 — Format (absolute)
 
 - Plain text. No markdown headers, bold, italics. Hyphen bullets for the project list only.

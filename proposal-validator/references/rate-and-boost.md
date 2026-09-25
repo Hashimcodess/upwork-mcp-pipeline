@@ -158,6 +158,21 @@ month of the subscription allowance, and that call is his alone.
 **contradicted by direct observation** — bids of 100+ are real and were seen on this job. Trust the
 preview's `current_top_bids`, never a blog's range.
 
+### Surface the boost BEFORE approval, not after (added 2026-09-25 — was: named only in the post-submit report)
+
+A boost cannot be added once a proposal is submitted, so naming it in the post-submit report is
+too late to act on. On the DJI Matrice job the preview showed `current_top_bids: [3, 2, 1]` with
+only 3 boosters for 4 paid slots, so 1 Connect would have bought a pinned slot (4 would have taken
+the top one). The proposal went out unboosted because the option was only visible after Hashim
+said "submit".
+
+Rule: run `manage_proposals create` (preview only) **before** presenting the letter for Hashim's
+approval, read the `boost` block, and put one line in the approval message:
+`BOOST  top bids [3 2 1], 1 Connect takes a top-4 slot (4 takes #1). Add it? Default: no.`
+Always show that line when fewer than 4 applicants have boosted or the top-4 slot costs 5 Connects
+or less, whatever the match or field size. The preview expires in ~15 minutes; if Hashim's reply
+comes later, re-create it. **Still never auto-boost.**
+
 **Still never auto-boost.** Surfacing is the change; the decision stays Hashim's.
 
 **Research note (2026-09-08, does not change the default):** a vendor blog (bidpilotpro.com, so
