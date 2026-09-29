@@ -96,3 +96,15 @@ not sufficient - client quality and timing still matter.
 - version check: too early (needs 15 judged in both)
 - passed over: 9 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Principal AI-Native Software Engineering; Senior Full-Stack Engineer (AI-Native) -; Audio Processing Service
 - recommendations: 0; applied: none
+
+## 2026-09-29 — stage observe, judged 15, engaged 3
+
+- impossible_spec: 1/1 engaged, ci90 [0.27, 1.0] (observe)
+- misdiagnosis: 1/4 engaged, ci90 [0.06, 0.64] (observe)
+- unstated_failure: 1/3 engaged, ci90 [0.08, 0.75] (observe)
+- buried_real_project: 0/4 engaged, ci90 [0.0, 0.4] (observe)
+- none: 0/3 engaged, ci90 [0.0, 0.47] (observe)
+- scout predictiveness: {"scored_judged": 9, "engaged_mean_score": 73.5, "engaged_n": 2, "other_mean_score": 73.1, "other_n": 7}
+- version check: too early (needs 15 judged in both)
+- passed over: 9 — Computer Vision Script for House Identif; Quick Prototype for Realistic Wall Repla; GIS Expert in ArcGIS, Spatial Analysis, ; Senior Generative Video ML Engineer, Pos; Freelance AI Developer - Autonomous Clau; Senior LLM agent engineer/advisor: Aethe; Principal AI-Native Software Engineering; Senior Full-Stack Engineer (AI-Native) -; Audio Processing Service
+- recommendations: 0; applied: none

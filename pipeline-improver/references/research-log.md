@@ -92,3 +92,7 @@ would actually change a rule.**
 - KEPT: Connects cost per job is dynamic while the job is live (Upwork's own wording, quoted in 2026
   guides at aiproposer.com and snipework.com). Matches direct observation 10 -> 16. Encoded in validator 6a.
 - REJECTED: "boosts cost 10-60 Connects" (vendor blogs); contradicted by observed 100+ bids on 2026-09-18.
+
+## 2026-09-29
+- KEPT: nothing new. Upwork's own pages and blog again confirm Uma ranks proposal text plus screening answers and delivers a ranked shortlist; already encoded.
+- REJECTED: gigradar / upwex / snipework / aiproposer Connects-and-boost cost guides ("14-25 Connects, boosts past 50"). Vendor blogs, and the observed top bids on this job were 211/201/200/164, far above their ranges. Trust the preview's current_top_bids.

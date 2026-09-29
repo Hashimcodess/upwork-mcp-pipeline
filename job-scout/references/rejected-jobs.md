@@ -857,3 +857,34 @@ Format: `job_id | title | score | reason`
 2102652901331187342 | AI Voice FreePBX | filtered | 189 proposals
 2102983753627563947 | Senior Full-Stack AI RAG (StrongAfter) | filtered | 234 proposals
 2103085371419742879 | Full-Stack AI SaaS | filtered | 463 proposals
+2103240376065909645 | Volleyball live/dead rally segmentation | filtered | $500 total for 25h labeled dataset + model ≈ sub-$10/hr
+2103328379133411841 | GCC ANPR/ALPR local | 37 | unverified new client, 7 invites/5 interviewing, $500
+2103493663451334550 | AI & CV Engineer UAE | filtered | 64 proposals, $20-40/hr generic
+2103421282306829442 | AI Architect Pune | filtered | rate floor $18-22/hr, onsite Pune
+2103222461155232156 | Agentic Engineer 45-day sprint | 38 | 78 proposals, low match
+2103335469403315790 | Python/OpenCV arrow swipe game QA | filtered | game automation, 50 props
+2103313768816811598 | Caller ID spoofing detection | filtered | match <40%
+2103397575353195157 | Keyless car access IoT | filtered | match <40%, unverified
+2104949201611195523 | Technical Product Image Automation (fixed $2,000) | filtered | 5 milestones over 4-6 wks implies ~$13-20/hr; 1 already hired; reviews cite shifting requirements
+2104885784624156297 | Technical Product Image Automation (hourly duplicate) | filtered | same client and job as above, platform-default $20-40
+2104994280982609981 | LiDAR Data Processing Montevideo Streets | filtered | $100 fixed for a city-LiDAR methodology doc, sub-floor; 18 invites, 0 hired
+2104916083625763872 | Wearable Sensor Fusion white paper | 23 | match 40%, payment unverified, default-range rate
+2104910487539601033 | Sr AI Agent & Voice Systems Engineer | 24 | match 75% but 85 proposals, client 0 hires, 3-sentence post, $20-50
+2104972564168343613 | AI Automation Engineer (Claude Code, EU pref) | 35 | client 78h total across 23 short contracts, 50+ proposals, Loom required
+2104647244744053582 | AI Predictive Maintenance Expert | 29 | 3-sentence post, no budget, client 0 hires, match 40%
+2104790311286216015 | AI-Assisted Asset Tracking | filtered | rate floor $12-27/hr
+2104910558361061383 | Senior Python/CV Engineer (surgical trays) | filtered | rate floor $15-30/hr, unverified
+2104977355836089326 | Python phone AWS AgentCore agent | filtered | $30 fixed for a voice-agent build
+2104913131267761184 | AI Reception Phone Agent | filtered | $150 fixed, client rating 3.45
+2104480902551669172 | AI Consultant Healthcare Lead | filtered | US and Canada only
+2104967448067287776 | Sr Robotics/Mechatronics Engineer in China | filtered | must be located in China
+2104920490392355971 | EU-Based Data Annotators | filtered | EU location gate, annotation labour
+2104599313408340858 | AI/ML Evaluation Specialist | filtered | $3-20/hr
+2104751967917044005 | GIS Digitizing condo site plans | filtered | $50 fixed
+2104398737677704175 | GIS Specialist Drone Mapping | 18 | 71 proposals, $20-45/hr, thin client data
+2104907476671057545 | AI Solutions Architect and Hands-On Engineer | 13 | 112 proposals, $3,000 for a ~4-month engagement
+2104995561837201415 | Sr Full-Stack AI Knowledge Platform | filtered | 119 proposals, $25-50/hr, client 4.12
+2104904102848735968 | AI Developer (B2B SaaS consultant) | filtered | 317 proposals, default $25-50
+2104931441837788809 | Train AI for an app | filtered | $20-28/hr, entry level, unverified
+2104919490651204320 | ML Engineer Canada paid interview | filtered | Canada location gate, $80
+2104682841597014309 | Sports Scientist for training app | filtered | human domain-expert role, match <40%

@@ -226,6 +226,10 @@ said "I've deployed on DJI before". Record the gap in `wedge.md` so the validato
 - **Shared-cause claims: say "most of" or "several", not "are one gap"** (added 2026-09-14). Second
   time the single-cause trap fired (football v1, then Aethera's "problems 1, 2 and 4 are one gap").
   Name the shared piece without claiming it explains every symptom.
+- **Intermediary posts: the poster is not the end client (added 2026-09-29).** "for a law firm client" means the
+  poster is a developer or agency and the attorneys belong to a third party. The first draft said "your
+  attorneys' worked cases" and the validator caught it. Refer to the end client as "the firm" or "your
+  client", and check every "your X" against who actually owns X.
 - **Never hardcode the bid in a screening answer before the liveness re-check** (added 2026-09-14).
   Aethera's Q3 said $65; the field average moved $34 -> $45 before submit and rule 2b set $55. Write
   `<RATE>` in the draft and let the validator fill it at Step 6c.

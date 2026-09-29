@@ -628,3 +628,13 @@ FOUND    1) Scout age math used the machine clock (~12h behind): 48h cutoff and 
          3) Hashim's "no disclaimer" instruction handled correctly (authority from verified platform facts, no false claim). Encoded as a rule so it repeats.
 CHANGED  job-scout/SKILL.md (API-derived "now"), proposal-validator/references/rate-and-boost.md (preview before approval + boost line), cover-letter/SKILL.md (no-disclaimer rule).
 RESEARCH skipped by request (light run); last external research 2026-09-21. Wedge research for this job logged in the proposal's wedge.md.
+
+## 2026-09-29 - PDF Extraction + Legal Platform API (2105032852201558017)
+AUDITED  scout 2026-09-29-1840 -> cover-letter -> validator PASS after one fix -> submitted $3,000 fixed, 16 Connects, no boost.
+FOUND    1) Tier is not a count. Card said "50+ tier"; real field was 170 (172 an hour later). By the scout's own crowd rules the score was 34, below the 40 floor, so Hashim picked from a card that overstated the job by 20 points. Boost auction was also contested (top bids 211/201/200/164).
+         2) Notification: tool confirms desktop toast only; skips while terminal is active; phone delivery never confirmed, and the digest said "pushed".
+         3) Letter draft said "your attorneys" for an intermediary post (poster is a dev shop, attorneys belong to the law firm). Validator caught it.
+         4) outcomes.csv had a blank row, so sync_due stayed true forever.
+CHANGED  job-scout/SKILL.md (resolve tier via title search, honest notify wording), proposal-validator/SKILL.md (exact FIELD line in approval message, honest notify wording), cover-letter/SKILL.md (intermediary-post rule), outcome-learner/scripts/outcomes.py (load() skips blank-ID rows).
+RESEARCH light: Uma facts and boost mechanics re-checked, nothing new that changes a rule (see research-log).
+OPEN     Portfolio highlights lack Riddermark and La Fragrancia (portfolio-profile-upgrade). Approach doc PDF never built, not attached. Remote Control / phone push unverified.

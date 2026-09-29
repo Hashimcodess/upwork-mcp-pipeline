@@ -269,6 +269,12 @@ to `cover-letter`.
 
 ## Verdict
 
+**The approval message must carry the field size as an exact number (added 2026-09-29).** Resolve it with a
+title search (`find_jobs action=search`, read `proposal_count`), not the feed tier. A tier of `50+` hid a
+170-proposal field on the PDF-extraction job, and Hashim approved on the wrong picture. Put
+`FIELD  <n> proposals (as of <time>)` next to the terms, and if it is over 100 say plainly that the
+scout would have scored it down.
+
 **PASS** — every gate clean. Ready for Hashim's review. Present the letter and terms and wait for
 his explicit approval before Step 6 (hard rule above).
 
@@ -446,6 +452,8 @@ Under 200 chars. Lead with the action taken, not the verdict.
 - On escalation: `"STUCK after 2 rewrites on <job>. Not submitted. Needs your call."`
 - On hard stop: `"NOT submitted: <job> shows totalHired 1, seat filled. Letter banked."`
 
+**Say what the tool actually confirmed (added 2026-09-29):** "desktop toast sent, mobile push requested,
+delivery unconfirmed". The tool skips the send entirely while a terminal is active. Never write "pushed".
 Always notify. On an unattended run the notification is how Hashim learns a letter is waiting
 for his review; nothing goes out until he approves it.
 

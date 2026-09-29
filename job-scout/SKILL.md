@@ -241,6 +241,21 @@ Rules:
   Hashim ten seconds.
 - **Never apply the crowded penalty on a single read that nothing corroborates.**
 
+### ⚠ A tier is not a count: resolve "50+" before scoring (added 2026-09-29, PDF Extraction / Legal Platform job)
+
+The smart_search and dashboard feeds report only a tier (`50+`, `20 to 50`), and `find_jobs get` carries
+no count at all. The PDF-extraction job was scored 54 with competition 0/10 and **no crowd penalty**
+because the count was hidden. It was **170** proposals (172 an hour later). By this file's own rules
+that is "very crowded" (-20), score 34, below the 40 floor. Hashim picked it from a card that said
+"50+ tier" and was never told the field was three times that.
+
+Rule: for any job whose only count is a tier (`50+`, `20 to 50`, `15 to 20`), run
+`find_jobs action=search params={query: "<title words>", sort: "recency", limit: 10}` and read the
+exact `proposal_count` off the matching row (verified 2026-09-29: it returned 172 for this job).
+Score on that number and apply the crowd penalties as usual. If the title search does not return the
+job, write `FIELD  50+ (exact count unavailable, could be 100+)` on the card and cap competition at
+0/10. Never let `50+` read as "roughly 50".
+
 **A rescored job re-enters the ranking (added 2026-09-18, same incident).** When a correction moves
 a job's score, it takes its new place in the numbered list — as card 1 if it now leads. Do not leave
 it in a correction note above the list. On 2026-09-18 the License Plate job was rescored 53 → 78,
@@ -430,7 +445,12 @@ Rules:
 - **Rank the message by the best job, but state the honest spread.** With the floor at 40 a scan
   can push on three 44s. Say so — `"3 borderline (44-51), none strong"` — so he can tell a quiet
   night from a live one without opening anything.
-- Desktop toast always. Phone push only when Remote Control is connected on his account.
+- Desktop toast always. Phone push only when Remote Control is connected on his account.- **Report delivery honestly (added 2026-09-29).** The tool returns `Terminal notification sent. Mobile push
+  requested.` That confirms the desktop toast only. It also refuses outright ("not sent, terminal is
+  active") while a terminal is in use, and a long idle gap did not change that. Write
+  `NOTIFY  desktop toast sent, mobile push requested, delivery unconfirmed` in the digest, never
+  "pushed". Only Hashim can confirm the phone received it.
+
 
 ---
 

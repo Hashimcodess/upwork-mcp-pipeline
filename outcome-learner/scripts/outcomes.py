@@ -85,7 +85,8 @@ def load():
     if not DATA.exists():
         return []
     with DATA.open(newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        # skip rows with no proposal_id: a blank line in the CSV kept sync_due true forever (2026-09-29)
+        return [r for r in csv.DictReader(f) if (r.get("proposal_id") or "").strip()]
 
 
 def save(rows):
