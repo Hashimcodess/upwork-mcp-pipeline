@@ -931,3 +931,14 @@ Format: `job_id | title | score | reason`
 2105273550990772231 | Test New Task Based AI Router | -- | $2,500 fixed beta-tester gig, 48 proposals.
 2105260171919172640 | AI Automation Developer (IND) | -- | n8n/HighLevel class, unverified.
 2105155606360294531 | AI Video & Image Evaluator | -- | Evaluation/annotation labour.
+2105401285584869832 | ML Engineer for Fire Detection Classifier (BrainChip) | 32 | match ~60%, payment unverified -10, quiet client -10 (43 proposals, 0 invites). Under floor, flagged to Hashim in 2026-10-01 digest footer.
+2105093819335304174 | ArcGIS / 3D Geospatial Developer | 37 | match ~40% (LiDARView only, no ArcGIS SDK), 60 proposals crowded -10.
+2105489248260667779 | Fine-tune Qwen2.5-7B blind exam | -- | $482 fixed / 7 days, needs public LLM fine-tune artifact, below rate floor.
+2105398377250793452 | Advanced Robotics R&D Team | -- | placeholder default range, 0 hires, unverified, vague, match ~35%.
+2105391967447561029 | AI Engineer and AI Artist | 34 | 3-sentence post, no rate, 32 proposals with 0 invites (quiet -10), client reposting 3 near-identical jobs.
+2105308502723854741 | Technical Program Manager Embedded NPD | -- | PM role, post says generic PM proposals unfit, match ~25%.
+2105524177559368517 | ESP32 Firmware & AWS IoT Engineer | -- | range tops $40, bids avg ~$30, requires shipped ESP32 product, match ~35%.
+2105570360311654380 | AI Engineer (LLM/MCP, $2,100 fixed, 6+ months) | 31 | 65 proposals crowded -10, budget low for scope.
+2105474943552805359 | Claude AI Specialist Lead Gen Agents | 35 | 58 proposals, no rate, client $27k across 160 hires.
+2105558048334915564 | AI Engineer OCR/CV/VLM (Hanoi onsite) | -- | onsite in Vietnam, entry level.
+2105569529742993388 | Solution Architect Enterprise AI Azure | -- | $5 client spend, no rate, match ~25%.
