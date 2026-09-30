@@ -22,6 +22,7 @@ import argparse
 import json
 import math
 import os
+import re
 import statistics
 import sys
 from collections import Counter, defaultdict
@@ -144,13 +145,18 @@ def ledger_anchor(records, override):
     return max(stamps) if stamps else datetime.now(timezone.utc)
 
 
+def has_term(text, term):
+    """Match on a word START, so 'roof' finds 'roofline' and 'roofing' but not 'proof'."""
+    return re.search(r"\b" + re.escape(term), text) is not None
+
+
 def match(rec, terms, must, exclude):
     text = " ".join([rec.get("title", ""), rec.get("snippet", ""), " ".join(rec.get("skills") or [])]).lower()
-    if exclude and any(x in text for x in exclude):
+    if exclude and any(has_term(text, x) for x in exclude):
         return False
-    if must and not all(m in text for m in must):
+    if must and not all(has_term(text, m) for m in must):
         return False
-    return any(t in text for t in terms) if terms else bool(must)
+    return any(has_term(text, t) for t in terms) if terms else bool(must)
 
 
 def split(csv):
