@@ -160,6 +160,8 @@ Check:
 - **Technique names.** U-Net, LangGraph, pgvector, TensorRT, BoT-SORT — the file must name that
   technique, not a cousin.
 
+**Proof from outside `projects/` (added 2026-09-30).** A project Hashim supplied as a document is verifiable against that document when `wedge.md` names its path. Check: every fact in the bullet appears in the document; design or proposal work reads as design or proposal, not built or live; no "we" or Minibyte carried over from the document. No path in `wedge.md` means UNSUPPORTED.
+
 **Known unverifiable — flag on sight:**
 - StackFuse CEO as Danish's co-founder / MiniByte CBO — rests on Hashim's word, no file
 - Hands-on Claude Agent SDK or MCP shipping history — undocumented
@@ -211,7 +213,7 @@ unchanged on a SaaS landing page.
 
 | Check | Rule |
 |---|---|
-| Word count | In band for the mode. Over by >15% → REVISE. **When 2+ screening questions are embedded in the body with no separate API field, the +15% allowance from `cover-letter/SKILL.md` Step 3 applies first** — measure the overage against the widened band, not the base one (added 2026-09-14, Vision AI/CCTV job) |
+| Word count | `wc -w` counts each hyphen bullet marker as a word, so subtract the bullet count before judging the band (added 2026-09-30). In band for the mode. Over by >15% → REVISE. **When 2+ screening questions are embedded in the body with no separate API field, the +15% allowance from `cover-letter/SKILL.md` Step 3 applies first** — measure the overage against the widened band, not the base one (added 2026-09-14, Vision AI/CCTV job) |
 | Referenced work | Bulleted, plain hyphens, 2-3 items, each tied to *this* client |
 | Hard wrapping | Unbroken paragraph lines. Wraps → REVISE |
 | Markdown | No headers, bold, italics, emoji. Hyphen bullets only |

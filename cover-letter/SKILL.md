@@ -136,6 +136,8 @@ Every metric must exist in the project file. Uma machine-scores the text against
 stated requirements, so a stretched claim is now checkable. If a project has no quotable number,
 describe what it does without inventing one.
 
+**Proof Hashim supplies from outside `projects/` (added 2026-09-30, retail checkout job, Roomi PDF).** He may hand over a document (proposal PDF, report) and ask for it in the referenced work. Use it, but: (1) write its path into `wedge.md` so the validator can check the letter against that document; (2) if the document is a proposal or design and not a shipped system, the bullet must say so ("design for...", "scoped..."), never "built" or "live"; (3) take only facts the document states; (4) the document may say "we" or name Minibyte, and neither may leak into the letter in engineer mode. Also record the **file-verified match %** in `wedge.md`; when it differs from the scout's figure by more than 10 points (80% scout vs 65-70% checked against files on that job), say so in the hand-off to Hashim.
+
 **Check active contracts, not only `projects/` (added 2026-09-21, depth-camera measurement job).**
 Current Upwork contracts are often the most relevant proof and have no `projects/*.md` file until
 someone writes one. Run `list_contracts action=search contract_statuses=["ACTIVE"]` and scan titles
@@ -343,6 +345,7 @@ brochure.
    in v1.
 2. Render with the kit at `Upwork-Claude-Skill/generate-doc-kit` (MiniByte LaTeX template).
    Produces `approach-doc.tex` then `approach-doc.pdf`, matching the hired proposal's layout.
+   **Engineer mode: the template hardcodes "MiniByte" on the cover and in the running header** (added 2026-09-30, retail checkout job; the first PDF shipped with MiniByte branding, which engineer mode forbids). Do not edit the shared kit. Copy `minibyte-preamble.tex` into the proposal folder as `engineer-preamble.tex`, replace the two `MiniByte` strings (`\small MiniByte` and `{MiniByte};`) with `Danish Ashraf`, and `\input{engineer-preamble}` instead. Read page 1 of the PDF before calling it done.
 3. **Compile with the Bash tool, never PowerShell.** MiKTeX refuses to run elevated; `pdflatex`
    through Bash works. This is a known, already-paid-for lesson.
 4. Max 5 pages. Include the architecture diagram (TikZ). Name and branding per the positioning

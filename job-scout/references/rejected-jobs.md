@@ -888,3 +888,46 @@ Format: `job_id | title | score | reason`
 2104931441837788809 | Train AI for an app | filtered | $20-28/hr, entry level, unverified
 2104919490651204320 | ML Engineer Canada paid interview | filtered | Canada location gate, $80
 2104682841597014309 | Sports Scientist for training app | filtered | human domain-expert role, match <40%
+
+## 2026-09-30 13:15 PKT (full scan, 7 domains + 3D-recon + medical, now = 08:10 UTC from API)
+
+2105074332396356739 | Lead Full-Stack Engineer Real-Time Visualization (US, $68k client) | -- | VERY CROWDED 246 proposals (-20). Full-stack integration lead, 7+ yrs ownership, JSS 90 + Rising Talent required. Sibling of the ArcGIS posting (2105093819335304174, surfaced 45).
+2104352272056027572 | Indoor Positioning / Sensor Fusion Engineer (AUS) | -- | HARD FILTER rate floor: $500 fixed for a strict 3-week build. ~75% match and an impossible-spec wedge (5-30 cm from phone IMU/PDR + ORB markers), 15 proposals, but client reviews 1.0/1.0/2.0/2.6 incl. "not paid for the work", 1 offer already made, $153/hire average. Would be a candidate at a real budget.
+2104786923634889423 | CV expert to fine-tune a CV model (Argentina) | 30 | 67 proposals (-10), two-sentence post, client $1,042 lifetime over 18 contracts (24h total), $200-350/hr range not credible (avg bid $91.56), 1 invite/2 interviewing.
+2105078162843140157 | AI Engineer for Call Routing (US) | 35 | 57 proposals, Node/Postgres CRM + power dialer + call bidding, client $190/hire average, Loom required, quiet client (-10). ~55% voice match.
+2105161131865647840 | Senior Applied ML Engineer LLM Fine-Tuning Qwen/LoRA | -- | rate floor $10-40 (mid $25), LLM LoRA gap (only image LoRA in files), client $435 lifetime.
+2105180644344398785 | Principal EW/Radar DSP Algorithm Engineer C++ | 30 | $15-40/hr, C++ DSP/EW not ML, client $419 lifetime.
+2105128047582241774 | Frontier Model Development Engineer | -- | 67 proposals, vague, platform-default $25-50, match <40%. Client is strong ($273k, 5.0) but only 5 reviews.
+2105035066178513632 | Take over site intelligence platform (NLD) | -- | FAKE BUDGET $500 for phases 2-4 of a platform.
+2104666602815005744 | Machine Learning DevOps AWS/CVAT CV deployment (US) | 38 | NOT PULLED. 92 proposals (-10), client 4.49, DevOps focus. Estimated score.
+2104910558361061383 | Senior Python/CV Engineer, surgical trays (BEL) | -- | rate floor $15-30/hr, NOT_VERIFIED (re-seen).
+2104790311286216015 | AI-Assisted Asset Tracking (US) | -- | rate floor $12-27/hr, 77 proposals (re-seen).
+2104699671556387109 | Dual-Camera Still Capture -> see surfaced card (53)
+2105166982011487169 2105116856717445127 | Scientific Coding Expert x2 (PAK) | -- | $50 fixed STEM dataset authoring.
+2104857455971730563 | AI Engineer LLM Agents RAG MLOps (IND) | -- | client rating 2.12, $15-25/hr.
+2104631002791584816 | Fractional AI Engineer (US) | -- | client rating 2.7, no rate.
+2104618822735057742 | Machine Learning / Applied AI Engineer (US) | -- | 50+ proposals, RL/RAG focus, not CV.
+(remaining recency-feed rows: AI-video/image content gigs, GIS/CAD drafting, PCB/hardware, saturated agent/automation, annotation/tutor/review gigs -- established off-pattern classes)
+
+## 2026-09-30 14:50 PKT (rescan ~1.5h after 13:15, latest API timestamp 09:44 UTC)
+
+2105223781394350485 | Navigation Systems Engineer (AUS) | -- | Same client as 2104352272056027572 (reviews 1.0/1.0/2.0/2.6, "not paid for the work"), now $300 fixed for a 2-week build of the same 5-30 cm indoor nav. Rate floor.
+2105231846710518816 | Simpro + Claude AI Integration Developer (IND) | -- | $22-29/hr platform default, connector build.
+2105217550891592416 | AI Developer Needed (PAK) | -- | $19-30/hr, generic.
+2105214622759199776 | Kling AI Expert flosy.ai (DEU) | -- | $9-60/hr, video-gen prompt/pipeline tuning, not engineering.
+2105216700761367534 | image annotations Roboflow (IND) | -- | annotation labour, NOT_VERIFIED.
+2105226724618208387 | VFX Artist Unreal (KSA) | -- | game VFX art.
+
+## 2026-09-30 19:15 PKT (manual scan, now ~14:13 UTC from API)
+
+2105016249398626311 | Algorithm for Stock Calculation (FRA) | -- | VERY CROWDED 106 proposals (-20; tier read 50+). $10-90 manual, client $17k/13 of 13 hired/5.0. Has PRD_ML_stocks.docx attachment (readable via signed link, not read).
+2104966700493243329 | Senior AI Systems Engineer Claude-Powered Appraisal (US) | -- | VERY CROWDED 428 proposals (tier read 50+). Also JSS 90 + Rising Talent + $10k earned gates. Client paid ~$14/hr avg over 4,968h.
+2105290526122509443 | Fractional CTO for Software Company (US) | -- | Hard gate: must have worked at Google/Meta/NVIDIA-class company, first screening answer names it. Match gate fail, not a fit question.
+2105281736878785667 | Medical phrase grounding chest X-ray (PhD, GBR) | 35 | $10-30 default, bids avg $23.92, client $370 lifetime, tutoring class ("understand each step myself").
+2105253413233262653 | Senior LLM/RAG Engineer ($1.02M client) | -- | VERY CROWDED 381 proposals.
+2105274240834109501 | Senior LLM RAG Engineer (AUS) | -- | $150 fixed, sibling of the 381-proposal posting.
+2105247269654225902 | Part-Time Technical Team Leader ML/CV (ISR, $92k client) | 37 | Surfaced by serious-buyer rule despite score. 60 proposals (-10), $30-50 default, no wedge. Repeat buyer of this role (5 open contracts).
+2105120664785118190 | AI Voice Agent SaaS multi-tenant | 39 | Re-scored from 49: 62 proposals now (-10 crowded). 85% match.
+2105273550990772231 | Test New Task Based AI Router | -- | $2,500 fixed beta-tester gig, 48 proposals.
+2105260171919172640 | AI Automation Developer (IND) | -- | n8n/HighLevel class, unverified.
+2105155606360294531 | AI Video & Image Evaluator | -- | Evaluation/annotation labour.

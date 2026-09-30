@@ -96,3 +96,7 @@ would actually change a rule.**
 ## 2026-09-29
 - KEPT: nothing new. Upwork's own pages and blog again confirm Uma ranks proposal text plus screening answers and delivers a ranked shortlist; already encoded.
 - REJECTED: gigradar / upwex / snipework / aiproposer Connects-and-boost cost guides ("14-25 Connects, boosts past 50"). Vendor blogs, and the observed top bids on this job were 211/201/200/164, far above their ranges. Trust the preview's current_top_bids.
+
+## 2026-09-30
+- KEPT: nothing new. Search for a September 2026 proposals or Uma policy change found none; Upwork status page showed only resolved outages (Sep 9, Sep 13).
+- REJECTED (again): vendor pages (gigradar, upwex, aiproposer, jobbers, getmany) claiming boosts cost "25-40 Connects". Contradicted by this job's real auction: top bids 31 / 30 / 15 / 12, and 13 cleared a top-4 slot.

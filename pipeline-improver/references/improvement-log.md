@@ -638,3 +638,15 @@ FOUND    1) Tier is not a count. Card said "50+ tier"; real field was 170 (172 a
 CHANGED  job-scout/SKILL.md (resolve tier via title search, honest notify wording), proposal-validator/SKILL.md (exact FIELD line in approval message, honest notify wording), cover-letter/SKILL.md (intermediary-post rule), outcome-learner/scripts/outcomes.py (load() skips blank-ID rows).
 RESEARCH light: Uma facts and boost mechanics re-checked, nothing new that changes a rule (see research-log).
 OPEN     Portfolio highlights lack Riddermark and La Fragrancia (portfolio-profile-upgrade). Approach doc PDF never built, not attached. Remote Control / phone push unverified.
+
+## 2026-09-30 (retail checkout job, proposal 2105310619874095105)
+AUDITED  scout 2026-09-30-1915 -> cover-letter -> validator PASS first pass -> Hashim edits -> submitted $1,400 fixed, 15 Connects, no boost, 17 proposals at submit.
+FOUND    1) find_jobs get now returns client review comments and, on some jobs, a signed attachment link. The scout skill still said both were unavailable. Verified on Israel client, Fractional CTO client, Algorithm for Stock Calculation (PRD_ML_stocks.docx).
+         2) Approach-doc template hardcodes "MiniByte" on cover and header, which engineer mode forbids. First PDF shipped that way, caught on page-1 read, fixed with a local preamble copy.
+         3) Hashim supplied proof (Roomi PDF) that has no projects/*.md. It is a proposal, not a shipped system, and the PDF says "we" and Minibyte. No rule covered this.
+         4) Scout match 80% vs 65-70% checked against files (no hand-object interaction project anywhere).
+         5) `wc -w` counts hyphen bullet markers, so the band check read 4 words high.
+CHANGED  job-scout/SKILL.md (attachments and client reviews sections revised), cover-letter/SKILL.md (outside-proof rule + file-verified match note in Step 4, engineer-mode preamble fix in Step 8), proposal-validator/SKILL.md (outside-proof check in Gate 1, bullet-marker note in Gate 3 word count).
+NOT CHANGED, n=1: Hashim removed the binary-choice sentence from the CTA (letter shipped with the first-mile ask only). Hashim added a fourth bullet against the max-three rule. Both single instances, so logged, not encoded. If either repeats, make it a rule.
+RESEARCH light, nothing new (see research-log).
+OPEN     Approach doc PDF and CV not attached (Hashim chose no files). Proposal insights showed proposals_total 23 at 14:34Z against 17 at submit; insights lag and count differently, do not use for the FIELD line.
