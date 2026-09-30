@@ -30,8 +30,12 @@ does not fit the cap, cut scope and say what was cut. Do not stretch the cap sil
 
 Write `plan.md` and show it:
 
-- Success bar, dataset(s) with **name, version and licence** (the licence must allow portfolio
-  display; record it), models and libraries, hardware, expected run time.
+- Success bar, dataset(s) with **name, version and licence**. The licence must allow portfolio
+  display. **Read the dataset's own licence and access terms (its download page, its Hugging Face
+  card, its gating prompt), never the upstream source's.** A processed or annotated redistribution
+  can be far stricter than the raw data underneath it (Building3D is CC BY-NC-SA 4.0 and gated,
+  while the Estonian Land Board data beneath it is open). Never accept a licence, gate or
+  data-use agreement on Hashim's behalf. Record the licence in `metrics.md`, models and libraries, hardware, expected run time.
 - What the finished piece will show, and the 3-5 assets that will show it.
 - **Where the demo will live.** Hashim has not chosen a host. Options: a local folder ready to
   push to a public GitHub repo, or a hosted demo (Hugging Face Spaces and similar would need a

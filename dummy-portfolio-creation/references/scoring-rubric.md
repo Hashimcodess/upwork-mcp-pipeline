@@ -67,7 +67,7 @@ not an answer.
 
 | Part | Points | Question |
 |---|---|---|
-| Data | 0-4 | Is there a public dataset whose licence allows portfolio use, or can honest synthetic data be generated? Name it |
+| Data | 0-4 | Is there a public dataset whose licence allows portfolio use, or can honest synthetic data be generated? Name it. **Verify the dataset's own licence and access terms (gating, non-commercial, share-alike), not the upstream source's. Search summaries are not the licence text.** If unverified, score at most 2 and say so |
 | Compute and time | 0-3 | Does it fit the effort cap (default 3 working days) on hardware Danish has? |
 | Tooling | 0-3 | Are the models and libraries available and stable? |
 
