@@ -942,3 +942,13 @@ Format: `job_id | title | score | reason`
 2105474943552805359 | Claude AI Specialist Lead Gen Agents | 35 | 58 proposals, no rate, client $27k across 160 hires.
 2105558048334915564 | AI Engineer OCR/CV/VLM (Hanoi onsite) | -- | onsite in Vietnam, entry level.
 2105569529742993388 | Solution Architect Enterprise AI Azure | -- | $5 client spend, no rate, match ~25%.
+2105583553852422249 | On-Prem AI Infrastructure Architect (Bare-Metal GPU + K8s HA) | -- | match ~25% (needs bare-metal vLLM/Triton, EKS excluded), 2-3 hour advisory at $20-40/hr.
+2105645919400193248 | Hardware engineer 10-ch current sensor PCB + CAN (TomFit) | 39 | PCB design + 4 assembled boards on $5k incl. materials; vr-glasses is the only PCB credit, match ~30%; client has no history.
+2105617619186866632 | Sport Data specialist | -- | data-entry research role, platform default $15-50.
+2105639354301110767 | AI Harness/Context expert article | -- | $500 technical writing, not engineering.
+2105651237716449775 | Senior Full-Stack AI Engineer (Luminova) | -- | $10-15/hr, below floor.
+2105639613089949676 | Full-Stack Developer Node.js LLM RAG | -- | $1,000 fixed, 227 proposals.
+2105618878319652064 | Fix RAG chatbot (LangChain) | -- | $100 fixed, 82 proposals.
+2105592878426216904 | AI Agent Developer RAG SaaS Ecommerce | -- | $20-25/hr, below floor.
+2105635611042475232 | AI Phone Agent Demo for SMBs | -- | $150 fixed, entry level.
+2105590481893697516 | Embedded/Biomedical Wearable Sensor Prototype | -- | fixed-price, 32 proposals, client 2 hires $720, no stated budget, match ~35%.
