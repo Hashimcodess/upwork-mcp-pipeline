@@ -143,7 +143,7 @@ For each, `Grep`/`Read` `Danish/projects/*.md` and record:
 | **MISATTRIBUTED** | Real capability, wrong project credited |
 
 Check:
-- **Numbers.** "±0.4mm", "100 FPS on Jetson Nano", "5,000+ devices", "eight categories". Letter
+- **Numbers.** "±0.4mm", "100 FPS on Jetson Nano", "eight categories". Letter
   number must equal file number. Not rounded, not "over", not "nearly".
 - **Role.** Files say "Lead engineer" or "Architect and technical lead". Do not promote to sole
   author or demote a lead.
@@ -167,6 +167,7 @@ Check:
 - Hands-on Claude Agent SDK or MCP shipping history — undocumented
 - `newmanbands.com/sizer` — 404, never deployed. Never link
 - Any Newman Bands demo link — IP handed over, no copy retained
+- **Smart Hail Guard device counts or deployment wording (HARD RULE, Hashim 2026-10-01): "5,000 devices", any number of devices, "deployed across the US", "production units", "fleet", "running unattended". It never happened. BLOCK on sight, never REVISE. Also check approach docs, screening answers and CV attachments.**
 
 Any DISTORTED / UNSUPPORTED / MISATTRIBUTED → **REVISE**.
 
@@ -469,7 +470,7 @@ Real failures caught in past sessions:
    cleaner. Detection dropouts and ID switches are two problems.
 2. **Unlinked project.** Client asks for a link; letter names a project with no public URL and
    does not acknowledge it.
-3. **Metric drift.** "±0.4mm" → "sub-millimetre". "5,000+ devices" → "thousands". Both DISTORTED.
+3. **Metric drift.** "±0.4mm" → "sub-millimetre". "eight categories" → "many categories". Both DISTORTED.
 4. **Stale deliverable.** Claiming something is live that the client never deployed.
 5. **Silent scope creep.** The letter promises more than the bid covers.
 6. **Wedge/letter mismatch.** `wedge.md` describes a sharp insight the letter never actually states.

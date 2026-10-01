@@ -146,6 +146,8 @@ live "Computer Vision/AI Engineer for Camera Measurement" contract; Hashim had t
 active contract in present tense, from its scope documents only, never with results that don't exist
 yet, and never name the client.
 
+**Smart Hail Guard hard rule (Hashim, 2026-10-01).** Never claim 5,000 devices, any device count, "deployed across the US", "production units", "fleet" or "running unattended" for Smart Hail Guard. It never happened. Cite it only as a hail-detection pipeline Danish built (hail vs rain and windblown debris, PyTorch/OpenCV, custom firmware, MQTT). Applies to letters, screening answers and approach docs. The old project file said otherwise; it was wrong.
+
 **Vocabulary leak trap (caught 2026-09-08, AI Solutions Architect job):** when the letter also has
 a "how I'd approach this" paragraph naming techniques for the *client's* problem, don't let that
 paragraph's vocabulary bleed into a proof bullet about *past* work. The letter recommended

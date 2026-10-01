@@ -51,7 +51,7 @@ Read the relevant ones before assigning a percentage. Never score from the proje
 | Project | What it proves |
 |---|---|
 | `guardio.md` | 100 FPS on Jetson Nano after TensorRT optimization |
-| `smart-hail-guard.md` | 5,000+ devices deployed in the US |
+| `smart-hail-guard.md` | Hail vs rain/debris discrimination pipeline + custom firmware. NO deployment count: never claim 5,000 devices (Hashim, 2026-10-01) |
 | `ensemble-smart-lighting.md`, `drive-pulse.md` | Microcontroller AI, wearable/vehicle hardware |
 | `agricultural-ugv.md` | Field robotics, sensor fusion |
 
