@@ -650,3 +650,15 @@ CHANGED  job-scout/SKILL.md (attachments and client reviews sections revised), c
 NOT CHANGED, n=1: Hashim removed the binary-choice sentence from the CTA (letter shipped with the first-mile ask only). Hashim added a fourth bullet against the max-three rule. Both single instances, so logged, not encoded. If either repeats, make it a rule.
 RESEARCH light, nothing new (see research-log).
 OPEN     Approach doc PDF and CV not attached (Hashim chose no files). Proposal insights showed proposals_total 23 at 14:34Z against 17 at submit; insights lag and count differently, do not use for the FIELD line.
+
+## 2026-10-01 (LPG cylinder counting, proposal 2105678785336684545)
+AUDITED  scout 2026-10-01-1353/1845 -> cover-letter (6 Hashim edit rounds) -> validator PASS -> submitted $15,000 fixed, 19 Connects, no boost, balance 882. 52 proposals by title search at submit, insights showed 46.
+FOUND    1) Smart Hail Guard "5,000 devices deployed across the US" was false. It lived in the project file, CLAUDE.md, GEMINI.md, the rubric, the validator's own examples and the embedded CV, and went into about a dozen submitted proposals. The validator marked it VERIFIED because the project file said so. Hashim caught it, not the pipeline.
+         2) The cover-letter skill did not know the fixed-price rule: letter quoted $12,500 against a posted $15,000; only the validator's rate rule caught it.
+         3) Length: 300-380 words against a 160-220 band because the post demanded projects, architecture, timeline and cost in-body. No rule covered it.
+         4) Hashim rejected jargon (homography, metric height) and asked why a cashier in the loop justified a vision system. No plain-language rule existed.
+         5) Bullets over three: second time (retail checkout asked four, LPG asked five). Last run logged it as n=1; now it repeats, so it becomes a rule.
+CHANGED  cover-letter/SKILL.md (post-mandated sections widen length to ~330, fixed-price price = posted budget, scale claims need provenance, plain language for the client, bullets 2-3 default up to 5); proposal-validator/SKILL.md (scale-claim provenance in Gate 1, ~330 cap for post-mandated sections, bullets up to 5, fixed-price rate consistency).
+Earlier this session (already committed 3312e73): Smart Hail Guard hard rule in CLAUDE.md, GEMINI.md, rubric, validator BLOCK, cover-letter skill.
+RESEARCH light, nothing new (see research-log).
+OPEN     cv-embedded-ai-ml.pdf/.tex, portfolio.pdf and two cv-systems-engineering.tex copies still carry the false claim; needs Hashim's true facts. Other scale claims in the submitted letter (Guardio "commercially deployed", Imagate 1M+ images and 90%+ cost cut, Aethero flight hardware) still rest on project files only: Hashim should mark each CONFIRMED. Job 3 (CAN gateway) drafted and previewed, not submitted. Not yet encoded, n=1: Hashim wanted the cashier-loop logic explained in the letter itself.

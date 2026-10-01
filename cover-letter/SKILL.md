@@ -124,6 +124,10 @@ treat the table above as the base and allow up to +15% over the top of the band 
 length as a hygiene problem. A letter that is still over even with that allowance gets trimmed for
 real, not because the base band didn't account for the questions it was required to answer.
 
+**Post-mandated sections widen the band further (added 2026-10-01, LPG cylinder and CAN gateway jobs).** When the post says "include X, Y, Z in your application" (projects, architecture, timeline, cost breakdown, availability, budget) and there is no separate field, those sections are required content. Measure the rest of the letter against the band and cap the whole letter near 330 words. Both drafts landed at 300-380 against a 160-220 band, and the 380 stood only because Hashim asked for the extra bullets. Trim the weakest bullet first, then price line items. Never trim the wedge.
+
+**Fixed-price jobs: the price in the letter is the posted budget (added 2026-10-01).** `rate-and-boost.md` says bid the stated budget on fixed jobs. The LPG draft quoted $12,500 against a posted $15,000 and only the validator caught it. Any cost breakdown in the letter sums to the posted budget unless Hashim sets a different number. Scope the work to the budget; do not undercut it.
+
 ---
 
 ## Step 4 — Match projects honestly
@@ -145,6 +149,8 @@ for the job's domain. On the depth-camera job the letter cited AATMS and Newman 
 live "Computer Vision/AI Engineer for Camera Measurement" contract; Hashim had to ask for it. Cite an
 active contract in present tense, from its scope documents only, never with results that don't exist
 yet, and never name the client.
+
+**Scale claims need provenance (added 2026-10-01).** A project file is a draft written by us, not proof. Smart Hail Guard's "5,000 devices deployed across the US" sat in its project file, CLAUDE.md, the rubric, the validator's own examples and the embedded CV, went into about a dozen submitted proposals, and was false. Any claim of deployed devices, users, customers, revenue, "fleet", "production units" or "commercially deployed" needs a second source (an Upwork contract, client confirmation) or Hashim's confirmation recorded in the project file as CONFIRMED. If unsure, cite what was built, not the scale it reached.
 
 **Smart Hail Guard hard rule (Hashim, 2026-10-01).** Never claim 5,000 devices, any device count, "deployed across the US", "production units", "fleet" or "running unattended" for Smart Hail Guard. It never happened. Cite it only as a hail-detection pipeline Danish built (hail vs rain and windblown debris, PyTorch/OpenCV, custom firmware, MQTT). Applies to letters, screening answers and approach docs. The old project file said otherwise; it was wrong.
 
@@ -177,7 +183,7 @@ Relevant work:
 - Anna: annotation platform where the model suggests a label and a human approves it before it counts, the verification discipline legal review needs.
 ```
 
-- Two, occasionally three. Never four.
+- Two or three by default. Up to five when the post has several distinct requirement axes (edge hardware, look-alike discrimination, operator UI, audit trail) and each bullet maps to a different one (revised 2026-10-01 - was "never four"; Hashim asked for a fourth on the retail checkout job and five on the LPG cylinder job, so the cap moves, with each bullet still tied to this client).
 - `Name: what it is, the technical detail that matters *here*, the real number.`
 - The clause after the metric must tie to **this** client's problem. A bullet that fits any
   proposal is dead weight.
@@ -202,6 +208,8 @@ underscore, showcase, pivotal, crucial, tapestry.
 **The Pakistan test:** would this sentence fit on a SaaS landing page? Then rewrite it.
 
 ---
+
+**Plain language for the client (added 2026-10-01, LPG cylinder job).** Hashim rejected "floor marks give a ground-plane homography ... size comes from metric height, not pixels" with "couldn't understand this" and asked why a cashier in the loop justified a vision system. Write the plan paragraph in the client's terms: what the system does for them and when a human steps in, in words an operator, not an engineer, would use. Keep the technique names (homography, TensorRT) for the approach doc or for clients who used those words first. If the design has a human-in-the-loop step, say why the automation still pays for itself (fewer keystrokes, exceptions only, a measurable override rate) before the client has to ask.
 
 **"No disclaimer" instructions (added 2026-09-25, DJI Matrice job).** When Hashim says to drop a
 gap line and write with full authority, drop the disclaimer but still never claim the missing

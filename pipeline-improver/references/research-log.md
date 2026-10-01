@@ -100,3 +100,8 @@ would actually change a rule.**
 ## 2026-09-30
 - KEPT: nothing new. Search for a September 2026 proposals or Uma policy change found none; Upwork status page showed only resolved outages (Sep 9, Sep 13).
 - REJECTED (again): vendor pages (gigradar, upwex, aiproposer, jobbers, getmany) claiming boosts cost "25-40 Connects". Contradicted by this job's real auction: top bids 31 / 30 / 15 / 12, and 13 cleared a top-4 slot.
+
+## 2026-10-01
+- KEPT: nothing new that changes a rule. Search confirms Uma (launched Oct 2025, moved to the Basic plan on May 5, 2026) reads proposal text plus screening answers, and that repetitive proposals are penalised. Already encoded.
+- UNVERIFIED, not encoded: vendor blogs (snipework, uphunt, upalerts) say that on jobs where the client turns it on, completing an Uma AI video interview is required before a proposal can be submitted. One source class, no Upwork primary page. If a scanned job's `find_jobs get` shows such a requirement, add it as a scout card flag then.
+- REJECTED: no October 2026 policy announcement exists yet in search results; the "AI agents as a hiring category" piece (memvers.com) is market commentary, not a rule.

@@ -160,6 +160,8 @@ Check:
 - **Technique names.** U-Net, LangGraph, pgvector, TensorRT, BoT-SORT — the file must name that
   technique, not a cousin.
 
+**Scale claims need a second source (added 2026-10-01).** A number in a project file is not proof of itself: the Smart Hail Guard "5,000 devices" claim lived in the file and the validator passed it as VERIFIED for weeks. For any claim of deployed devices, users, customers, revenue, "fleet", "production units" or "commercially deployed", the project file must mark it CONFIRMED by Hashim or an Upwork contract must back it. An unmarked scale claim is a REVISE, and the Smart Hail Guard wording is a BLOCK (see Known unverifiable).
+
 **Proof from outside `projects/` (added 2026-09-30).** A project Hashim supplied as a document is verifiable against that document when `wedge.md` names its path. Check: every fact in the bullet appears in the document; design or proposal work reads as design or proposal, not built or live; no "we" or Minibyte carried over from the document. No path in `wedge.md` means UNSUPPORTED.
 
 **Known unverifiable — flag on sight:**
@@ -214,8 +216,8 @@ unchanged on a SaaS landing page.
 
 | Check | Rule |
 |---|---|
-| Word count | `wc -w` counts each hyphen bullet marker as a word, so subtract the bullet count before judging the band (added 2026-09-30). In band for the mode. Over by >15% → REVISE. **When 2+ screening questions are embedded in the body with no separate API field, the +15% allowance from `cover-letter/SKILL.md` Step 3 applies first** — measure the overage against the widened band, not the base one (added 2026-09-14, Vision AI/CCTV job) |
-| Referenced work | Bulleted, plain hyphens, 2-3 items, each tied to *this* client |
+| Word count | `wc -w` counts each hyphen bullet marker as a word, so subtract the bullet count before judging the band (added 2026-09-30). In band for the mode. Over by >15% → REVISE. **When 2+ screening questions are embedded in the body with no separate API field, the +15% allowance from `cover-letter/SKILL.md` Step 3 applies first** — measure the overage against the widened band, not the base one (added 2026-09-14, Vision AI/CCTV job). **Post-mandated in-body sections (approach, timeline, cost breakdown, availability, budget) widen the cap to about 330 words total** (added 2026-10-01, LPG and CAN jobs) |
+| Referenced work | Bulleted, plain hyphens, 2-3 items by default, up to 5 when each maps to a distinct requirement of the post and Hashim asked (revised 2026-10-01 - was 2-3 only), each tied to *this* client |
 | Hard wrapping | Unbroken paragraph lines. Wraps → REVISE |
 | Markdown | No headers, bold, italics, emoji. Hyphen bullets only |
 | Signature | `Danish Ashraf`, name only |
@@ -223,7 +225,7 @@ unchanged on a SaaS landing page.
 | Language mirroring | Client's stack terms and problem wording reproduced exactly (Uma input) |
 | Screening questions | All body questions answered when there is no separate field |
 | Screening text drift | When the post body also lists the questions, diff body vs screening field. Every sub-question in either version answered (added 2026-09-14, Aethera Q2) |
-| Rate consistency | Any rate in the letter or screening answers equals the Step 6c bid. Re-check after liveness (added 2026-09-14, $65 in Q3 vs $55 bid) |
+| Rate consistency | Any rate in the letter or screening answers equals the Step 6c bid. Re-check after liveness (added 2026-09-14, $65 in Q3 vs $55 bid) On a fixed-price job the price in the letter must equal the posted budget (rate-and-boost.md), a different figure is a REVISE unless Hashim set it (added 2026-10-01, LPG draft said $12,500 against $15,000). |
 
 ---
 
