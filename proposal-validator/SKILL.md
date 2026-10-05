@@ -280,6 +280,22 @@ title search (`find_jobs action=search`, read `proposal_count`), not the feed ti
 `FIELD  <n> proposals (as of <time>)` next to the terms, and if it is over 100 say plainly that the
 scout would have scored it down.
 
+**Rate and time in the approval message are re-derived from the freshest pull, never carried over
+(added 2026-10-05, ADA takeoff job).** The job was picked with a $65 suggestion at 24 proposals; by
+approval the field was 26, rule 3 fired and the rule gave $55. State the rate only after the 6a
+pull, quote the field count it was derived from, and when it differs from anything Hashim was told
+earlier say that the earlier figure is superseded and why. Every "as of" time comes from an API
+timestamp in that same pull (newest `recent_usage` row, newest feed `created_date`, `insights.computed_at`),
+never an estimate: a "just now" time stated in chat on this job was roughly 6 hours behind the real API clock.
+
+**Approval flow, reconciled (revised 2026-10-05 — `rate-and-boost.md` said build the preview before
+approval, this file said never create without approval).** PASS, letter shown, Hashim says submit,
+then 6a-6c, then build the draft preview, then ONE final-confirm message (letter unchanged, rate with
+reason, Connects cost and balance, FIELD line, BOOST line from the preview), then his yes, then 6d
+confirm. The preview spends nothing and submits nothing, but it is built only after the first
+approval. Cost: one extra message. Open for Hashim to decide: allow preview-only creation before the
+first approval so the boost line arrives with the letter.
+
 **PASS** — every gate clean. Ready for Hashim's review. Present the letter and terms and wait for
 his explicit approval before Step 6 (hard rule above).
 
@@ -344,6 +360,14 @@ Hashim approved a specific cost in this sitting, tell him the new cost before co
 
 This exists because a real job went from open to `totalHired: 1` between being drafted and being
 reviewed. Scout data can be two hours stale.
+
+**Count the whole 24h Connects window, not only applications (added 2026-10-05).** `recent_usage`
+and `get_profile connects_balance` list every `Connects spent` row. The Availability Badge
+(`Paid invitation badge`; 14 Connects a week, 1 every 12h; `boost_profile get_status` confirms it)
+adds 2 a day. An unexplained -60 with `reason: null` and no job landed on 2, 3, 4 and 5 Oct (240
+Connects, and `get_status` shows no active profile boost), which alone uses 60% of the 100-Connect
+ceiling and leaves room for about two applications a day. Put `<N> used in 24h (<X> applications,
+<Y> other)` in the approval message, and tell Hashim when a non-proposal charge repeats.
 
 ### 6b. Duplicate check — mandatory
 ```

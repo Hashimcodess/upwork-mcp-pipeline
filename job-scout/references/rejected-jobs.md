@@ -952,3 +952,56 @@ Format: `job_id | title | score | reason`
 2105592878426216904 | AI Agent Developer RAG SaaS Ecommerce | -- | $20-25/hr, below floor.
 2105635611042475232 | AI Phone Agent Demo for SMBs | -- | $150 fixed, entry level.
 2105590481893697516 | Embedded/Biomedical Wearable Sensor Prototype | -- | fixed-price, 32 proposals, client 2 hires $720, no stated budget, match ~35%.
+
+## 2026-10-02 13:35 PKT (manual scan, now ~08:35 UTC from API)
+
+2105903568013352612 | IoT Fuel Theft Detection Prototype (Oman) | 27 | $30-50, client 0 contracts, 3-sentence post, 29 proposals, no wedge
+2105788079530434212 | Senior Backend Engineer GCP (Reventure) | filtered | match <40%, full-time 40h real-estate backend, $30-60
+2105907978109837487 | Quant dev alternative assets | filtered | match <40%, quant finance
+2105727420213324185 | Data Engineer with ML Expertise ($600,000 fixed, India) | filtered | fake budget, NOT_VERIFIED
+2105903626503264569 | Solution Architect Enterprise AI Azure | filtered | client $5 lifetime spend, Azure programme architecture, match <40%
+2105883031634799001 | Senior Software Engineer AI/Cloud/Production (Ukraine) | filtered | generic JD, new client, match <40%
+2105932906070660968 | Multi-tenant QR web app + AI chat (UAE) | filtered | match <40%, 4.12 client, 43 proposals
+2105865290186874532 | RF Engineer cavity diplexer S-band | filtered | $80 fixed, RF filter design not in portfolio
+2105767728665946521 | 4-layer PCB KiCad industrial gateway | filtered | $350 fixed PCB layout
+2105729656593143699 | RFID PCB Project Development | filtered | $800 fixed, 28 proposals, RF/PCB not in portfolio
+2105835936030747033 2105794489011230611 | Head Orientation Annotation (x2) | filtered | $80 fixed annotation
+2105700822604518299 | 3D Scan Annotation Specialist | filtered | $3-15/hr annotation
+2105695728717455084 | Generative AI Video quality evaluation | filtered | $5/hr rating gig
+2105266704933651587 | Robotics Video Annotation Specialist | filtered | $3/hr annotation
+2105740148000778649 2105659534220865555 | Vapi/Twilio and ElevenLabs voice agents | filtered | 123 and 146 proposals, no-code voice stack, low match
+2105858662067018041 | AI Automation supply chain (logistics) | filtered | NOT_VERIFIED, $16-45 default range, 71 proposals
+2105927356679577252 2105907926587007151 | AI Agent Development $10 / $25 fixed | filtered | fake budget
+2105924587588372348 | AI (Claude) Automation Engineer, training programme | filtered | $7-25/hr
+2105930491733952380 | 1:1 AI tutor avatars | filtered | $7-15/hr tutoring
+2105825670534621593 | Ai agent (client rating 1.0) | filtered | 3-line post, 1.0 client
+2105772445857603759 | Machine learning engineer (Serbia) | filtered | $20-30/hr entry level
+
+## 2026-10-05 17:38 PKT (full scan, now = 12:38 UTC from API)
+
+2106933880194284539 | Embedded Firmware Engineer: Low-Power Camera Wearable BLE | -- | HARD FILTER location gate: "Remote, based in Europe, Africa, or the US", Pakistan not listed. Also needs shipped Zephyr/nRF BLE firmware (no project file). $70-120/hr, 45 proposals, 29 invites / 6 interviewing / 0 hired, client 0 spend. Match ~45%.
+2107080853813647109 | US-Based AI Engineer, long-term part-time | -- | HARD FILTER location gate: "Must be currently based in the United States", confirmation required in the proposal. $75-100/hr, 2 proposals, Ukraine client 0 history. LLM/RAG/agents match ~55% otherwise.
+2107079311620473280 | AI Solutions Engineer: RAG + Evals (Malta) | 19 | totalHired:1 already (-25) and 173 proposals 33 min after posting (-20). Match ~60% (SN3, ideolab), strong wedge (confident wrong answers = retrieval grounding + eval set). CLIENT WORTH WATCHING: 48 hires, $21.7k, 5.0 from 53, but newest contract started Apr 2026.
+2107084263835563261 | AI Engineer for Automation (Boldstream, UK) | 35 | 240 proposals (-20), 4 seats, Claude Code / MCP / Agent SDK core (documented gap). CLIENT WORTH WATCHING: $293,751, 146 hires, 4.99 from 101.
+2107014382322352576 | Full-Stack Operator UI, Industrial Humanoid (DEU) | 20 | 152 proposals (-20), match <40% (React/FastAPI/ROS 2 bridge, not ML), screening Q "From where do you work", JSS 90 preferred. $30-150/hr.
+2106116499280144963 | CAD-Assisted Screw Hole Detection (ROS) | -- | HARD FILTER age: posted 2026-10-02T23:17Z, 61h at scan. Match ~55% (AATMS extrinsic calibration, Arm Lift). 33 proposals, 35 invites / 16 interviewing / 0 hired.
+2106096411798194116 | Mobile Sports/Movement Analytics, Edge AI & CV | -- | HARD FILTER age 62h. $19-40/hr platform default range, NDA-gated spec.
+2106145546949234510 | Senior VoIP Engineer PortaSwitch (Cyprus) | -- | HARD FILTER age 62h. Also PortaSwitch/SIP core, individuals only, JSS 90+, $10k earned, 4h EET overlap, full-time.
+2106319262279220219 | AI Developer: understand mobile apps from screen recordings | -- | HARD FILTER age 51h, $200 fixed, 39 proposals.
+2105343861471554272 | iOS 3D Scanning App and SDK (LiDAR & Photogrammetry) | -- | HARD FILTER age 5 days.
+2106728520786775885 | Real-Time Camera Image Processing App (medical simulator) | -- | $15-30/hr below floor, 65 proposals.
+2107079384043877629 | Senior ML Engineer Long-Term (Stealth Bio, PK) | -- | $20-30/hr below floor.
+2107086980578229243 | AI app developer | -- | $25-30/hr below floor, post body is a Drive link only.
+2107085780604179667 | Software Engineer - AI Expert (Alpheva AI) | -- | NOT_VERIFIED, AI training/evaluation task class (same as micro1 / Terminal-Bench rejects).
+2106951915357808672 | Leonardo.ai seeding / locking images | 30 | Hosted-tool consultancy, off-pattern. Client 4.x, 115 hires $42k.
+2106847879844877523 | Knoxville permit and parcel data (OpeningMove) | 30 | Public-records scraping, match <40%, no rate. CLIENT WORTH WATCHING: $201,068, 49 hires, 4.99.
+2106925415406186891 | Databricks AI / Genie POC | -- | $20-50/hr, match <40%.
+2106769121985040205 | Senior Applied AI Engineer, PDF search + extraction | 35 | 50+ proposals, $1,000 fixed for under a week, client 1 hire / $450.
+2106782065572108037 | Super software Architect, large-scale AI SaaS (India) | 33 | Two-sentence post, $5-60/hr, bids avg $27.83, client history is WordPress / PHP / bookkeeping / VA.
+2107077969333587789 | Web Scraper and Data Processing Engineer | -- | $10-30/hr below floor.
+2107007039962561531 | Fine Tune LLM in Banking Space (India) | -- | NOT_VERIFIED, no rate, LLM fine-tuning match <40%.
+2107076893172203968 | AI Engineer for LLM Features ($600) | -- | 51 proposals, skills mis-tagged (Microcontroller / Mechanical).
+2107026923190095693 2107026010971829501 2106978549695462395 | (dance-school chatbot, customer-service chatbot, "AI Project Development and Deployment") | -- | 77 / 89 / 50+ proposals, chatbot or contentless posts.
+2106925901776585152 2106883941405316307 2106770866262004947 2106791434734556371 2106587547210347773 2106145324785893824 2106325194941825472 2106336175337189771 | (8x voice-agent platform assembly / receptionist / beta-tester jobs) | -- | 46-101 proposals or below floor or platform assembly. Established off-pattern class.
+2106970591943098816 2107078624043470669 2107059359408215251 2107051945297916299 2107041960808601349 2107015973590553811 2106782591108196384 2106818263283848965 | (AI video / image / avatar content gigs) | -- | Content production, not ML engineering. Established off-pattern class.
+2107050571910031392 2107005781308528389 2106995415023277829 2106955752771817293 2106932701695071443 2106941546601254733 2106881113509852413 2107039038345073875 | (PCB / RF / firmware / C# / C++ gigs) | -- | Hardware or non-ML engineering, or $10-30/hr.

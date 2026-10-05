@@ -95,6 +95,13 @@ and the published figure then independently matched. That order matters for two 
 independently derived number is one you can defend in a call, and if your arithmetic and the
 literature *disagree*, that gap is itself a finding worth investigating before it reaches a client.
 
+**Read the primary source, not a fetch summary (added 2026-10-05, ADA takeoff job).** `WebFetch` on a
+PDF returned "binary content, unreadable" for Caltrans DIB 82-06, but the tool saves the file
+locally and prints the path. Extract it with `pypdf` through Bash, grep the passages (the "Case"
+text, the table) and quote from that. A summarising model cannot be trusted for numbers; an
+extracted page can. That is how "63 in for a 4 in curb face, 126 for 8" and "Case A, B and C in
+Standard Plan A88A" were verified before they reached a letter.
+
 **If you cannot find a wedge, say so in the output.** A job with no wedge available is a lottery
 ticket, and Hashim should know he is buying a ticket rather than making a bet. Write the letter
 anyway, but flag it: `NO WEDGE FOUND — this is a credentials-only letter, expect low conversion.`
@@ -235,6 +242,12 @@ said "I've deployed on DJI before". Record the gap in `wedge.md` so the validato
   question. The validator caught the missing half on loop 1.
 - **Name every source in the text** (added 2026-09-14). "A CBT study found" is vague attribution
   and failed Gate 2b three times in one letter. Write the paper's title or the benchmark name.
+- **Quote a published number with its stated conditions, and use the project file's own wording**
+  (added 2026-10-05, ADA takeoff job). Caltrans' 63-inch Case A run holds for an 8.3% running slope
+  on a 2% cross-slope sidewalk and the first draft dropped that; the Well Log bullet said "scanned"
+  where the file says "raster". Both only surfaced at Gate 1. Hedge convention claims you cannot
+  cite ("usually only gives through spot elevations"), and give the client's own terms ("computer
+  vision", "working demonstration") where the draft used a synonym.
 - **Shared-cause claims: say "most of" or "several", not "are one gap"** (added 2026-09-14). Second
   time the single-cause trap fired (football v1, then Aethera's "problems 1, 2 and 4 are one gap").
   Name the shared piece without claiming it explains every symptom.

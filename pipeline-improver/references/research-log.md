@@ -105,3 +105,9 @@ would actually change a rule.**
 - KEPT: nothing new that changes a rule. Search confirms Uma (launched Oct 2025, moved to the Basic plan on May 5, 2026) reads proposal text plus screening answers, and that repetitive proposals are penalised. Already encoded.
 - UNVERIFIED, not encoded: vendor blogs (snipework, uphunt, upalerts) say that on jobs where the client turns it on, completing an Uma AI video interview is required before a proposal can be submitted. One source class, no Upwork primary page. If a scanned job's `find_jobs get` shows such a requirement, add it as a scout card flag then.
 - REJECTED: no October 2026 policy announcement exists yet in search results; the "AI agents as a hiring category" piece (memvers.com) is market commentary, not a rule.
+
+## 2026-10-05
+- KEPT (from Upwork's own tool, strongest source): `boost_profile get_status` shows the "Paid invitation badge" is the Availability Badge, ON since 2026-07-31, price 14 Connects, renewed by the system, next renewal 2026-10-06T02:59Z, no active profile boost ad. That explains the -1 every 12h and rules out an active ad as the cause of the -60 rows.
+- UNVERIFIED, not encoded as fact: upwex.io says a boosted-profile click can cost "60 to 70+ Connects", charged per client click with an optional daily limit. Vendor blog, official support pages return 403 to WebFetch, and get_status shows no ad now. Fits the -60 pattern but is not proven; Hashim to check ad history on upwork.com.
+- KEPT: Uma availability to all clients since 2026-05-05 and screening answers scored (upalerts, snipework, already encoded).
+- REJECTED: uphunt / zenlance Connects pricing pages (price per Connect, not a rule change); nothing new on Uma ranking this month.

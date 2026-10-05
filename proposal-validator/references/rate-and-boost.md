@@ -30,6 +30,15 @@ survived the scout's hard filters.
      - client spend_total < $10,000 (modest buyer)
    Then bid midway between the field average and the clamped number. Never below $40.
 4. Never adjust up past the clamped number.
+
+**Budget type DEFAULT (added 2026-10-05).** `hourlyBudgetType: DEFAULT` means the range is Upwork's
+placeholder, not a client-stated ceiling. The rule still clamps to it (the field average anchors the
+number anyway, as on the drone job), but say so in the approval message and name the override:
+"range is a placeholder, $65 is available as your override." **Re-derive the number from the 6a
+liveness pull before quoting it.** On the ADA takeoff job the suggestion was $65 at 24 proposals,
+the field reached 26 before approval, rule 3 fired, and the rule gave $55 (midpoint of the $50.54
+field average and the $60 clamp). Never give Hashim a rate before the 6a pull; if one was given and
+the pull differs, say the earlier figure is superseded.
 ```
 
 ### Hourly with NO stated range (added 2026-09-07 — the rule had no branch for this)
@@ -166,8 +175,10 @@ only 3 boosters for 4 paid slots, so 1 Connect would have bought a pinned slot (
 the top one). The proposal went out unboosted because the option was only visible after Hashim
 said "submit".
 
-Rule: run `manage_proposals create` (preview only) **before** presenting the letter for Hashim's
-approval, read the `boost` block, and put one line in the approval message:
+Rule (revised 2026-10-05 — was: build the preview before presenting the letter for approval, which
+contradicted the validator hard rule that nothing is created without Hashim's approval): build the
+`manage_proposals create` preview right after Hashim says submit, read the `boost` block, and put
+one line in the final-confirm message before `confirm_preview`:
 `BOOST  top bids [3 2 1], 1 Connect takes a top-4 slot (4 takes #1). Add it? Default: no.`
 Always show that line when fewer than 4 applicants have boosted or the top-4 slot costs 5 Connects
 or less, whatever the match or field size. The preview expires in ~15 minutes; if Hashim's reply
@@ -200,7 +211,7 @@ Any one of these stops the pipeline and surfaces to Hashim instead.
 | Verdict is **BLOCK** | Fabricated claim or contact info. Never goes out, never silently rewritten |
 | **2 rewrite loops exhausted** | The disagreement needs a human, not a third attempt |
 | **`totalHired > 0`** on the liveness re-check | Seat is filled. The roofline job went open → hired in 3 days |
-| **Daily cap: 100 Connects or 4 proposals in the last 24 hours** (revised 2026-09-14 — was "balance would drop below 50") | Count this submission in. Proposals from `list_freelancer_proposals action=list` created in the last 24h; Connects from dashboard `recent_usage` in the last 24h. Either limit reached → stop, bank the letter, report which limit and when it frees up |
+| **Daily cap: 100 Connects or 4 proposals in the last 24 hours** (revised 2026-09-14 — was "balance would drop below 50") | Count this submission in. Proposals from `list_freelancer_proposals action=list` created in the last 24h; Connects from dashboard `recent_usage` in the last 24h, **every `Connects spent` row, not only applications** (added 2026-10-05: the badge costs 2 a day and an unexplained -60 landed daily from 2 Oct, so headroom is the 100 less those, not the full 100). Either limit reached → stop, bank the letter, report which limit and when it frees up |
 | **`connects_cost` > 40** | Unusually expensive application, worth a human look |
 | **Job no longer returns** `can_apply: true` | Closed or withdrawn |
 | Client rating **below 3.5** | Below the scout's flag threshold; freelancers are reporting real problems |
