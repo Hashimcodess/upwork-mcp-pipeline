@@ -361,12 +361,7 @@ Hashim approved a specific cost in this sitting, tell him the new cost before co
 This exists because a real job went from open to `totalHired: 1` between being drafted and being
 reviewed. Scout data can be two hours stale.
 
-**Count the whole 24h Connects window, not only applications (added 2026-10-05).** `recent_usage`
-and `get_profile connects_balance` list every `Connects spent` row. The Availability Badge
-(`Paid invitation badge`; 14 Connects a week, 1 every 12h; `boost_profile get_status` confirms it)
-adds 2 a day. A -60 with `reason: null` and no job lands about daily (2-5 Oct, 240 Connects). Hashim identified it as his message-broadcast campaign (Upwork's message boost: Connects are charged each time the broadcast lands in a client's DMs, opened or not); `boost_profile get_status` does not show it, which alone uses 60% of the 100-Connect
-ceiling and leaves room for about two applications a day. Put `<N> used in 24h (<X> applications,
-<Y> other)` in the approval message, and ask Hashim whether message-broadcast spend should count toward the ceiling (open since 2026-10-05).
+**What counts toward the 100-Connect ceiling (revised 2026-10-06 — was: every Connects-spent row, added 2026-10-05).** Application spend only: `Connects spent` rows with `reason: "Job application"` plus any proposal boost bid. The Availability Badge (`Paid invitation badge`, 14 a week, 1 every 12h) and Hashim's message-broadcast campaign (about -60 a day, `reason: null`, no job; Upwork's message boost, charged when the broadcast lands in a client's DMs) are deliberate and are excluded from the ceiling, per Hashim 2026-10-06. Still list them, so the balance picture is honest: put `<N> applications in 24h, <Y> other (badge, broadcast)` in the approval message. A `reason: null` row that is not about -60 and daily is not assumed to be the campaign; ask.
 
 ### 6b. Duplicate check — mandatory
 ```

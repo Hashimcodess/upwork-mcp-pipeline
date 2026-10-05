@@ -44,10 +44,7 @@ python outcome-learner/scripts/outcomes.py status
 Any proposal that prints `NEW SIGNAL` goes at the top of the digest next to invitations. Add one
 line to the digest footer: `LEARNING  stage <stage> · judged <n> of 30`.
 
-**Connects headroom** (added 2026-10-05). Add `CONNECTS  <n> used in 24h (<x> applications, <y> other)`
-to the footer, read from the dashboard `recent_usage` rows. Non-proposal charges count toward the
-100-per-24h automated-spend ceiling; a -60 message-broadcast charge recurring daily would leave room for two
-applications, and a scan should say so before it ranks jobs Hashim may not be able to afford to apply to.
+**Connects headroom** (added 2026-10-05, revised 2026-10-06). Add `CONNECTS  <n> applications in 24h of the 100 ceiling · <y> other (badge, broadcast)` to the footer. Only application spend counts toward the ceiling; the availability badge and Hashim's message-broadcast campaign are deliberate and excluded (Hashim, 2026-10-06), shown only so the balance stays honest.
 
 ---
 
