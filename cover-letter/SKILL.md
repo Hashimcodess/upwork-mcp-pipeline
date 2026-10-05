@@ -6,7 +6,7 @@ description: >
   referenced work as bullets, saves to a dated folder, hands off to proposal-validator.
 model: opus
 disable-model-invocation: false
-allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, mcp__upwork__upwork__find_jobs
+allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Agent, mcp__upwork__upwork__find_jobs
 ---
 
 # cover-letter — write the letter that wins
@@ -45,6 +45,14 @@ In parallel:
 - Every `Danish/projects/*.md` in the job's domain
 
 Pull the post if not saved: `find_jobs action=get params={job_id: "<id>"}`
+
+## Step 1b — Client research (added 2026-10-06)
+
+If the post names a company, product or site, spawn the research subagent while you read the
+context files above. Prompt, rules and what may be used are in `references/client-research.md`.
+Save the result as `research.md` in the proposal folder. It feeds the wedge hunt and the hook; a
+fact reaches the letter only if the company's own site confirms it. Anonymous client: skip, and do
+not guess who they are.
 
 ---
 

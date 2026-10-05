@@ -6,7 +6,7 @@ description: >
   checks compliance. Returns PASS / REVISE / BLOCK and notifies on verdict.
 model: opus
 disable-model-invocation: false
-allowed-tools: Read, Glob, Grep, Edit, Write, WebSearch, PushNotification, mcp__upwork__upwork__find_jobs, mcp__upwork__upwork__list_freelancer_proposals, mcp__upwork__upwork__manage_proposals, mcp__upwork__upwork__confirm_preview
+allowed-tools: Read, Glob, Grep, Edit, Write, WebSearch, Agent, PushNotification, mcp__upwork__upwork__find_jobs, mcp__upwork__upwork__list_freelancer_proposals, mcp__upwork__upwork__manage_proposals, mcp__upwork__upwork__confirm_preview
 ---
 
 # proposal-validator — the last filter, and the submit
@@ -126,6 +126,23 @@ Read only the first sentence. Does it earn the second?
 
 85% of clients read the first paragraph and stop. If sentence one is setup, throat-clearing, or a
 restatement of the post → **REVISE.**
+
+### 0g. The blind read (added 2026-10-06)
+
+0a-0f are judged by the same session that watched the letter being written, so they lean toward
+agreement. Spawn the blind reader: a fresh subagent that gets only the job post, the letter and the
+screening answers, and reads them cold as a skeptical client. Full prompt, what to withhold, and how
+each output maps to a gate are in `references/blind-reader.md`. Read that file before spawning.
+
+- Run it after 0a-0f and before Gate 1, so its `UNSUPPORTED CLAIMS` feed Gate 1 and its `AI TELLS`
+  feed Gate 2b.
+- **It is advisory.** It cannot approve, edit, submit or lift a BLOCK. Every point it raises is
+  either fixed or rebutted in one line in the report.
+- A confirmed `UNANSWERED` item (an explicit instruction or screening question the letter skipped)
+  is a **REVISE** on its own.
+- Anything it suggests about Danish's experience goes through Gate 1. It has no portfolio access.
+- Skip it only for a letter under about 60 words with no screening questions, and say so in the
+  report.
 
 ---
 
@@ -320,6 +337,10 @@ WEDGE   "The real bar is reliability: the same document scoring the same
         as the bar rather than treating it as a coding task.
         Objection defused: "will this actually be reliable" via per-function evals.
         Six-second test: sentence 1 earns sentence 2.
+
+BLIND   Reader (sonnet): FIRST LINE keep reading · SHORTLIST maybe
+        Unanswered: none · AI tells: 1 ("robust"), fixed · Missing: nothing the
+        project files can back. Unsupported claims sent to CLAIMS below.
 
 CLAIMS  4 checked, 4 verified
         "eight categories"      VERIFIED  sn3-customer-support-chatbot.md:21
