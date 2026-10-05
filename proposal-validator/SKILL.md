@@ -364,10 +364,9 @@ reviewed. Scout data can be two hours stale.
 **Count the whole 24h Connects window, not only applications (added 2026-10-05).** `recent_usage`
 and `get_profile connects_balance` list every `Connects spent` row. The Availability Badge
 (`Paid invitation badge`; 14 Connects a week, 1 every 12h; `boost_profile get_status` confirms it)
-adds 2 a day. An unexplained -60 with `reason: null` and no job landed on 2, 3, 4 and 5 Oct (240
-Connects, and `get_status` shows no active profile boost), which alone uses 60% of the 100-Connect
+adds 2 a day. A -60 with `reason: null` and no job lands about daily (2-5 Oct, 240 Connects). Hashim identified it as his message-broadcast campaign (Upwork's message boost: Connects are charged each time the broadcast lands in a client's DMs, opened or not); `boost_profile get_status` does not show it, which alone uses 60% of the 100-Connect
 ceiling and leaves room for about two applications a day. Put `<N> used in 24h (<X> applications,
-<Y> other)` in the approval message, and tell Hashim when a non-proposal charge repeats.
+<Y> other)` in the approval message, and ask Hashim whether message-broadcast spend should count toward the ceiling (open since 2026-10-05).
 
 ### 6b. Duplicate check — mandatory
 ```

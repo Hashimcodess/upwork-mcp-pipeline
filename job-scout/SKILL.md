@@ -46,7 +46,7 @@ line to the digest footer: `LEARNING  stage <stage> · judged <n> of 30`.
 
 **Connects headroom** (added 2026-10-05). Add `CONNECTS  <n> used in 24h (<x> applications, <y> other)`
 to the footer, read from the dashboard `recent_usage` rows. Non-proposal charges count toward the
-100-per-24h automated-spend ceiling; an unexplained -60 recurring daily would leave room for two
+100-per-24h automated-spend ceiling; a -60 message-broadcast charge recurring daily would leave room for two
 applications, and a scan should say so before it ranks jobs Hashim may not be able to afford to apply to.
 
 ---

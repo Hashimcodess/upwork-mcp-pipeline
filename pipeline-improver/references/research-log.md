@@ -111,3 +111,4 @@ would actually change a rule.**
 - UNVERIFIED, not encoded as fact: upwex.io says a boosted-profile click can cost "60 to 70+ Connects", charged per client click with an optional daily limit. Vendor blog, official support pages return 403 to WebFetch, and get_status shows no ad now. Fits the -60 pattern but is not proven; Hashim to check ad history on upwork.com.
 - KEPT: Uma availability to all clients since 2026-05-05 and screening answers scored (upalerts, snipework, already encoded).
 - REJECTED: uphunt / zenlance Connects pricing pages (price per Connect, not a rule change); nothing new on Uma ranking this month.
+- CORRECTION 2026-10-06: the -60 daily charge is Hashim's message-broadcast campaign, not a profile ad. A search result titled "How to Boost a Message for freelancers" (support.upwork.com) exists and fits, but the page returned 403 and was not read. `boost_profile get_status` does not report it.

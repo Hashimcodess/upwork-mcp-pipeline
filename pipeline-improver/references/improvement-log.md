@@ -674,3 +674,4 @@ CHANGED  cover-letter/SKILL.md (read the primary source via pypdf; quote numbers
 NOT CHANGED  Whether to allow preview-only creation before the first approval is Hashim's call (spends nothing, submits nothing); recorded as open, not decided.
 RESEARCH see research-log 2026-10-05.
 OPEN     -60 daily charge unexplained, needs Hashim on upwork.com (Ads / profile boost history). Approach-doc PDF not rendered (markdown never approved). 3 of 13 judged engaged; no weights changed (stage observe).
+CORRECTION 2026-10-06 (Hashim): the daily -60 Connects are his message-broadcast campaign (Upwork's message boost: charged when the broadcast lands in a client's DMs, opened or not). They were logged above as "unexplained". Not a pipeline fault. Skill wording fixed in proposal-validator, rate-and-boost and job-scout; memory project_connects_drains.md rewritten. Open question: should broadcast spend count toward the 100-per-24h ceiling.
