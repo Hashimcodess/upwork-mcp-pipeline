@@ -297,6 +297,7 @@ title search (`find_jobs action=search`, read `proposal_count`), not the feed ti
 `FIELD  <n> proposals (as of <time>)` next to the terms, and if it is over 100 say plainly that the
 scout would have scored it down.
 
+**Job age and shortlist state in the FIELD line (added 2026-10-06, LiDAR tracking job).** Uma delivers its shortlist about six hours after posting. The LiDAR proposal went in 15.4 hours after the post (04:09Z to 19:33Z) and the insights already showed 11 shortlisted, 0 opened, so it joined after the shortlist formed. Add `AGE <hours since published_date>` and, after submit, the `insights.shortlisted` count to the report. One observation, not a rule: if later submissions made after hour 6 convert worse than early ones, the outcome loop should test job age.
 **Rate and time in the approval message are re-derived from the freshest pull, never carried over
 (added 2026-10-05, ADA takeoff job).** The job was picked with a $65 suggestion at 24 proposals; by
 approval the field was 26, rule 3 fired and the rule gave $55. State the rate only after the 6a

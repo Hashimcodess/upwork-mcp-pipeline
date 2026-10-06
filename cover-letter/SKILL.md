@@ -180,6 +180,8 @@ bullet against its project file in isolation, not against the surrounding paragr
 
 ---
 
+**Personal-experience questions the project files cannot answer (added 2026-10-06, LiDAR tracking job).** When screening questions ask for specifics only Danish knows (operating system, ROS or library versions, tracker design, tuning results) and the project files do not carry them, do not fill the gap with a plan in future tense and present it as done. List the missing facts as one short question to Hashim when the draft is shown, before the validator runs. The LiDAR answers shipped with no OS in Q1 and a part-plan Q4 because the AATMS and LiDARView files have no tracker internals; the blind read flagged both. Hashim can supply them in one message; write only what he confirms.
+
 ## Step 5 — Structure
 
 1. **Hook** — the wedge, stated plainly. 1-2 sentences.
@@ -392,6 +394,8 @@ LOW technical depth, or a fixed budget under ~$500 where the doc costs more than
 validator reads it and will not let an unexplained absence through on a HIGH-depth job.
 
 ---
+
+**Markdown preview never approved (added 2026-10-06, second job in a row).** The ADA and LiDAR jobs both got `approach-doc.md` but no PDF, because the preview step needs Hashim's OK and he moves straight from letter to submit. When the markdown is not approved before submit, write one line in `wedge.md` ("approach doc: md only, PDF not rendered, Hashim did not ask for it") so Gate 5b sees a recorded decision rather than a silent gap, and ask once at the letter review whether he wants it rendered.
 
 ## Step 9 — Save and hand off
 

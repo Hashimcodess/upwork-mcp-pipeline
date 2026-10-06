@@ -1005,3 +1005,12 @@ Format: `job_id | title | score | reason`
 2106925901776585152 2106883941405316307 2106770866262004947 2106791434734556371 2106587547210347773 2106145324785893824 2106325194941825472 2106336175337189771 | (8x voice-agent platform assembly / receptionist / beta-tester jobs) | -- | 46-101 proposals or below floor or platform assembly. Established off-pattern class.
 2106970591943098816 2107078624043470669 2107059359408215251 2107051945297916299 2107041960808601349 2107015973590553811 2106782591108196384 2106818263283848965 | (AI video / image / avatar content gigs) | -- | Content production, not ML engineering. Established off-pattern class.
 2107050571910031392 2107005781308528389 2106995415023277829 2106955752771817293 2106932701695071443 2106941546601254733 2106881113509852413 2107039038345073875 | (PCB / RF / firmware / C# / C++ gigs) | -- | Hardware or non-ML engineering, or $10-30/hr.
+2107278412470947661 | Ai Defect detection system (facade drone) | 27 | One-sentence post, zero-hire client, payment NOT_VERIFIED, 25 proposals, no wedge
+2107272507118318845 | ComfyUI Image Manipulation System | 36 | Zero-hire client, NOT_VERIFIED, rate tops at $50, three-sentence post
+2107384047968397344 | OpenClaw integration | 26 | One-line post, NOT_VERIFIED, zero hires, no rate, intermediate
+2107242478326722955 | Technical Advisor / Fractional CTO | 27 | 133 proposals (very crowded -20), match ~30%, 30+ hrs/week
+2107114826209562445 | AI Voice Agent Call Center Feasibility + PoC | 30 | 141 proposals, $650 fixed
+2107174462619550144 | Senior AI Engineer for RFP Analysis | 25 | 98 proposals, skills tagged civil/electrical, client spent $380
+2107243651170825469 | OSINT & AI Automation Architect (museums) | <=40 | 50+ tier unresolved, no-code n8n/Airtable focus, no rate
+2107095236920923909 | Cognigy VoiceBot Developer | 30 | Low-code Cognigy, tops at $50, match ~30%
+2107282392799245565 | AI Multi-Agent Consultation | -- | $25 fixed

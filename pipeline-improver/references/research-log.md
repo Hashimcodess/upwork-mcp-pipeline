@@ -112,3 +112,6 @@ would actually change a rule.**
 - KEPT: Uma availability to all clients since 2026-05-05 and screening answers scored (upalerts, snipework, already encoded).
 - REJECTED: uphunt / zenlance Connects pricing pages (price per Connect, not a rule change); nothing new on Uma ranking this month.
 - CORRECTION 2026-10-06: the -60 daily charge is Hashim's message-broadcast campaign, not a profile ad. A search result titled "How to Boost a Message for freelancers" (support.upwork.com) exists and fits, but the page returned 403 and was not read. `boost_profile get_status` does not report it.
+
+## 2026-10-06
+Query: Upwork Uma recruiter shortlist proposals update October 2026. Result: nothing newer than the May 2026 expansion of Uma Recruiter shortlisting to the Basic plan (shortlist about six hours after posting; Upwork internal testing Nov 2025 to Mar 2026: shortlist users hired 30% more often, filled jobs 11% faster). Vendor blogs (snipework, upalerts, appalach.ai) repeat the same facts; none carries new dated numbers. No rule changed. Rejected as low-value: generic "how to win on Upwork 2026" proposal-tip blogs (undated advice, course-selling tone). Our own insights (11 of 49 shortlisted before our submit) are the stronger evidence for the timing observation.
