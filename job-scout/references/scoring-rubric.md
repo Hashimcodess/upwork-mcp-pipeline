@@ -55,6 +55,17 @@ Read the relevant ones before assigning a percentage. Never score from the proje
 | `ensemble-smart-lighting.md`, `drive-pulse.md` | Microcontroller AI, wearable/vehicle hardware |
 | `agricultural-ugv.md` | Field robotics, sensor fusion |
 
+### Physical hardware / optics / fabrication (added 2026-10-07, ESP32 dermatoscope job)
+Sweep ALL of these before scoring any job that needs hands-on hardware (firmware + optics + printed parts + test rig). The scout read only camera and firmware files on the ESP32 dermatoscope job and scored match 35%; the full sweep gave about 50%.
+| Project | What it proves |
+|---|---|
+| `vr-glasses.md` | Lead hardware designer: custom PCB, lens selection and optical optimization for a mixed-reality headset |
+| `fabsky.md` | SolidWorks/AutoCAD design, FDM/SLA 3D printing, CNC, high-tolerance parts |
+| `aethero-nxn-edge-module.md` | Flight hardware that passed launch qualification; Danish named on the module (team build, not solo) |
+| `arm-lift.md` | Finds a user's face, estimates height, repositions hardware to it |
+| `smart-hail-guard.md` | Custom firmware running a multi-camera array with sensors, timestamped MQTT events (no deployment claims) |
+Gaps that stay gaps: no ESP32, no BLE-to-iOS, no LED driver circuits, no polarized optics in any file.
+
 ### Robotics / sensors / 3D
 | Project | What it proves |
 |---|---|

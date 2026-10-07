@@ -115,3 +115,8 @@ would actually change a rule.**
 
 ## 2026-10-06
 Query: Upwork Uma recruiter shortlist proposals update October 2026. Result: nothing newer than the May 2026 expansion of Uma Recruiter shortlisting to the Basic plan (shortlist about six hours after posting; Upwork internal testing Nov 2025 to Mar 2026: shortlist users hired 30% more often, filled jobs 11% faster). Vendor blogs (snipework, upalerts, appalach.ai) repeat the same facts; none carries new dated numbers. No rule changed. Rejected as low-value: generic "how to win on Upwork 2026" proposal-tip blogs (undated advice, course-selling tone). Our own insights (11 of 49 shortlisted before our submit) are the stronger evidence for the timing observation.
+
+## 2026-10-07
+- Searched: Upwork boost/Connects changes Oct 2026; Uma screening-question ranking 2026.
+- Rejected: unil.ink and snipework/aiproposer pieces claiming "Uma can override boosting" and "clients scroll past boosted rows". Undated or vendor content, no measured numbers. No rule change.
+- Confirmed (no change needed): uphunt.io guide repeats that Uma scores proposal text and screening answers against client requirements, already in root CLAUDE.md.

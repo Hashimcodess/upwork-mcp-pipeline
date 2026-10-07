@@ -204,6 +204,7 @@ Relevant work:
 - `Name: what it is, the technical detail that matters *here*, the real number.`
 - The clause after the metric must tie to **this** client's problem. A bullet that fits any
   proposal is dead weight.
+- **Tie only where the overlap is literal (revised 2026-10-07, ESP32 dermatoscope job, was: always add a tie clause).** "That's your snap connection" after a LiDAR-calibration bullet, or "your tests get scored the same way" after a ring sizer, read to the blind reader as AI pattern-matching and as stretching unrelated work. When the project is adjacent rather than the same thing, state the plain fact and let the client draw the line. Never repeat a "That's your X" closer across bullets.
 - Plain hyphens. No bold, no nesting, no emoji.
 
 ---

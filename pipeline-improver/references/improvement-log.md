@@ -688,3 +688,13 @@ CHANGED  cover-letter/SKILL.md (Step 4: ask Hashim for personal-experience facts
 NOT CHANGED  No scout weights, no wedge preference (outcome stage observe, 14 rows now, learning gated at 30).
 RESEARCH see research-log 2026-10-06.
 OPEN     Q1 OS and Q4 tracker design for AATMS/LiDARView still unknown; if Hashim supplies them, put them in projects/aatms.md and lidarview.md so future letters inherit them. Watch whether the proposal is opened given it joined after the shortlist.
+
+## 2026-10-07 (ESP32 dermatoscope job, proposal 2107789502694899713)
+Audited: scout card, letter v1 to v5, screening answers, validator loop, blind read, submit flow.
+Found and changed:
+1. Scout under-read hardware jobs (35% vs ~50% file-verified; VR Glasses, FabSky, Arm Lift, Aethero missed). scoring-rubric.md: new "Physical hardware / optics / fabrication" domain table plus the gaps that stay gaps.
+2. Blind read flagged forced "that's your X" tie clauses as AI tells. cover-letter/SKILL.md: tie only where the overlap is literal (revised, was: always tie).
+3. Gate 1 caught "printed reference" (file: credit card) and a 52 mm iPhone 2x (Pro is 48 mm). proposal-validator standing traps 7 and 8.
+4. Boost approved after preview forced a rebuild. rate-and-boost.md: rebuild rule, when the approval carries over, and BOOST line in the first approval message.
+5. Hashim: no committed timeline, overlap by mutual agreement. Memory feedback_no_committed_timeline.md.
+Rejected: none from outcomes (13 of 30 judged, observe). Research: no rule change.

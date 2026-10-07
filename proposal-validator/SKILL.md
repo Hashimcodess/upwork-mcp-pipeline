@@ -516,3 +516,5 @@ Real failures caught in past sessions:
 4. **Stale deliverable.** Claiming something is live that the client never deployed.
 5. **Silent scope creep.** The letter promises more than the bid covers.
 6. **Wedge/letter mismatch.** `wedge.md` describes a sharp insight the letter never actually states.
+7. **Paraphrase drift on a project's mechanism (added 2026-10-07).** Newman Bands measured against a credit card (ISO 7810), and the draft said "printed reference" because the client's tests use printed targets. Check the noun, not just the number.
+8. **Assumed device specs (added 2026-10-07).** iPhone 2x was assumed 52 mm; on 14/15 Pro it is 48 mm (crop of the 24 mm main), which moved the face distance from 37-40 to ~35 cm. Any lens, sensor or frame-rate figure for a named device gets a source in `wedge.md`. A component the client never named (the OV5640) is written as "a typical module", not as theirs.

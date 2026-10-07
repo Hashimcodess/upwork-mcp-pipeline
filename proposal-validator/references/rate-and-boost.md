@@ -120,6 +120,8 @@ BOOST  Skipped. Top bids were [12 12 11 1] — 13 Connects would clear the field
 
 Boost only when Hashim explicitly asks, for that job or as a standing instruction.
 
+**A boost approved after the preview needs a rebuilt preview (added 2026-10-07, ESP32 dermatoscope job).** `boost_connects` is set at `create`, so "boost 16 and submit" means a second `create` with every other field identical. The tool then asks for the full preview to be re-presented. When Hashim's approval named the exact boost amount after seeing the full preview, and the rebuilt preview differs only in that boost with unchanged competing bids, his message is the approval for it. If the top bids moved or any other field changed, show the new preview and ask again. To save the round trip, the first approval message always carries the BOOST line with the bid to clear.
+
 ### When skipping must be SURFACED, not silent (added 2026-09-16)
 
 The default stays skip — that is Hashim's authorisation boundary and this rule does not move it.

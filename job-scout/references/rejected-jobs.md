@@ -1014,3 +1014,36 @@ Format: `job_id | title | score | reason`
 2107243651170825469 | OSINT & AI Automation Architect (museums) | <=40 | 50+ tier unresolved, no-code n8n/Airtable focus, no rate
 2107095236920923909 | Cognigy VoiceBot Developer | 30 | Low-code Cognigy, tops at $50, match ~30%
 2107282392799245565 | AI Multi-Agent Consultation | -- | $25 fixed
+2107400830043509168 | Senior Python Engineer, Malta (FastAPI, AI agent feature) | 30 | totalHired 1 already (-25), 50+ proposals unresolved, 30+ h/week
+2107545481395783969 | Higgsfield AI Platform Expert | 36 | Platform support, no rate, bids avg $24, match ~30%
+2107490307659223472 | Experienced AI software Engineer (Ukraine) | 37 | Vague post, new client no spend, TensorFlow/Java
+2107497986914116242 | AI developer with image rating experience | 33 | 91 proposals (crowded), annotation/eval work, $15-50
+2107453154377943764 | EDGE caching CDN on Jetson Orin | -- | $350 fixed, network admin scope, below floor
+2107543558168987937 | AI consultant personal assistant (Russian-speaking) | -- | LANGUAGE gate
+2107487154318561712 | Esperto AI e automazione (Italian) | -- | LANGUAGE gate
+2107498843998472481 | Overseas MCU / Embedded Firmware Engineer | -- | $15-35/hr below floor
+2107451731361878448 | Senior AI/ML Engineer (LLM, RAG) | -- | $20-35/hr below floor
+2107528247636383593 | Lookin for Ai agent makers | -- | 63 proposals, $20-200 default range, personal assistant
+2107525637267730260 | AI Automation & Backend Developer, recruitment OS | -- | 75 proposals, no rate, new client
+2107555775966824737 | Data Engineer - PDF Processing Pipeline | 48 | Hashim skipped: 1-3 h task, small-ticket client ($2.3k over 19 posts), 1.00 review about a 50% refund request, field 0 to 19 in 25 min
+2107347736742065405 | Founding Engineer: Audio Signal Processing and Embedded Hardware (Ennovo) | 33 | Post text says US or UAE based only, beamforming/MVDR/hearing-aid DSP, match ~25%
+2107420979641407721 | Hardware and firmware engineer: LoRaWAN sensor node family (Geolook) | -- | RATE: $3,600 fixed for 7 products + EMC/CE/RDSO lab tests in 45 days, 40% held ~6 months, 1%/day penalty; analog front-end hardware, match ~25%. Scope trap, not an apply
+2107143748716614867 | Senior AI/ML Software Engineer, LangChain (PH) | 39 | New client $45 spent, 1 hire, generic LLM post
+2107185050996838221 | Machine Learning Operations Engineer - Agent Harnesses (Upwork HWS) | 51 | Hashim skipped: 143 proposals (very crowded -20, rescored from 71), 4 interviewing, posted 2026-10-05T19:04Z, Upwork Enterprise client is legitimate
+2107569196536639316 | Senior AI/ML Engineer 7+ Years (Ukraine) | -- | 2,500 USD fixed for 3-6 months, rate floor; new client 0 hires, CV + intro video ask
+2107664269000788257 | AI Engineer for Gaming Platform | -- | 20 USD fixed placeholder, all 4 bids 20, template brackets unfilled, client no spend. Match ~70 (LangGraph, eval); revisit only if budget amended
+2107654121715223252 | AI Operator, Run and Verify AI Agents | 33 | 61 proposals, 13 already invited to interview, junior operator role, avg bid 29, no rate; crowded -10
+2107748167328682416 | AI and RAG Integration, legacy ColdFusion | 22 | requires strong ColdFusion/CFML (none in files), 65 proposals within an hour of posting, new client
+2107695533032952240 | Radar SLAM Research | -- | 100 USD fixed, rate floor
+2107645162595502369 | Satellite Image Annotator (parking, solar) | -- | annotation labor, no rate, 60 proposals
+2107577865128725204 | Multimodal CV video-to-training-data pipeline | -- | 400 USD fixed for a pipeline build, rate floor
+2107758024689142049 | EU ONLY Applied ML candidate ranking | -- | LOCATION gate (EU only), 300 USD fixed
+2107731603846278996 | AI Consultant Agentic AI implementation | -- | 169 proposals, very crowded, client 689 USD spent
+2107452209074096852 | Wireless Electricity AI Development | -- | match under 40, no credible fit (90 pct long-range wireless power claim)
+2107497986914116242 | AI developer with image rating experience | -- | image rating/labeling labor, match ~30, range tops at 50
+2107697102192855329 | Senior Software Lead, Product Engineering | -- | managerial Flutter/Dart lead, 50+ tier, match under 40
+2107701132931582241 | Senior Software Engineer (non-coding) | -- | represent a dev team in meetings, no engineering
+2107736953945272148 | Full Stack AI Developer 1,000 USD | -- | 113 proposals, generic MVP, rate floor
+2107561771980939922 | Senior AI Automation Engineer, rebuild operations | -- | 283 proposals, 22-29/hr below floor
+2107695508164397345 | Founding Engineer, manufacturing software (PLC parser) | -- | match under 40, 1,500 USD fixed
+2107560831589908825 | AI for Bid Selection | -- | client rating 2.29 (-15), 50+ proposals, match ~45
